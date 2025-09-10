@@ -120,7 +120,67 @@ p.footer-text-style {
 	font-weight: 500;
 	align-self: end;
 }
+  /* Container utama */
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      padding: 20px 0;
+      background: #f8f8f8;
+    }
 
+    .slider-container .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Area slider */
+    .slider {
+      display: flex;
+      gap: 15px; /* jarak antar gambar */
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 0 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+      height: 8px;
+    }
+    .slider::-webkit-scrollbar-thumb {
+      background: #bbb;
+      border-radius: 10px;
+    }
+    .slider::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+
+    /* Gambar */
+    .slider .slide img {
+      height: 220px;   /* tinggi seragam */
+      width: auto;     /* lebar otomatis */
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    /* Efek hover */
+    .slider .slide img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Selang-seling */
+    .slider .slide:nth-child(odd) img {
+      margin-top: 15px;
+    }
+    .slider .slide:nth-child(even) img {
+      margin-bottom: 15px;
+    }
+  </style>
 .fixed-nav {
   background-color: #222831; /*color palat is used from https://colorhunt.co/palette/22283131363f76abaeeeeeee color hunt site*/
   position: fixed;
