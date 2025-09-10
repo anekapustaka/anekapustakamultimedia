@@ -1,4 +1,4 @@
-  /* Container utama */
+    /* Container utama */
     .slider-container {
       width: 100%;
       overflow: hidden;
@@ -17,7 +17,7 @@
     /* Area slider */
     .slider {
       display: flex;
-      gap: 15px; /* jarak antar gambar */
+      gap: 20px; /* spasi antar slide */
       align-items: center;
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -39,23 +39,26 @@
     /* Gambar */
     .slider .slide img {
       height: 220px;   /* tinggi seragam */
-      width: auto;     /* lebar otomatis */
+      width: auto;
       object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+      border-radius: 8px;
+      border: 3px solid #ddd;  /* bingkai */
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s, border-color 0.3s;
+      display: block;
     }
 
     /* Efek hover */
     .slider .slide img:hover {
       transform: scale(1.05);
+      border-color: #0077cc;
     }
 
-    /* Selang-seling */
+    /* Selang-seling zig-zag */
     .slider .slide:nth-child(odd) img {
       margin-top: 15px;
     }
     .slider .slide:nth-child(even) img {
       margin-bottom: 15px;
     }
-  </style>
