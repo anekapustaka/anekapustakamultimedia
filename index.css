@@ -239,7 +239,7 @@ p.footer-text-style {
 @media(max-width: 768px) {
   .welcome-style {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     padding: 0 10px;
   }
 
