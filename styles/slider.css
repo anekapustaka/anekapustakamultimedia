@@ -1,11 +1,13 @@
-    body {
+body {
       font-family: Arial, sans-serif;
-      background: #f8f8f8;
+      background: #ffffff;
     }
 
     .slider-container {
       width: 100%;
       padding: 20px 0;
+      overflow: hidden; /* sembunyikan scroll */
+      position: relative;
     }
 
     .slider-container .title {
@@ -15,33 +17,20 @@
       text-align: center;
     }
 
-    /* Area slider */
+    /* area slider */
     .slider {
       display: flex;
-      gap: 20px; /* spasi antar gambar */
-      overflow-x: auto;
-      scroll-snap-type: x mandatory; /* snap ke tiap slide */
-      scroll-behavior: smooth;
-      padding: 0 20px;
+      gap: 20px;
+      animation: scroll 25s linear infinite; /* animasi jalan otomatis */
     }
 
-    .slider::-webkit-scrollbar {
-      height: 10px;
-    }
-    .slider::-webkit-scrollbar-thumb {
-      background: #bbb;
-      border-radius: 5px;
-    }
-    .slider::-webkit-scrollbar-track {
-      background: #eee;
+    /* duplikat isi supaya loop terlihat mulus */
+    .slider-inner {
+      display: flex;
+      gap: 20px;
     }
 
-    /* Slide */
-    .slide {
-      flex: 0 0 auto;
-      scroll-snap-align: start; /* agar berhenti pas di awal gambar */
-    }
-
+    /* tiap slide */
     .slide img {
       height: 220px;
       width: auto;
@@ -57,6 +46,12 @@
       border-color: #0077cc;
     }
 
-    /* Zig-zag */
+    /* zig-zag */
     .slide:nth-child(odd) img { margin-top: 15px; }
     .slide:nth-child(even) img { margin-bottom: 15px; }
+
+    /* animasi geser */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
