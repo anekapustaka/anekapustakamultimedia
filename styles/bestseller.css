@@ -1,13 +1,32 @@
-.mt-5 {
-    margin-top: 0rem !important;
+.book-collection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
-.Bestseller-author .image img{
-    padding: 4rem;
-    
+
+.book-card {
+  width: 200px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
 }
-.book-detail-description-style{
-    color: rgb(233, 231, 231);
+
+.book-card img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.bestseller-detail{
-    margin: 4rem ;
+
+.book-card img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.book-title {
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
 }
