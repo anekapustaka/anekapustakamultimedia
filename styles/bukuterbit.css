@@ -1,65 +1,75 @@
- body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+}
 
-    h2 {
-      color: #0066cc;
-      margin-bottom: 30px;
-    }
+.services {
+  text-align: center;
+  padding: 50px 20px;
+}
 
-    .book-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-    }
+.services h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0056d2;
+  margin-bottom: 40px;
+}
 
-    .book-card {
-      display: flex;
-      align-items: center;         /* sejajarkan cover & teks ke tengah */
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      padding: 20px;
-      width: 80%;
-      max-width: 900px;
-      transition: transform 0.2s ease;
-    }
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .book-card:hover {
-      transform: translateY(-4px);
-    }
+.service-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
 
-    .book-cover {
-      width: 100px;
-      height: 140px;
-      flex-shrink: 0;
-      border-radius: 6px;
-      object-fit: cover;
-      margin-right: 20px;
-    }
+.service-card:hover {
+  transform: translateY(-5px);
+}
 
-    .book-info {
-      text-align: left;
-      flex: 1;
-    }
+/* --- Ikon dengan bingkai melengkung --- */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
 
-    .book-info h3 {
-      margin: 0;
-      font-size: 18px;
-      color: #333;
-    }
+.icon-box img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
 
-    .book-info p {
-      margin-top: 6px;
-      font-size: 14px;
-      color: #666;
-      line-height: 1.4;
-    }
-  </style>
-</head>
-<body>
+.service-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0056d2;
+}
+
+.service-info p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
