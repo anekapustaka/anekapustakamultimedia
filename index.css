@@ -273,37 +273,96 @@ p.footer-text-style {
 
 
 /* New Header Elegan */
-/* Background section hero */
-.hero {
-    background-color: rgb(0, 123, 255); /* Biru solid */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 2rem; /* jarak dalam */
-    height: auto; /* biar tidak terlalu tinggi fix */
-    min-height: 60vh; /* cukup proporsional */
-}
+/* Header background lebih terang */
+	.header-custom {
+	  background: linear-gradient(135deg, rgb(0, 102, 204), rgb(102, 178, 255));
+	  color: black;
+	  padding-bottom: 2rem; /* supaya cukup tapi tidak terlalu tinggi */
+	}
+    /* Navbar */
+    .navbar {
+      background-color: rgb(30, 30, 30);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.7rem 2rem;
+    }
 
-/* Styling teks di hero */
-.hero-text {
-    color: black;
-    max-width: 50%;
-}
+    .navbar .logo h2 {
+      color: white;
+      margin: 0;
+    }
 
-/* Navbar */
-.navbar {
-    background-color: rgb(30, 30, 30); /* tetap gelap */
-    padding: 0.5rem 2rem;
-}
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
 
-.navbar a {
-    color: white; /* menu navigasi jadi putih */
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-}
+    .navbar nav a:hover {
+      color: rgb(0, 140, 255);
+    }
 
-.navbar a:hover {
-    color: rgb(0, 183, 255); /* biru muda saat hover */
-}
+    .btn-order {
+      background-color: rgb(255, 193, 7);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom, rgb(0, 153, 255), rgb(0, 102, 204));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      min-height: 65vh;
+    }
+
+    .hero-text {
+      max-width: 50%;
+      color: black;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .hero-image img {
+      max-width: 320px;
+    }
+
+    /* Responsive di HP */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        min-height: auto;
+      }
+
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-image img {
+        max-width: 220px;
+      }
+
+      .navbar nav {
+        display: none; /* bisa diganti hamburger menu kalau perlu */
+      }
+    }
