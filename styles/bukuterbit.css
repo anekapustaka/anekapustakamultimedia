@@ -25,39 +25,40 @@ body {
 }
 
 .service-card {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  width: 300px;
   padding: 20px;
-  text-align: left;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
-/* --- Ikon dengan bingkai melengkung --- */
+/* Box untuk ikon */
 .icon-box {
-  width: 60px;
-  height: 60px;
+  width: 80px;       /* lebih besar sedikit */
+  height: 80px;
   border-radius: 12px;
-  background: #f1f5f9;
+  background: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: hidden;  /* biar gambar tidak keluar */
+  border: 2px solid #eee;
 }
 
+/* Gambar di dalam icon-box */
 .icon-box img {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
+  width: 70%;          /* skala gambar relatif */
+  height: 70%;         /* biar proporsional */
+  object-fit: contain; /* jaga agar tidak gepeng */
 }
 
 .service-info h3 {
