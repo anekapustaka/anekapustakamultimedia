@@ -270,3 +270,84 @@ p.footer-text-style {
     font-size: 25px;
   }
 }
+
+
+/* New Header Elegan */
+/* Header background */
+.header-custom {
+  background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 102, 204));
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand .logo {
+  height: 50px;
+  width: auto;
+}
+
+.nav-link {
+  color: rgb(230, 230, 230) !important;
+  font-size: 0.95rem;
+  margin: 0 5px;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: underline;
+}
+
+/* Search */
+.search-box input {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.search-box button {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+/* Hero Section */
+.welcome-text {
+  color: rgb(220, 235, 255);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: rgb(240, 240, 240);
+}
+
+.hero-img {
+  max-height: 280px;
+  border-radius: 0.5rem;
+}
+
+/* Social Icons */
+.social-links i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  .hero-img {
+    max-height: 200px;
+  }
+}
