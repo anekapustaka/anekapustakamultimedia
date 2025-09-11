@@ -281,20 +281,21 @@ p.footer-text-style {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body clean */
 body {
-  background-color: #ffffff; /* putih bersih */
+  background-color: #ffffff;
 }
 
-/* Navbar */
+/* Header Navbar */
 .navbar {
-  background: linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(0,102,204,1) 100%);
+  background-color: #0066cc; /* solid biru */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
   color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
 }
 
 .navbar .logo h2 {
@@ -336,6 +337,7 @@ body {
   padding: 3rem 2rem;
   min-height: 70vh;
   color: white;
+  margin-top: 0;   /* pastikan nempel ke header */
 }
 
 .hero-text {
@@ -377,16 +379,7 @@ body {
   }
 
   .navbar nav {
-    display: none; /* nanti bisa diganti hamburger menu */
-  }
-}
-
-  .hero-image img {
-    max-width: 220px;
-  }
-
-  .navbar nav {
-    display: none; /* nanti bisa diganti hamburger menu */
+    display: none; /* bisa diganti hamburger menu */
   }
 }
 
