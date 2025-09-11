@@ -273,89 +273,37 @@ p.footer-text-style {
 
 
 /* New Header Elegan */
-/* Header background lebih terang */
-.header-custom {
-  background: linear-gradient(135deg, rgb(0, 102, 204), rgb(102, 178, 255));
-  color: black;
-  padding-bottom: 2rem; /* supaya cukup tapi tidak terlalu tinggi */
+/* Background section hero */
+.hero {
+    background-color: rgb(0, 123, 255); /* Biru solid */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem; /* jarak dalam */
+    height: auto; /* biar tidak terlalu tinggi fix */
+    min-height: 60vh; /* cukup proporsional */
+}
+
+/* Styling teks di hero */
+.hero-text {
+    color: black;
+    max-width: 50%;
 }
 
 /* Navbar */
 .navbar {
-  padding: 0.6rem 1rem;
+    background-color: rgb(30, 30, 30); /* tetap gelap */
+    padding: 0.5rem 2rem;
 }
 
-.navbar-brand .logo {
-  height: 45px;
-  width: auto;
+.navbar a {
+    color: white; /* menu navigasi jadi putih */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-.nav-link {
-  color: rgb(20, 20, 20) !important;
-  font-size: 0.9rem;
-  margin: 0 5px;
+.navbar a:hover {
+    color: rgb(0, 183, 255); /* biru muda saat hover */
 }
-
-.nav-link:hover {
-  color: rgb(0, 51, 102) !important;
-}
-
-/* Search */
-.search-box input {
-  border-radius: 0.3rem 0 0 0.3rem;
-}
-
-.search-box button {
-  border-radius: 0 0.3rem 0.3rem 0;
-}
-
-/* Hero Section */
-.welcome-text {
-  color: rgb(0, 51, 102);
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: rgb(0, 51, 102);
-  margin-bottom: 1rem;
-}
-
-.hero-description {
-  font-size: 1rem;
-  color: rgb(30, 30, 30);
-}
-
-.hero-img {
-  max-height: 250px;
-  border-radius: 0.5rem;
-}
-
-/* Social Icons */
-.social-links i {
-  font-size: 1.2rem;
-  color: rgb(20, 20, 20);
-}
-
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .header-custom {
-    padding-bottom: 1rem; /* rapikan gap di hp */
-  }
-  .hero-title {
-    font-size: 1.4rem;
-  }
-  .hero-description {
-    font-size: 0.9rem;
-  }
-  .hero-img {
-    max-height: 180px;
-  }
-  .container-fullscreen {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-}
-
