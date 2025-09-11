@@ -273,113 +273,100 @@ p.footer-text-style {
 
 
 /* New Header Elegan */
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Header background */
+.header-custom {
+  background: linear-gradient(135deg, rgb(0, 102, 204), rgb(51, 153, 255));
+  color: white;
+  padding: 0.5rem 0; /* lebih ramping */
 }
 
-body {
-  background-color: #ffffff;
-}
-
-/* Header Navbar */
+/* Navbar */
 .navbar {
-  background-color: #0066cc; /* solid biru */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 2rem;
-  color: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  position: relative;
-  z-index: 10;
+  padding: 0.6rem 1rem; /* lebih tipis */
 }
 
-.navbar .logo h2 {
-  font-weight: 700;
+.navbar-brand .logo {
+  height: 45px;
+  width: auto;
 }
 
-.navbar nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+.nav-link {
+  color: rgb(240, 240, 240) !important;
+  font-size: 0.95rem;
+  margin: 0 6px;
 }
 
-.navbar nav a:hover {
-  color: #ffd633;
+.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: underline;
 }
 
-.btn-order {
-  background-color: #ffd633;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+/* Search */
+.search-box input {
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 
-.btn-order:hover {
-  background-color: #e6c200;
+.search-box button {
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 /* Hero Section */
-.hero {
-  background: linear-gradient(135deg, rgba(0,153,255,0.95) 0%, rgba(0,102,204,0.95) 100%);
+.hero-section {
+  background: linear-gradient(135deg, rgb(0, 120, 220), rgb(102, 178, 255));
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 2rem;
-  min-height: 70vh;
-  color: white;
-  margin-top: 0;   /* pastikan nempel ke header */
+  padding: 2rem 1.5rem; /* diperkecil biar tidak kebesaran */
 }
 
-.hero-text {
-  max-width: 50%;
+.welcome-text {
+  color: rgb(230, 245, 255);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.hero-text h1 {
-  font-size: 2.2rem;
+.hero-title {
+  font-size: 2rem;
   font-weight: 700;
+  color: white;
   margin-bottom: 1rem;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 300;
+.hero-description {
+  font-size: 1rem;
+  color: rgb(245, 245, 245);
 }
 
-.hero-image img {
-  max-width: 340px;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+.hero-img {
+  max-height: 250px;
+  border-radius: 0.5rem;
+}
+
+/* Social Icons */
+.social-links i {
+  font-size: 1.2rem;
+  color: white;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero {
+  .hero-section {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem; /* lebih rapat di hp */
   }
 
-  .hero-text {
-    max-width: 100%;
-    margin-bottom: 1.5rem;
+  .hero-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
   }
 
-  .hero-image img {
-    max-width: 220px;
+  .hero-description {
+    font-size: 0.9rem;
   }
 
-  .navbar nav {
-    display: none; /* bisa diganti hamburger menu */
+  .hero-img {
+    max-height: 180px;
+    margin-top: 1rem;
   }
 }
-
