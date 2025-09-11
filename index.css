@@ -274,42 +274,92 @@ p.footer-text-style {
 
 /* New Header Elegan */
 /* Header background */
-.header-custom {
-  background: linear-gradient(135deg, rgb(0, 102, 204), rgb(51, 153, 255));
-  color: white;
-  padding: 0.5rem 0; /* lebih ramping */
+.header-top {
+  background-color: #152B3C; /* biru tua */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
 }
 
-/* Navbar */
-.navbar {
-  padding: 0.6rem 1rem; /* lebih tipis */
+.logo img {
+  height: 50px;
 }
 
-.navbar-brand .logo {
-  height: 45px;
-  width: auto;
+/* Search Box */
+.search-box {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 40px;
+  display: flex;
 }
 
-.nav-link {
-  color: rgb(240, 240, 240) !important;
-  font-size: 0.95rem;
-  margin: 0 6px;
-}
-
-.nav-link:hover {
-  color: rgb(255, 255, 255) !important;
-  text-decoration: underline;
-}
-
-/* Search */
 .search-box input {
-  border-radius: 0.3rem 0 0 0.3rem;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
 }
 
 .search-box button {
-  border-radius: 0 0.3rem 0.3rem 0;
+  padding: 10px 15px;
+  border: none;
+  background: #444c56;
+  color: white;
+  cursor: pointer;
 }
 
+/* Social Media */
+.social-icons a {
+  color: white;
+  margin-left: 12px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Header Navigation */
+.header-nav {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.header-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: #007BFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .search-box {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+  }
+
+  .header-nav a {
+    margin: 8px 12px;
+  }
+}
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, rgb(0, 120, 220), rgb(102, 178, 255));
