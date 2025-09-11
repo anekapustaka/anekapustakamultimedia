@@ -9,6 +9,27 @@ body, html {
   overflow-x: hidden; /* cegah geser horizontal */
 }
 
+/* ✅ Background tidak gelap lagi */
+.background-set {
+  background: url(/images/background.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  position: relative;
+}
+
+/* Kalau tetap mau overlay, bisa diperingan */
+.background-set::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15); /* sebelumnya 0.433, terlalu gelap */
+}
+
 /* =================== HEADER =================== */
 .header-top {
   background-color: #152B3C; /* biru tua */
