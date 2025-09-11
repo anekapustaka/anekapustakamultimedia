@@ -281,15 +281,20 @@ p.footer-text-style {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body clean */
+body {
+  background-color: #ffffff; /* putih bersih */
+}
+
 /* Navbar */
 .navbar {
-  background: rgb(0, 102, 204);
   background: linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(0,102,204,1) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
   color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .navbar .logo h2 {
@@ -324,7 +329,7 @@ p.footer-text-style {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(0,153,255,0.9) 0%, rgba(0,102,204,0.9) 100%);
+  background: linear-gradient(135deg, rgba(0,153,255,0.95) 0%, rgba(0,102,204,0.95) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -366,6 +371,15 @@ p.footer-text-style {
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
+
+  .hero-image img {
+    max-width: 220px;
+  }
+
+  .navbar nav {
+    display: none; /* nanti bisa diganti hamburger menu */
+  }
+}
 
   .hero-image img {
     max-width: 220px;
