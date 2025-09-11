@@ -1,44 +1,62 @@
-/*color palat is used from https://colorhunt.co/palette/22283131363f76abaeeeeeee color hunt site*/
-.categorycard{
-    border: 2px solid ;
-    margin: 2rem;
-    background-color: #31363F;
+.categorycard {
+    border: 2px solid rgb(0, 102, 204);   /* biru tegas */
+    margin: 1rem;
+    background-color: rgb(230, 242, 255); /* biru muda */
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
-}
-.categorysection{
+.categorysection {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(20rem,1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
     padding: 2rem;
-    background-color: #EEEEEE;
+    background-color: rgb(255, 255, 255); /* putih */
 }
-.poster{
+
+.poster {
     text-align: center;
-    border: 2px solid red;
-    border-radius: 0.5rem;
-    margin:1rem;
-    background-color: white;
-}
-.btncard{
-    font-size: rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.poster img{
-    position: relative;
-    width: 15rem;
-}
-.parahome h4{
-    text-align: center;
-    color: white;
-}
-.parahome p{
-    color: rgba(255, 255, 255, 0.853);
     padding: 1rem;
-    font-family: "Oswald", sans-serif;
-    font-size: 1remx;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
-.parahome{
-    height: 35vh;
+
+.poster img {
+    width: 100%;
+    max-width: 200px;   /* agar seragam */
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.3rem;
+}
+
+.btncard {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.parahome h4 {
+    text-align: center;
+    color: rgb(0, 0, 0); /* hitam */
+    margin: 0.5rem 0;
+}
+
+.parahome p {
+    color: rgb(30, 30, 30); /* hitam abu-abu */
+    padding: 0.8rem 1rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.parahome {
+    min-height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
