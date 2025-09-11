@@ -273,31 +273,31 @@ p.footer-text-style {
 
 
 /* New Header Elegan */
-/* Header background */
+/* Header background lebih terang */
 .header-custom {
-  background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 102, 204));
-  color: white;
+  background: linear-gradient(135deg, rgb(0, 102, 204), rgb(102, 178, 255));
+  color: black;
+  padding-bottom: 2rem; /* supaya cukup tapi tidak terlalu tinggi */
 }
 
 /* Navbar */
 .navbar {
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1rem;
 }
 
 .navbar-brand .logo {
-  height: 50px;
+  height: 45px;
   width: auto;
 }
 
 .nav-link {
-  color: rgb(230, 230, 230) !important;
-  font-size: 0.95rem;
+  color: rgb(20, 20, 20) !important;
+  font-size: 0.9rem;
   margin: 0 5px;
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 255) !important;
-  text-decoration: underline;
+  color: rgb(0, 51, 102) !important;
 }
 
 /* Search */
@@ -311,43 +311,51 @@ p.footer-text-style {
 
 /* Hero Section */
 .welcome-text {
-  color: rgb(220, 235, 255);
+  color: rgb(0, 51, 102);
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: white;
+  color: rgb(0, 51, 102);
   margin-bottom: 1rem;
 }
 
 .hero-description {
   font-size: 1rem;
-  color: rgb(240, 240, 240);
+  color: rgb(30, 30, 30);
 }
 
 .hero-img {
-  max-height: 280px;
+  max-height: 250px;
   border-radius: 0.5rem;
 }
 
 /* Social Icons */
 .social-links i {
   font-size: 1.2rem;
-  color: white;
+  color: rgb(20, 20, 20);
 }
 
-/* Responsive */
+/* Responsive Fix */
 @media (max-width: 768px) {
+  .header-custom {
+    padding-bottom: 1rem; /* rapikan gap di hp */
+  }
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .hero-description {
     font-size: 0.9rem;
   }
   .hero-img {
-    max-height: 200px;
+    max-height: 180px;
+  }
+  .container-fullscreen {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
 }
+
