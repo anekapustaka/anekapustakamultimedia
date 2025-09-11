@@ -30,30 +30,76 @@
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <h2>📘 aneka Pustaka Multimedia</h2>
+<header class="header-custom">
+  <div class="fixed-nav-parant">
+    <div class="container fixed-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/Logo.png" class="logo" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- Left icons -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 social-links">
+            <li class="nav-item">
+              <a class="nav-link" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com"><i class="fab fa-x-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+
+          <!-- Right menu -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item search-box d-flex">
+              <input class="form-control form-control-sm" type="search" placeholder="Search">
+              <button id="search-button" type="button" class="btn btn-light btn-sm">
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+            <li class="nav-item">
+              <a href="booking.html" class="btn btn-warning btn-sm px-3">
+                Pesan Sekarang <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Layanan</a>
-      <a href="#">Tentang Kami</a>
-      <a href="#">Kontak</a>
-    </nav>
-    <button class="btn-order">Pesan Sekarang</button>
-  </header>
+  </div>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Rumah bagi karya-karya inspiratif dan bacaan bermakna</h1>
-      <p>Kami hadir untuk menemani perjalanan literasi Anda, menghadirkan buku-buku berkualitas
-         yang tidak hanya menghibur, tetapi juga mencerdaskan, menginspirasi, dan memperluas wawasan.</p>
+  <div class="container d-flex justify-content-center my-5 container-fullscreen background-set">
+    <div class="row w-100 align-items-center">
+      <div class="col-md-7 text-md-start text-center">
+        <p class="welcome-text">
+          <i>Selamat datang di situs resmi Aneka Pustaka Multimedia</i>
+        </p>
+        <h1 class="hero-title">
+          Rumah bagi karya-karya inspiratif dan bacaan bermakna
+        </h1>
+        <p class="hero-description">
+          Kami hadir untuk menemani perjalanan literasi Anda, menghadirkan buku-buku berkualitas
+          yang tidak hanya menghibur, tetapi juga mencerdaskan, menginspirasi, dan memperluas wawasan.
+        </p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="./images/Book.png" class="img-fluid hero-img" alt="Book" />
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="images/Book.png" alt="Books and Globe">
-    </div>
-  </section>
+  </div>
+</header>
 
   <!-- Slider starts -->
   <div class="slider-container">
