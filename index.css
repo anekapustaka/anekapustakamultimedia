@@ -4,7 +4,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  padding-top: 80px; /* sesuaikan dengan tinggi header */
+  padding-top: var(--header-height); /* sesuaikan dengan tinggi header */
   font-family: "Cardo", serif;
   height: 100%;
   overflow-x: hidden; /* cegah geser horizontal */
@@ -31,7 +31,6 @@ body, html {
   background-color: rgba(0, 0, 0, 0.15); /* sebelumnya 0.433, terlalu gelap */
 }
 
-/* =================== HEADER START =================== */
 :root {
   --header-height: 80px;
   --header-height-mobile: 70px;
@@ -39,6 +38,7 @@ body, html {
   --accent: #66b3ff;
 }
 
+/* =================== HEADER START =================== */
 .main-header {
   position: fixed;
   top: 0;
@@ -77,38 +77,26 @@ body, html {
   max-width: 85%;
   max-height: 85%;
 }
-
 .logo-text-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 0; /* penting agar ellipsis bisa jalan */
+  white-space: nowrap; /* cegah teks pecah */
 }
-
-.company-text {
-  max-width: 250px; /* batasi lebar teks */
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .company-text h2 {
   font-family: 'Arial Black', sans-serif;
-  font-size: 18px;
+  font-size: 18px; 
   font-weight: 700;
   color: #ffffff;
   margin: 0;
-  letter-spacing: 1px;
-  line-height: 1.2;
+  letter-spacing: 0.5px;
 }
-
 .company-text h3 {
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #d9f2e6;
   margin: 2px 0 0 0;
-  line-height: 1.2;
 }
 
 /* NAVIGATION desktop */
@@ -157,16 +145,15 @@ body, html {
   :root { --header-height: var(--header-height-mobile); }
   body { padding-top: var(--header-height); }
 
-  .company-text {
-    max-width: 160px; /* lebih kecil */
-  }
-
   .company-text h2 {
-    font-size: 14px; /* diperkecil */
+    font-size: 14px; /* kecil agar muat */
   }
-
   .company-text h3 {
-    display: none; /* sembunyikan subjudul agar rapi */
+    font-size: 10px;
+  }
+  .logo-circle {
+    width: 48px;
+    height: 48px;
   }
 
   .nav-menu {
