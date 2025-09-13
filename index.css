@@ -34,10 +34,16 @@ body, html {
 /* =================== HEADER START =================== */
 .main-header {
   background-color: #003366; /* biru tua */
-  padding: 10px 40px;        /* padding atas-bawah lebih besar */
-  min-height: 80px;          /* tinggi minimum agar lebih lebar ke bawah */
+  padding: 10px 40px;
+  min-height: 80px;
   display: flex;
-  align-items: center;       /* isi rata tengah secara vertikal */
+  align-items: center;
+
+  position: fixed;   /* Biar nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* Supaya tidak ketutup elemen lain */
 }
 
 .header-container {
