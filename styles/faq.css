@@ -1,52 +1,71 @@
+/* FAQ Section */
 .faq {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: rgb(255, 255, 255); /* putih */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #ffffff; /* Putih bersih */
+  max-width: 800px;
+  margin: 0 auto; /* Tengah */
 }
 
+/* Container tiap pertanyaan */
 .faq details {
-    margin: 1rem 0;
-    border: 1px solid rgb(0, 102, 204);   /* biru tegas */
-    border-radius: 1rem;
-    overflow: hidden;
-    background-color: rgb(230, 242, 255); /* biru muda */
+  border: 1px solid #0066cc;
+  border-radius: 0.8rem;
+  background-color: #e6f2ff; /* biru sangat muda */
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
+/* Judul pertanyaan */
 .faq details summary {
-    color: rgb(0, 0, 0);                  /* teks hitam */
-    padding: 1rem;
-    background-color: rgb(200, 230, 255); /* biru pastel */
-    font-size: 1.3rem;
-    font-weight: 600;
-    cursor: pointer;
-    list-style: none;
+  padding: 1rem 3rem 1rem 1rem; /* beri ruang kanan utk ikon */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003366; /* biru tua */
+  background-color: #cce6ff; /* biru pastel */
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  user-select: none; /* agar tidak gampang kepilih teksnya */
 }
 
-/* ❌ Jangan pakai summary::marker {display:none;} */
-/* ✅ Gunakan yang aman */
+/* Hilangkan marker default */
 .faq details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Tambah ikon custom */
+/* Tambahkan ikon plus/minus */
 .faq details summary::after {
   content: "➕";
-  float: right;
-  transition: transform 0.3s;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #003366;
+  transition: transform 0.3s ease;
 }
 
 .faq details[open] summary::after {
   content: "➖";
 }
 
+/* Isi jawaban */
 .faq details p {
-    color: rgb(0, 0, 0);                  /* teks hitam */
-    margin: 0;
-    padding: 1.2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    background-color: rgb(255, 255, 255); /* putih */
-    border-top: 1px solid rgb(0, 102, 204); /* biru tegas */
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+  border-top: 1px solid #0066cc;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animasi lembut saat muncul */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
