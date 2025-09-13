@@ -39,9 +39,10 @@
       border-color: #0077cc;
     }
 
-    /* Zig-zag */
+    /* Zig-zag 
     .slide:nth-child(odd) img { margin-top: 15px; }
     .slide:nth-child(even) img { margin-bottom: 15px; }
+    */
 
     /* Animasi bolak-balik */
     @keyframes scrollX {
