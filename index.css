@@ -33,7 +33,7 @@ body, html {
 
 /* =================== HEADER =================== */
 .main-header {
-  background-color: #31363F; /* biru tua */
+  background-color: rgb(0, 51, 102); 
   padding: 10px 40px;
   position: fixed;   /* ✅ agar tetap menempel */
   top: 0;            /* posisikan di paling atas */
@@ -166,25 +166,3 @@ body, html {
     font-size: 0.9rem;
   }
 }
-
-/* =================== FOOTER =================== */
-.footer-design {
-  height: 5rem;
-  background-color: #31363F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-text-style {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-}
-
-  .footer-text-style {
-    font-size: 14px;
-  }
-}
-
