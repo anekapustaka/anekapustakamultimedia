@@ -31,70 +31,55 @@ body, html {
 }
 
 /* =================== HEADER =================== */
-.header-top {
+/* ========== HEADER CLEAN STYLE ========== */
+.main-header {
   background-color: #152B3C; /* biru tua */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px 40px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
 .logo img {
   height: 50px;
 }
 
-/* Search Box */
-.search-box {
-  flex: 1;
-  max-width: 500px;
-  margin: 0 40px;
+/* Navigation */
+.nav-menu {
   display: flex;
+  gap: 25px; /* jarak antar menu */
 }
 
-.search-box input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-  background: #f0f0f0;
-}
-
-.search-box button {
-  padding: 10px 15px;
-  border: none;
-  background: #444c56;
-  color: white;
-  cursor: pointer;
-}
-
-/* Social Media */
-.social-icons a {
-  color: white;
-  margin-left: 12px;
-  font-size: 18px;
+.nav-menu a {
+  color: #ffffff;
   text-decoration: none;
-}
-
-/* Header Navigation */
-.header-nav {
-  background: #fff;
-  border-top: 1px solid #ddd;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.header-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #222;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.header-nav a:hover {
-  color: #007BFF;
+.nav-menu a:hover {
+  color: #66b3ff; /* biru muda saat hover */
 }
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -201,28 +186,8 @@ body, html {
   text-align: center;
 }
 
-/* =================== RESPONSIVE =================== */
-@media (max-width: 992px) {
-  .header-top {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .search-box {
-    margin: 15px 0;
-    width: 100%;
-  }
-
-  .header-nav {
-    flex-wrap: wrap;
-  }
-
-  .header-nav a {
-    margin: 8px 12px;
-  }
-
   .footer-text-style {
     font-size: 14px;
   }
 }
+
