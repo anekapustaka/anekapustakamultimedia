@@ -88,6 +88,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .hero-container {
@@ -144,6 +145,60 @@ body, html {
   height: auto;
   border-radius: 0.8rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi teks */
+.animate-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.animate-text:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.animate-text:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.animate-text:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.animate-text:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+/* Animasi gambar */
+.animate-image {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeZoom 1.2s ease forwards;
+  animation-delay: 1.5s;
+}
+
+/* Keyframes */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Responsif */
