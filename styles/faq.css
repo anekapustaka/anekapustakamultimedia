@@ -24,8 +24,21 @@
     list-style: none;
 }
 
-.faq details summary::marker {
-    display: none; /* hilangkan tanda default > */
+/* ❌ Jangan pakai summary::marker {display:none;} */
+/* ✅ Gunakan yang aman */
+.faq details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Tambah ikon custom */
+.faq details summary::after {
+  content: "➕";
+  float: right;
+  transition: transform 0.3s;
+}
+
+.faq details[open] summary::after {
+  content: "➖";
 }
 
 .faq details p {
