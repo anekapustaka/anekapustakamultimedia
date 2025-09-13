@@ -96,36 +96,93 @@ body, html {
   color: #007BFF;
 }
 
-/* =================== HERO =================== */
+/* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, rgb(0, 120, 220), rgb(102, 178, 255));
+  background: linear-gradient(135deg, rgb(204, 229, 255), rgb(153, 204, 255));
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  padding: 2rem 1.5rem; /* tidak terlalu besar */
+  gap: 2rem;
+}
+
+/* Teks Hero */
+.hero-text {
+  flex: 1 1 500px;
+  color: #003366;
 }
 
 .welcome-text {
-  color: rgb(230, 245, 255);
   font-size: 1rem;
+  color: #0059b3;
   margin-bottom: 0.5rem;
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  color: #00264d;
   margin-bottom: 1rem;
 }
 
 .hero-description {
-  font-size: 1rem;
-  color: rgb(245, 245, 245);
+  font-size: 1.1rem;
+  color: #003366;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
-.hero-img {
-  max-height: 250px;
+/* Tombol */
+.btn-hero {
+  display: inline-block;
+  background: rgb(0, 102, 204);
+  color: white;
+  padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: rgb(0, 76, 153);
+}
+
+/* Gambar */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btn-hero {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* =================== FOOTER =================== */
@@ -163,26 +220,6 @@ body, html {
 
   .header-nav a {
     margin: 8px 12px;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 1.6rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .hero-description {
-    font-size: 0.9rem;
-  }
-
-  .hero-img {
-    max-height: 180px;
-    margin-top: 1rem;
   }
 
   .footer-text-style {
