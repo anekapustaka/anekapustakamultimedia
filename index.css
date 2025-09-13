@@ -33,30 +33,29 @@ body, html {
 
 /* =================== HEADER START =================== */
 .main-header {
-background-color: rgb(0, 51, 102);
-  padding: 0 40px;             /* padding kiri-kanan */
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: #003366; /* biru tua */
+  padding: 20px 40px;        /* padding atas-bawah lebih besar */
+  min-height: 80px;          /* tinggi minimum agar lebih lebar ke bawah */
+  display: flex;
+  align-items: center;       /* isi rata tengah secara vertikal */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  z-index: 1000;
-
-  display: flex;               /* flex agar sejajar */
-  align-items: center;         /* logo & menu sejajar vertikal */
-  justify-content: space-between; /* logo kiri, menu kanan */
-  height: 70px;                /* tinggi header konsisten */
-  box-sizing: border-box;
 }
 
+/* Logo */
 .logo img {
-  height: 50px;
-  display: block;
+  height: 55px; /* sedikit lebih besar supaya match dengan header */
 }
 
+/* Navigation */
 .nav-menu {
   display: flex;
-  align-items: center;    /* ✅ teks rata tengah vertikal */
-  gap: 25px;              /* jarak antar menu */
+  gap: 25px; /* jarak antar menu */
 }
 
 .nav-menu a {
@@ -71,13 +70,11 @@ background-color: rgb(0, 51, 102);
   color: #66b3ff; /* biru muda saat hover */
 }
 
-/* Responsif */
+/* Responsif untuk HP */
 @media (max-width: 768px) {
-  .main-header {
+  .header-container {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
-    padding: 20px;
   }
 
   .nav-menu {
