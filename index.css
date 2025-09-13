@@ -32,18 +32,33 @@ body, html {
 }
 
 /* =================== HEADER START =================== */
- /* ================= HEADER ================= */
+:root {
+  --header-height: 80px;
+  --header-height-mobile: 70px;
+  --primary: #003366;
+  --accent: #66b3ff;
+}
+
+body {
+  margin: 0;
+  padding-top: var(--header-height);
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* HEADER */
 .main-header {
-  background-color: #003366;
-  padding: 10px 40px;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: var(--header-height);
+  background: var(--primary);
+  display: flex;
+  align-items: center;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0 20px;
 }
 
 .header-container {
@@ -53,114 +68,113 @@ body, html {
   width: 100%;
 }
 
-/* Logo Bulat */
+/* Logo bulat */
 .logo-circle {
-  background-color: #ffffff;
+  width: 56px;
+  height: 56px;
+  background: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-  margin-right: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   flex-shrink: 0;
   overflow: hidden;
 }
-
 .logo-circle img {
-  max-width: 85%;  /* lebih besar biar pas lingkaran */
+  max-width: 85%;
   max-height: 85%;
-  height: auto;
-  width: auto;
-  display: block;
 }
-
-/* Logo + Teks Container */
 .logo-text-container {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-
-/* Teks Perusahaan */
 .company-text h2 {
-  font-size: 18px;
-  color: #ffffff;
   margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 16px;
+  color: #fff;
 }
-
 .company-text h3 {
-  font-size: 13px;
-  color: #cce6ff;
   margin: 0;
-  font-weight: 500;
+  font-size: 12px;
+  color: rgba(255,255,255,0.9);
 }
 
-/* Navigation */
+/* NAVIGATION desktop */
 .nav-menu {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
-
 .nav-menu a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
-
 .nav-menu a:hover {
-  color: #66b3ff;
+  color: var(--accent);
 }
 
-/* Hamburger Button */
+/* Checkbox hidden */
 .menu-toggle {
   display: none;
-  font-size: 26px;
-  color: #fff;
-  cursor: pointer;
 }
 
-/* ================= RESPONSIVE ================= */
+/* Hamburger icon */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.hamburger-btn span {
+  width: 20px;
+  height: 2px;
+  background: var(--primary);
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+/* ========== MOBILE ========== */
 @media (max-width: 768px) {
-  .header-container {
-    flex-wrap: wrap;
-  }
+  :root { --header-height: var(--header-height-mobile); }
+  body { padding-top: var(--header-height); }
 
-  .company-text h2 {
-    font-size: 16px;
-  }
-
-  .company-text h3 {
-    font-size: 12px;
-  }
-
-  /* Hide nav by default on mobile */
   .nav-menu {
     display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
     flex-direction: column;
-    width: 100%;
-    background: #002244;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
-
   .nav-menu a {
-    padding: 8px 0;
+    color: var(--primary);
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-menu a:last-child {
+    border-bottom: none;
   }
 
-  .menu-toggle {
-    display: block;
-  }
+  /* show hamburger */
+  .hamburger-btn { display: flex; }
 
-  .nav-menu.active {
+  /* tampilkan nav ketika checkbox dicentang */
+  .menu-toggle:checked ~ .nav-menu {
     display: flex;
   }
 }
+
 /* =================== HEADER END =================== */
 
 /* =================== HERO START =================== */
