@@ -328,16 +328,29 @@ body, html {
 /* =================== HERO END =================== */
 
 /* =================== ETALASE START =================== */
+/* Section */
 .product-section {
   padding: 20px;
-  background: #f5faff; /* biru muda sangat lembut */
+  background: #f5faff; /* biru muda lembut */
 }
 
-/* Grid */
+/* Grid maksimal 5 kolom */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
+}
+
+/* Responsif: layar kecil turun ke 2/3 kolom */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Card */
@@ -381,8 +394,16 @@ body, html {
 .product-card h3 {
   font-size: 14px;
   color: #003366;
-  margin: 8px 0;
-  min-height: 40px;
+  margin: 6px 0 4px;
+  min-height: 36px;
+}
+
+/* Deskripsi */
+.desc {
+  font-size: 13px;
+  color: #444;
+  margin: 4px 0 8px;
+  min-height: 36px;
 }
 
 /* Harga */
@@ -397,5 +418,22 @@ body, html {
 .sold {
   font-size: 13px;
   color: #555;
+  margin-bottom: 10px;
 }
+
+/* Tombol Selengkapnya */
+.btn-more {
+  background: #3399ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-more:hover {
+  background: #0073e6;
+}
+
 /* =================== ETALASE END =================== */
