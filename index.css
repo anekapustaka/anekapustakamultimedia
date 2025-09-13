@@ -32,14 +32,14 @@ body, html {
 }
 
 /* =================== HEADER START =================== */
-.main-header {
+ .main-header {
   background-color: #003366; /* biru tua */
   padding: 10px 40px;
-  min-height: 80px;
+  min-height: 90px;
   display: flex;
   align-items: center;
 
-  position: fixed;   /* Biar nempel di atas */
+  position: fixed;   
   top: 0;
   left: 0;
   width: 100%;
@@ -53,48 +53,52 @@ body, html {
   width: 100%;
 }
 
-/* Logo lingkaran */
-.logo {
-  background-color: #ffffff;
-  border-radius: 50%;          /* bulat */
-  padding: 10px;               /* ruang di dalam lingkaran */
-  display: flex;
-  align-items: center;
+/* Logo bulat */
+.logo-circle {
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  padding: 10px; 
+  display: flex; 
+  align-items: center; 
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* bayangan */
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.25); /* bayangan halus */
+  margin-right: 12px; /* jarak dengan teks */
 }
 
-.logo img {
+.logo-circle img {
   height: 50px;
-  width: 50px;
-  object-fit: contain;
-  display: block;
+  width: auto;
 }
 
-/* Judul di sebelah logo */
-.header-titles {
-  margin-left: 15px;
+/* Teks di sebelah logo */
+.company-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto; /* dorong ke kiri agar nav di kanan */
+}
+
+.company-text h2 {
+  font-family: 'Arial Black', sans-serif; /* mirip dengan gambar */
+  font-size: 18px; 
+  font-weight: 700;
   color: #ffffff;
-}
-
-.header-titles h2 {
-  font-size: 20px;  /* lebih besar */
   margin: 0;
-  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.header-titles h3 {
-  font-size: 14px;  /* lebih kecil */
+.company-text h3 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d9f2e6; /* hijau muda-putih biar tetap kontras */
   margin: 2px 0 0 0;
-  font-weight: 400;
-  opacity: 0.85;
 }
 
 /* Navigation */
 .nav-menu {
   display: flex;
   gap: 25px;
-  margin-left: auto; /* dorong ke kanan */
 }
 
 .nav-menu a {
@@ -106,18 +110,18 @@ body, html {
 }
 
 .nav-menu a:hover {
-  color: #66b3ff; /* biru muda saat hover */
+  color: #66b3ff;
 }
 
-/* Responsif untuk HP */
+/* Responsif */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .header-titles {
-    margin: 10px 0 0 0;
+  .company-text {
+    margin: 10px 0;
   }
 
   .nav-menu {
@@ -126,6 +130,7 @@ body, html {
     gap: 15px;
   }
 }
+
 /* =================== HEADER END =================== */
 
 /* =================== HERO START =================== */
