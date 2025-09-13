@@ -53,9 +53,20 @@ body, html {
   width: 100%;
 }
 
-/* Logo */
+/* Logo dengan kotak putih */
+.logo {
+  background-color: #ffffff;   /* kotak putih */
+  padding: 8px;                /* ruang di dalam kotak */
+  border-radius: 0 15px 15px 0;/* hanya pojok kanan atas & bawah yang rounded */
+  overflow: hidden;            /* rapikan isi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo img {
-  height: 55px; /* sedikit lebih besar supaya match dengan header */
+  height: 55px;
+  display: block;
 }
 
 /* Navigation */
@@ -89,6 +100,7 @@ body, html {
     gap: 15px;
   }
 }
+/* =================== HEADER END =================== */
 
 /* =================== HEADER END =================== */
 
