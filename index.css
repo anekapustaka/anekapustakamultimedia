@@ -33,18 +33,19 @@ body, html {
 
 /* =================== HEADER START =================== */
 .main-header {
-  background-color: rgb(0, 51, 102);
-  padding: 0 40px;        /* padding horizontal saja */
+background-color: rgb(0, 51, 102);
+  padding: 0 40px;             /* padding kiri-kanan */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 
-  display: flex;          /* ✅ aktifkan flexbox */
-  align-items: center;    /* ✅ sejajarkan vertikal */
+  display: flex;               /* flex agar sejajar */
+  align-items: center;         /* logo & menu sejajar vertikal */
   justify-content: space-between; /* logo kiri, menu kanan */
-  height: 70px;           /* tinggi konsisten */
+  height: 70px;                /* tinggi header konsisten */
+  box-sizing: border-box;
 }
 
 .logo img {
