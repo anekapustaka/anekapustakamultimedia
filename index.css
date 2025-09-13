@@ -4,6 +4,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  padding-top: 80px; /* sesuaikan dengan tinggi header */
   font-family: "Cardo", serif;
   height: 100%;
   overflow-x: hidden; /* cegah geser horizontal */
@@ -31,24 +32,25 @@ body, html {
 }
 
 /* =================== HEADER =================== */
-/* ========== HEADER CLEAN STYLE ========== */
 .main-header {
-  background-color: #152B3C; /* biru tua */
+  background-color: #31363F; /* biru tua */
   padding: 10px 40px;
+  position: fixed;   /* ✅ agar tetap menempel */
+  top: 0;            /* posisikan di paling atas */
+  left: 0;
+  width: 100%;       /* penuh sepanjang layar */
+  z-index: 1000;     /* biar di atas elemen lain */
 }
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Logo */
 .logo img {
   height: 50px;
 }
 
-/* Navigation */
 .nav-menu {
   display: flex;
   gap: 25px; /* jarak antar menu */
@@ -66,7 +68,6 @@ body, html {
   color: #66b3ff; /* biru muda saat hover */
 }
 
-/* Responsif untuk HP */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -80,8 +81,7 @@ body, html {
   }
 }
 
-
-/* Hero Section */
+/* =================== HERO =================== */
 .hero-section {
   background: linear-gradient(135deg, rgb(204, 229, 255), rgb(153, 204, 255));
   padding: 4rem 2rem;
@@ -99,7 +99,6 @@ body, html {
   gap: 2rem;
 }
 
-/* Teks Hero */
 .hero-text {
   flex: 1 1 500px;
   color: #003366;
@@ -125,7 +124,6 @@ body, html {
   margin-bottom: 1.5rem;
 }
 
-/* Tombol */
 .btn-hero {
   display: inline-block;
   background: rgb(0, 102, 204);
@@ -141,7 +139,6 @@ body, html {
   background: rgb(0, 76, 153);
 }
 
-/* Gambar */
 .hero-image img {
   max-width: 100%;
   height: auto;
