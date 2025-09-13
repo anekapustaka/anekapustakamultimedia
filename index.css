@@ -34,17 +34,12 @@ body, html {
 /* =================== HEADER =================== */
 .main-header {
   background-color: rgb(0, 51, 102); 
-  padding: 10px 40px;
+  padding: 20px 40px;
   position: fixed;   /* ✅ agar tetap menempel */
   top: 0;            /* posisikan di paling atas */
   left: 0;
   width: 100%;       /* penuh sepanjang layar */
   z-index: 1000;     /* biar di atas elemen lain */
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo img {
