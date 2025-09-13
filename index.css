@@ -39,14 +39,6 @@ body, html {
   --accent: #66b3ff;
 }
 
-body {
-  margin: 0;
-  padding-top: var(--header-height);
-  font-family: Arial, sans-serif;
-  background: #fff;
-}
-
-/* HEADER */
 .main-header {
   position: fixed;
   top: 0;
@@ -85,26 +77,40 @@ body {
   max-width: 85%;
   max-height: 85%;
 }
+
 .logo-text-container {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0; /* penting agar ellipsis bisa jalan */
 }
+
+.company-text {
+  max-width: 250px; /* batasi lebar teks */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .company-text h2 {
-  font-family: 'Arial Black', sans-serif; /* mirip dengan gambar */
-  font-size: 18px; 
+  font-family: 'Arial Black', sans-serif;
+  font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
   letter-spacing: 1px;
+  line-height: 1.2;
 }
+
 .company-text h3 {
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #d9f2e6; /* hijau muda-putih biar tetap kontras */
+  color: #d9f2e6;
   margin: 2px 0 0 0;
+  line-height: 1.2;
 }
+
 /* NAVIGATION desktop */
 .nav-menu {
   display: flex;
@@ -151,6 +157,18 @@ body {
   :root { --header-height: var(--header-height-mobile); }
   body { padding-top: var(--header-height); }
 
+  .company-text {
+    max-width: 160px; /* lebih kecil */
+  }
+
+  .company-text h2 {
+    font-size: 14px; /* diperkecil */
+  }
+
+  .company-text h3 {
+    display: none; /* sembunyikan subjudul agar rapi */
+  }
+
   .nav-menu {
     display: none;
     position: absolute;
@@ -178,7 +196,6 @@ body {
     display: flex;
   }
 }
-
 /* =================== HEADER END =================== */
 
 /* =================== HERO START =================== */
