@@ -31,24 +31,31 @@ body, html {
   background-color: rgba(0, 0, 0, 0.15); /* sebelumnya 0.433, terlalu gelap */
 }
 
-/* =================== HEADER =================== */
+/* =================== HEADER START =================== */
 .main-header {
-  background-color: rgb(0, 51, 102); 
-  padding: 20px 40px;
-  position: fixed;   /* ✅ agar tetap menempel */
-  top: 0;            /* posisikan di paling atas */
+  background-color: rgb(0, 51, 102);
+  padding: 0 40px;        /* padding horizontal saja */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;       /* penuh sepanjang layar */
-  z-index: 1000;     /* biar di atas elemen lain */
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;          /* ✅ aktifkan flexbox */
+  align-items: center;    /* ✅ sejajarkan vertikal */
+  justify-content: space-between; /* logo kiri, menu kanan */
+  height: 70px;           /* tinggi konsisten */
 }
 
 .logo img {
   height: 50px;
+  display: block;
 }
 
 .nav-menu {
   display: flex;
-  gap: 25px; /* jarak antar menu */
+  align-items: center;    /* ✅ teks rata tengah vertikal */
+  gap: 25px;              /* jarak antar menu */
 }
 
 .nav-menu a {
@@ -63,10 +70,13 @@ body, html {
   color: #66b3ff; /* biru muda saat hover */
 }
 
+/* Responsif */
 @media (max-width: 768px) {
-  .header-container {
+  .main-header {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
+    padding: 20px;
   }
 
   .nav-menu {
@@ -76,7 +86,9 @@ body, html {
   }
 }
 
-/* =================== HERO =================== */
+/* =================== HEADER END =================== */
+
+/* =================== HERO START =================== */
 .hero-section {
   background: linear-gradient(135deg, rgb(204, 229, 255), rgb(153, 204, 255));
   padding: 4rem 2rem;
@@ -216,3 +228,5 @@ body, html {
     font-size: 0.9rem;
   }
 }
+
+/* =================== HERO END =================== */
