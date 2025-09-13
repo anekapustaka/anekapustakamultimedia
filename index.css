@@ -34,8 +34,8 @@ body, html {
 /* =================== HEADER START =================== */
  .main-header {
   background-color: #003366; /* biru tua */
-  padding: 10px 40px;
-  min-height: 90px;
+  padding: 8px 30px;
+  min-height: 75px;
   display: flex;
   align-items: center;
 
@@ -53,20 +53,22 @@ body, html {
   width: 100%;
 }
 
-/* Logo bulat */
+/* Logo bulat kecil */
 .logo-circle {
   background-color: #ffffff; 
   border-radius: 50%; 
-  padding: 10px; 
+  width: 55px;
+  height: 55px;
   display: flex; 
   align-items: center; 
   justify-content: center;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.25); /* bayangan halus */
-  margin-right: 12px; /* jarak dengan teks */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* bayangan lebih ringan */
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .logo-circle img {
-  height: 50px;
+  height: 35px;
   width: auto;
 }
 
@@ -79,32 +81,32 @@ body, html {
 }
 
 .company-text h2 {
-  font-family: 'Arial Black', sans-serif; /* mirip dengan gambar */
-  font-size: 18px; 
+  font-family: 'Arial Black', sans-serif;
+  font-size: 16px; 
   font-weight: 700;
   color: #ffffff;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 
 .company-text h3 {
   font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  color: #d9f2e6; /* hijau muda-putih biar tetap kontras */
+  color: #d9f2e6;
   margin: 2px 0 0 0;
 }
 
 /* Navigation */
 .nav-menu {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-menu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -121,13 +123,13 @@ body, html {
   }
 
   .company-text {
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   .nav-menu {
-    margin-top: 10px;
+    margin-top: 8px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
   }
 }
 
