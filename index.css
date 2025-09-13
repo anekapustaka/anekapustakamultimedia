@@ -413,6 +413,9 @@ body, html {
   font-weight: bold;
   padding: 4px 6px;
   border-radius: 4px;
+  display: block; /* pastikan selalu tampil */
+  opacity: 1;     /* pastikan tidak transparan */
+  pointer-events: none; /* opsional, supaya tidak mengganggu klik */
 }
 
 /* Tombol */
