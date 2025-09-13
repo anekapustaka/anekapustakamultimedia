@@ -43,7 +43,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;     /* Supaya tidak ketutup elemen lain */
+  z-index: 1000;
 }
 
 .header-container {
@@ -53,26 +53,48 @@ body, html {
   width: 100%;
 }
 
-/* Logo dengan kotak putih */
+/* Logo lingkaran */
 .logo {
-  background-color: #ffffff;   /* kotak putih */
-  padding: 8px;                /* ruang di dalam kotak */
-  border-radius: 0 15px 15px 0;/* hanya pojok kanan atas & bawah yang rounded */
-  overflow: hidden;            /* rapikan isi */
+  background-color: #ffffff;
+  border-radius: 50%;          /* bulat */
+  padding: 10px;               /* ruang di dalam lingkaran */
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* bayangan */
 }
 
 .logo img {
-  height: 55px;
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
   display: block;
+}
+
+/* Judul di sebelah logo */
+.header-titles {
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.header-titles h2 {
+  font-size: 20px;  /* lebih besar */
+  margin: 0;
+  font-weight: 600;
+}
+
+.header-titles h3 {
+  font-size: 14px;  /* lebih kecil */
+  margin: 2px 0 0 0;
+  font-weight: 400;
+  opacity: 0.85;
 }
 
 /* Navigation */
 .nav-menu {
   display: flex;
-  gap: 25px; /* jarak antar menu */
+  gap: 25px;
+  margin-left: auto; /* dorong ke kanan */
 }
 
 .nav-menu a {
@@ -94,14 +116,16 @@ body, html {
     align-items: flex-start;
   }
 
+  .header-titles {
+    margin: 10px 0 0 0;
+  }
+
   .nav-menu {
     margin-top: 10px;
     flex-wrap: wrap;
     gap: 15px;
   }
 }
-/* =================== HEADER END =================== */
-
 /* =================== HEADER END =================== */
 
 /* =================== HERO START =================== */
