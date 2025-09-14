@@ -1,62 +1,80 @@
-.categorycard {
-    border: 2px solid rgb(0, 102, 204);   /* biru tegas */
-    margin: 1rem;
-    background-color: rgb(230, 242, 255); /* biru muda */
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
 .categorysection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1.5rem;
     padding: 2rem;
-    background-color: rgb(255, 255, 255); /* putih */
+    background-color: #fff;
+    align-items: stretch; /* Biar semua card punya tinggi sama */
 }
 
+.categorycard {
+    border: 2px solid rgb(0, 102, 204);
+    margin: 0; /* hilangkan margin supaya grid rapat */
+    background-color: rgb(230, 242, 255);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%; /* isi penuh mengikuti grid */
+}
+
+/* Poster */
 .poster {
     text-align: center;
     padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .poster img {
     width: 100%;
-    max-width: 200px;   /* agar seragam */
+    max-width: 200px;
     height: auto;
     object-fit: contain;
     border-radius: 0.3rem;
 }
 
-.btncard {
-    font-size: 1rem;
+/* Paragraf */
+.parahome {
+    flex-grow: 1; /* isi tengah fleksibel */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
-    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
 }
 
 .parahome h4 {
-    text-align: center;
-    color: rgb(0, 0, 0); /* hitam */
     margin: 0.5rem 0;
+    color: #000;
 }
 
 .parahome p {
-    color: rgb(30, 30, 30); /* hitam abu-abu */
-    padding: 0.8rem 1rem;
+    color: rgb(30, 30, 30);
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
     line-height: 1.4;
-    text-align: center;
 }
 
-.parahome {
-    min-height: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Tombol */
+.btncard {
+    text-align: center;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.btncard button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: rgb(0, 102, 204);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btncard button:hover {
+    background: rgb(0, 80, 160);
 }
