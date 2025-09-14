@@ -1,51 +1,65 @@
- body {
-      font-family: Arial, sans-serif;
-      background-color: #f9fafc;
-      margin: 0;
-      padding: 0;
-    }
+.slider-container {
+  width: 100%;
+  overflow-x: auto;     /* aktifkan scroll horizontal */
+  overflow-y: hidden;
+  padding: 20px;
+  background: #fff;
+  scroll-behavior: smooth; /* scroll halus */
+}
 
-    .slider-container {
-      width: 100%;
-      overflow: hidden;
-      padding: 20px;
-      background: #fff;
-    }
+/* sembunyikan scrollbar di browser modern */
+.slider-container::-webkit-scrollbar {
+  height: 8px;
+}
+.slider-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.slider-container::-webkit-scrollbar-thumb {
+  background: #0077cc;
+  border-radius: 10px;
+}
+.slider-container::-webkit-scrollbar-thumb:hover {
+  background: #005fa3;
+}
 
-    .title h2 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #0056d2;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+.title h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0066cc;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
 
-    .slider {
-      display: flex;
-      gap: 20px;
-      animation: scrollX 25s linear infinite alternate;
-    }
+.title h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #00c4ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 196, 255, 0.5);
+}
 
-    .slide img {
-      height: 220px;
-      border: 3px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: transform 0.3s, border-color 0.3s;
-    }
+.slider {
+  display: flex;        /* flex biar sejajar */
+  gap: 20px;
+  padding-bottom: 10px; /* beri ruang agar tidak mentok scrollbar */
+}
 
-    .slide img:hover {
-      transform: scale(1.05);
-      border-color: #0077cc;
-    }
+.slide img {
+  height: 220px;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, border-color 0.3s;
+  flex-shrink: 0; /* gambar tidak mengecil */
+}
 
-    /* Zig-zag 
-    .slide:nth-child(odd) img { margin-top: 15px; }
-    .slide:nth-child(even) img { margin-bottom: 15px; }
-    */
-
-    /* Animasi bolak-balik */
-    @keyframes scrollX {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+.slide img:hover {
+  transform: scale(1.05);
+  border-color: #0077cc;
+}
