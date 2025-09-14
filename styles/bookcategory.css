@@ -1,80 +1,115 @@
-.categorysection {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-    background-color: #fff;
-    align-items: stretch; /* Biar semua card punya tinggi sama */
-}
+    .judul {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
 
-.categorycard {
-    border: 2px solid rgb(0, 102, 204);
-    margin: 0; /* hilangkan margin supaya grid rapat */
-    background-color: rgb(230, 242, 255);
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 100%; /* isi penuh mengikuti grid */
-}
+    .judul h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0066cc;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-/* Poster */
-.poster {
-    text-align: center;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-}
+    .judul h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #00c4ff;
+      margin: 10px auto 0;
+      border-radius: 2px;
+      box-shadow: 0 2px 6px rgba(0, 196, 255, 0.5);
+    }
 
-.poster img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 0.3rem;
-}
+    /* Grid utama */
+    .categorysection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      background-color: #fff;
+      align-items: stretch; /* samakan tinggi card */
+    }
 
-/* Paragraf */
-.parahome {
-    flex-grow: 1; /* isi tengah fleksibel */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    padding: 0 1rem;
-}
+    /* Card */
+    .categorycard {
+      border: 2px solid rgb(0, 102, 204);
+      background-color: rgb(230, 242, 255);
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
 
-.parahome h4 {
-    margin: 0.5rem 0;
-    color: #000;
-}
+    .categorycard:hover {
+      transform: translateY(-5px);
+    }
 
-.parahome p {
-    color: rgb(30, 30, 30);
-    font-family: "Oswald", sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
-}
+    /* Poster gambar */
+    .poster {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 0.5rem;
+    }
 
-/* Tombol */
-.btncard {
-    text-align: center;
-    margin: 1rem 0 1.5rem 0;
-}
+    .poster img {
+      width: 100%;
+      max-width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.3rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-.btncard button {
-    padding: 0.6rem 1.2rem;
-    border: none;
-    border-radius: 0.4rem;
-    background: rgb(0, 102, 204);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
+    /* Isi */
+    .parahome {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 1rem;
+    }
 
-.btncard button:hover {
-    background: rgb(0, 80, 160);
-}
+    .parahome h4 {
+      margin: 0.5rem 0;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .parahome p {
+      color: #333;
+      font-family: "Oswald", sans-serif;
+      font-size: 1rem;
+      line-height: 1.4;
+      margin: 0.5rem 0 0;
+    }
+
+    /* Tombol */
+    .btncard {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .btncard button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 0.4rem;
+      background: #007bff;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btncard button:hover {
+      background: #0056b3;
+      box-shadow: 0 4px 12px rgba(0, 91, 187, 0.3);
+    }
