@@ -328,27 +328,34 @@ body, html {
 /* =================== HERO END =================== */
 
 /* =================== ETALASE START =================== */
-/* Judul */
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #0066cc;
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* Judul modern */ 
+.section-title { 
+  text-align: center; 
+  margin: 40px auto 30px; 
+  position: relative; 
+  font-size: 28px; 
+  font-weight: 700; 
+  color: #007bff; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+} 
+
+.section-title::after { 
+  content: ""; 
+  display: block; 
+  width: 80px; 
+  height: 4px; 
+  background: #00c4ff; 
+  margin: 10px auto 0; 
+  border-radius: 2px; 
+  box-shadow: 0 2px 6px rgba(0, 196, 255, 0.5); 
 }
 
-/* Container Scroll Horizontal */
 .product-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
-  overflow-x: auto;
-  padding: 10px;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-  scrollbar-color: #0077cc #f1f1f1;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 /* Scrollbar modern */
@@ -366,7 +373,7 @@ body, html {
 
 /* Card Buku */
 .product-card {
-  flex: 0 0 200px; /* ukuran tetap biar bisa scroll 5 di hp */
+  flex: 0 0 calc(20% - 16px); /* default desktop = 5 kolom */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -375,16 +382,17 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  scroll-snap-align: start;
   position: relative;
 }
 
+/* Gambar Buku */
 .product-card img {
   height: 180px;
   object-fit: contain;
   margin: 0 auto 12px;
   display: block;
 }
+
 
 .product-card h3 {
   font-size: 16px;
@@ -435,7 +443,7 @@ body, html {
 }
 
 /* Responsif Desktop */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .product-container {
     justify-content: center; /* di desktop ditengah */
     overflow-x: hidden; /* grid normal */
@@ -443,7 +451,7 @@ body, html {
   }
 
   .product-card {
-    flex: 0 0 calc(20% - 16px); /* 5 kolom rata di desktop */
+    flex: 0 0 calc(50% - 16px); /* 5 kolom rata di desktop */
   }
 }
 /* =================== ETALASE END =================== */
