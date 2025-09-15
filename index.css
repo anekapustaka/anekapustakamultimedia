@@ -559,7 +559,7 @@ body, html {
 /* Container utama */
 .detail-section {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(135deg, rgb(204, 229, 255), rgb(153, 204, 255));
+  background: #fff;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
