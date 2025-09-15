@@ -556,137 +556,84 @@ body, html {
 /* =================== ABOUT END =================== */
 
 /* =================== GLOBAL DETAIL START =================== */
-  /* Container utama */
-  .detail-section {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #f9fcff;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-  }
+/* Container utama */
+.detail-section {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f9ff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .detail-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1100px;
-    background: #fff;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  }
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
 
-  /* Gambar produk */
-  .detail-image {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
-    position: relative;
-  }
+/* Gambar produk */
+.detail-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
 
-  .detail-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  }
+.detail-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
 
-  .detail-info {
-    flex: 2;
-    min-width: 300px;
-  }
+/* Info Produk */
+.detail-info {
+  flex: 2;
+  min-width: 300px;
+}
 
-  .detail-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #003366;
-    margin-bottom: 10px;
-  }
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 8px;
+}
 
-  .detail-sold {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-  }
+.detail-sold {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
 
-  .detail-price {
-    font-size: 26px;
-    font-weight: 700;
-    color: #007bff;
-    margin-bottom: 20px;
-  }
+.detail-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 20px;
+}
 
-  /* Tabs */
-  .detail-tabs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+/* Tabs */
+.detail-tabs {
+  margin-top: 10px;
+}
 
-  .detail-tabs input {
-    display: none;
-  }
+.detail-tabs input {
+  display: none;
+}
 
-  .detail-tab {
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #666;
-    border-bottom: 2px solid transparent;
-    transition: 0.3s;
-    display: inline-block;
-  }
+.detail-tab {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e6f0ff;
+  margin-right: 8px;
+  border-radius: 8px 8px 0 0;
+  color: #0
 
-  #tab1:checked + label,
-  #tab2:checked + label {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-  }
-
-  /* Konten */
-  .detail-contents {
-    margin-top: 15px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .detail-pane {
-    display: none;
-    text-align: justify;
-  }
-
-  #tab1:checked ~ .detail-contents .detail-1 {
-    display: block;
-    animation: slideLeft 0.5s ease;
-  }
-
-  #tab2:checked ~ .detail-contents .detail-2 {
-    display: block;
-    animation: slideRight 0.5s ease;
-  }
-
-  @keyframes slideLeft {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-
-  @keyframes slideRight {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-
-  /* Responsif */
-  @media (max-width: 768px) {
-    .detail-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .detail-info {
-      text-align: left;
-      margin-top: 20px;
-    }
-  }
 /* =================== GLOBAL DETAIL END =================== */
