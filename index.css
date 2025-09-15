@@ -588,6 +588,16 @@ body, html {
   max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.image-extra-text {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
 }
 
 /* Info Produk */
@@ -616,24 +626,13 @@ body, html {
   margin-bottom: 20px;
 }
 
-/* Tabs */
-.detail-tabs {
-  margin-top: 10px;
-}
-
-.detail-tabs input {
-  display: none;
-}
-
-.detail-tab {
-  display: inline-block;
-  padding: 10px 20px;
+/* Deskripsi */
+.detail-description {
+  text-align: justify;
   font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  background: #e6f0ff;
-  margin-right: 8px;
-  border-radius: 8px 8px 0 0;
-  color: #0
+  line-height: 1.7;
+  color: #333;
+}
+
 
 /* =================== GLOBAL DETAIL END =================== */
