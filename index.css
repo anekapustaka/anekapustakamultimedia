@@ -554,3 +554,143 @@ body, html {
 }
 
 /* =================== ABOUT END =================== */
+
+/* =================== GLOBAL DETAIL START =================== */
+/* Container utama */
+.detail-section {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f9fcff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Gambar produk */
+.detail-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  position: relative;
+}
+
+.detail-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.detail-badge {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  background: #007bff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detail-subtitle {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Info Produk */
+.detail-info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.detail-sold {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.detail-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.detail-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-tab {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.detail-tab.active, .detail-tab:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Konten tab */
+.detail-content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.detail-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.detail-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-info {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+/* =================== GLOBAL DETAIL END =================== */
