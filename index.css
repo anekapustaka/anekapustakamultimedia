@@ -593,7 +593,7 @@ body, html {
 
 .detail-badge {
   position: absolute;
-  bottom: 60px;
+  bottom: 15px;
   right: 10px;
   background: #007bff;
   color: #fff;
@@ -601,13 +601,6 @@ body, html {
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
-}
-
-.detail-subtitle {
-  margin-top: 15px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #007bff;
 }
 
 /* Info Produk */
@@ -641,11 +634,14 @@ body, html {
   display: flex;
   gap: 15px;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.detail-tabs input {
+  display: none;
 }
 
 .detail-tab {
-  background: transparent;
-  border: none;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
@@ -655,28 +651,54 @@ body, html {
   transition: 0.3s;
 }
 
-.detail-tab.active, .detail-tab:hover {
+#tab1:checked + label,
+#tab2:checked + label {
   color: #007bff;
   border-bottom: 2px solid #007bff;
 }
 
 /* Konten tab */
-.detail-content {
+.detail-contents {
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.detail-pane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
   font-size: 14px;
   color: #333;
   line-height: 1.6;
 }
 
-.detail-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  font-weight: 600;
-  text-decoration: none;
+/* Animasi masuk Detail */
+#tab1:checked ~ .detail-contents .detail-1 {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.detail-more:hover {
-  text-decoration: underline;
+/* Animasi masuk Info Penting */
+#tab2:checked ~ .detail-contents .detail-2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Info keluar ke kanan */
+#tab2:checked ~ .detail-contents .detail-1 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Detail keluar ke kiri */
+#tab1:checked ~ .detail-contents .detail-2 {
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 /* Responsif */
