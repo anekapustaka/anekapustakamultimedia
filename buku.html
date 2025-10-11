@@ -58,26 +58,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
   
-<style>
-  .rekomendasi-buku img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s;
-    cursor: pointer;
-  }
-  .rekomendasi-buku img:hover {
-    transform: scale(1.05);
-  }
-  .rekomendasi-buku .card-title {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-</style>
-  
 <body>
 <!-- Header Section dimulai -->
 <header class="main-header" role="banner">
@@ -117,13 +97,6 @@
         <p><strong>CV. Aneka Pustaka Multimedia</strong> - Rumah bagi karya-karya inspiratif dan bacaan bermakna.</p>
       </div>
     </div>
-<!-- Rekomendasi Buku -->
-<div class="rekomendasi-buku mt-5">
-  <h3>Rekomendasi Buku Lainnya</h3>
-  <div class="row" id="rekomendasi-container">
-    <!-- Buku rekomendasi akan diisi oleh JS -->
-  </div>
-</div>
 
     <div class="detail-info">
       <h2 id="judul-buku" class="detail-title">Judul Buku</h2>
@@ -240,33 +213,6 @@ function populate(book, id) {
   cover.onload = () => { cover.style.opacity = "1"; };
   cover.src = "images/" + book.gambar;
   cover.alt = book.judul;
-  
-  // Rekomendasi buku (di dalam fungsi populate)
-  const rekomContainer = document.getElementById('rekomendasi-container');
-  if (rekomContainer) {
-    rekomContainer.innerHTML = ""; // bersihkan dulu
-  
-    const rekomBuku = window.daftarBuku.filter(b => b.id !== id).slice(0, 4); // ambil 4 buku selain buku saat ini
-    rekomBuku.forEach(b => {
-      const col = document.createElement('div');
-      col.className = 'col-6 col-md-3 mb-3';
-  
-      const card = document.createElement('div');
-      card.className = 'card border-0';
-  
-      const img = document.createElement('img');
-      img.src = 'images/' + b.gambar;
-      img.alt = b.judul;
-      img.onclick = () => window.location.href = 'buku.html?id=' + encodeURIComponent(b.id);
-  
-      const title = document.createElement('div');
-      title.className = 'card-title';
-      title.textContent = b.judul;
-  
-      card.appendChild(img);
-      card.appendChild(title);
-      col.appendChild(card);
-      rekomContainer.appendChild(col);
 
   updateSEO(book, id);
 }
