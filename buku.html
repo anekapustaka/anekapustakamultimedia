@@ -12,7 +12,7 @@
   <!-- Open Graph Tags (nilai default; akan dicoba diupdate via JS) -->
   <meta property="og:title" content="CV Aneka Pustaka Multimedia" id="og-title">
   <meta property="og:description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum" id="og-desc">
-  <meta property="og:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/penjas-mts.jpg" id="og-image">
+  <meta property="og:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/logocv.png" id="og-image">
   <meta property="og:url" content="https://anekapustaka.github.io/anekapustakamultimedia/buku.html" id="og-url">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Aneka Pustaka Multimedia">
@@ -92,7 +92,7 @@
   <div class="detail-container">
     <!-- Gambar Produk -->
     <div class="detail-image">
-      <img id="cover-image" src="images/penjas-mts.jpg" alt="Produk">
+      <img id="cover-image" src="" alt="Memuat gambar..." style="opacity:0; transition:opacity .3s;">
       <!-- Teks tambahan di bawah gambar -->
       <div class="image-extra-text">
         <p>
@@ -141,35 +141,31 @@
 <!-- Footer Section selesai-->
 
 <!-- Load data-buku -->
-<!-- Load data-buku -->
 <script src="data-buku.js"></script>
 
 <script>
-// Pastikan data dari data-buku.js disimpan sebagai window.daftarBuku
+// Sinkronisasi data dari data-buku.js ke window.daftarBuku jika perlu
 if (window.dataBuku && !window.daftarBuku) {
   window.daftarBuku = window.dataBuku;
 }
 
-/*
-  buku.html dynamic loader FIXED VERSION
-  - baca parameter ?id=...
-  - ambil data dari daftarBuku (data-buku.js)
-  - inject ke halaman
-  - jika tidak cocok → tampilkan "Produk tidak ditemukan"
-*/
-
+// Ambil query parameter
 function getQueryParam(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
+// Jika produk tidak ditemukan
 function showNotFound() {
   document.getElementById('judul-buku').textContent = "Produk tidak ditemukan";
   document.getElementById('isbn').textContent = "-";
   document.getElementById('harga-buku').textContent = "-";
   document.getElementById('sinopsis').textContent = "Maaf, produk tidak ditemukan. Periksa kembali link atau kembali ke etalase.";
-  document.getElementById('cover-image').src = "images/logocv.png";
+  const cover = document.getElementById('cover-image');
+  cover.style.opacity = "1";
+  cover.src = "images/logocv.png";
 }
 
+// Populate konten buku
 function populate(book) {
   document.getElementById('judul-buku').textContent = book.judul;
   document.getElementById('isbn').textContent = book.isbn;
@@ -189,17 +185,31 @@ function populate(book) {
     list.appendChild(li);
   });
 
-  // Gambar
-  document.getElementById('cover-image').src = "images/" + book.gambar;
+  // Smooth Load Gambar (Anti Kedip)
+  const cover = document.getElementById('cover-image');
+  cover.style.opacity = "0";
+  cover.onload = () => { cover.style.opacity = "1"; };
+  cover.src = "images/" + book.gambar;
+  cover.alt = book.judul;
+  
+  // Update OG Image
+  const ogImageMeta = document.querySelector('meta[property="og:image"]');
+  if (ogImageMeta) {
+    ogImageMeta.setAttribute(
+      "content",
+      "https://anekapustaka.github.io/anekapustakamultimedia/images/" + book.gambar
+    );
+  }
 
-  // Update title
+  // Update title SEO
   document.title = book.judul + " - Aneka Pustaka Multimedia";
 }
 
+// Main Loader
 (function(){
   const id = getQueryParam('id');
   if (!window.daftarBuku || !Array.isArray(window.daftarBuku)) {
-    console.error("❌ data-buku.js tidak ditemukan atau format salah");
+    console.error("❌ Format data tidak ditemukan atau format salah");
     showNotFound();
     return;
   }
