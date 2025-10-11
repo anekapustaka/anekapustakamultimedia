@@ -633,36 +633,31 @@ body, html {
   line-height: 1.7;
   color: #333;
 }
-.rekom-buku h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #003366;
+
+.rekom-buku-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  clear: both; /* Membuatnya turun ke bawah */
 }
 
 .rekom-slider {
   display: flex;
+  gap: 15px;
   overflow-x: auto;
-  gap: 10px;
-  padding-bottom: 5px;
-}
-
-.rekom-slider::-webkit-scrollbar {
-  height: 6px;
-}
-
-.rekom-slider::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.2);
-  border-radius: 3px;
+  padding: 10px;
 }
 
 .rekom-slider img {
-  height: 120px;
-  border-radius: 8px;
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform .2s ease;
 }
 
 .rekom-slider img:hover {
   transform: scale(1.05);
 }
+
 /* =================== GLOBAL DETAIL END =================== */
