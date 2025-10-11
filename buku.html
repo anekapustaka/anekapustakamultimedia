@@ -89,15 +89,23 @@
 </header>
 
 <!-- Detail Section dimulai -->
+<!-- Detail Section dimulai -->
 <section class="detail-section">
   <div class="detail-container">
+    
     <div class="detail-image">
       <img id="cover-image" src="" alt="Memuat gambar..." style="opacity:0; transition:opacity .3s;">
       <div class="image-extra-text">
         <p><strong>CV. Aneka Pustaka Multimedia</strong> - Rumah bagi karya-karya inspiratif dan bacaan bermakna.</p>
       </div>
+
+      <!-- ✅ Rekomendasi SEKARANG DI SINI (DI DALAM KOTAK BIRU) -->
+      <div class="rekom-buku">
+        <h5>Rekomendasi Buku Lainnya</h5>
+        <div class="rekom-slider" id="rekom-slider"></div>
+      </div>
     </div>
-    
+
     <div class="detail-info">
       <h2 id="judul-buku" class="detail-title">Judul Buku</h2>
       <p class="detail-sold">🔖ISBN : <span id="isbn">-</span></p>
@@ -125,16 +133,8 @@
       </div>
     </div>
   </div>
-  
-  <!-- Rekomendasi Buku Slider -->
-  <div class="rekom-buku mt-3">
-    <h5>Rekomendasi Buku Lainnya</h5>
-    <div class="rekom-slider" id="rekom-slider">
-      <!-- Gambar cover akan diisi JS -->
-    </div>
-  </div>
-  
 </section>
+
 
 <!-- Footer Section dimulai -->
 <footer class="footer">
@@ -224,20 +224,20 @@ function populate(book, id) {
   cover.alt = book.judul;
   
 // Slider Rekomendasi Buku
-  const slider = document.getElementById('rekom-slider');
-  if (slider) {
-    slider.innerHTML = ""; // kosongkan dulu
-    // Ambil buku lain selain buku yang sedang dibuka
-    const rekomBuku = window.daftarBuku.filter(b => b.id !== id).slice(0, 8); // ambil max 8 buku
-    rekomBuku.forEach(b => {
-      const img = document.createElement('img');
-      img.src = 'images/' + b.gambar;
-      img.alt = b.judul;
-      img.title = b.judul;
-      img.onclick = () => window.location.href = 'buku.html?id=' + encodeURIComponent(b.id);
-      slider.appendChild(img);
-    });
-  }
+const slider = document.getElementById('rekom-slider');
+if (slider && Array.isArray(window.daftarBuku)) {
+  slider.innerHTML = ""; // kosongkan dulu
+
+  const rekomBuku = window.daftarBuku.filter(b => b.id !== id).slice(0, 6);
+  rekomBuku.forEach(b => {
+    const img = document.createElement('img');
+    img.src = 'images/' + b.gambar;
+    img.alt = b.judul;
+    img.title = b.judul;
+    img.onclick = () => window.location.href = 'buku.html?id=' + encodeURIComponent(b.id);
+    slider.appendChild(img);
+  });
+}
   
   updateSEO(book, id);
 }
