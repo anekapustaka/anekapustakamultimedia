@@ -43,7 +43,8 @@ window.dataBuku = [
     tahun: "2024",
     gambar: "mtk-smp-vii.jpg",
     sinopsis: `Buku Matematika SMP Kelas VII ini menyajikan konsep dan latihan yang sistematis, mulai dari bilangan, aljabar dasar, hingga geometri. Disertai contoh pembahasan dan latihan ujian, cocok untuk pendalaman materi dan persiapan ujian sekolah.`
-  }
+  },
+  
   {
     id: "senirupa-mts-vii",
     judul: "Seni Rupa SMP/MTs Kelas VII - Konsep & Latihan",
