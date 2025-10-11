@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title id="page-title">Aneka Pustaka Multimedia</title>
+  <meta name="description" id="meta-description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum">
+
+  <!-- Open Graph Tags (nilai default; akan dicoba diupdate via JS) -->
+  <meta property="og:title" content="CV Aneka Pustaka Multimedia" id="og-title">
+  <meta property="og:description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum" id="og-desc">
+  <meta property="og:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/penjas-mts.jpg" id="og-image">
+  <meta property="og:url" content="https://anekapustaka.github.io/anekapustakamultimedia/buku.html" id="og-url">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aneka Pustaka Multimedia">
+
+  <meta name="twitter:card" content="summary_large_image" id="twitter-card">
+  <meta name="twitter:title" content="CV Aneka Pustaka Multimedia" id="twitter-title">
+  <meta name="twitter:description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum" id="twitter-desc">
+  <meta name="twitter:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/penjas-mts.jpg" id="twitter-image">
+
+  <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- file koneksi lokal -->
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="styles/slider.css">
+  <link rel="stylesheet" href="styles/bookcategory.css">
+  <link rel="stylesheet" href="styles/bestseller.css">
+  <link rel="stylesheet" href="styles/bukuterbit.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/faq.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
+  
+  <!-- fontawsome cdn attachment -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  
+<body>
+<!-- Header Section dimulai -->
+  <header class="main-header" role="banner">
+    <div class="header-container">
+      <!-- Logo + text -->
+      <div class="logo-text-container">
+        <div class="logo-circle">
+         <img src="images/logocv.png" alt="logo">
+        </div>
+        <div class="company-text">
+          <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
+          <h3>Penerbit, Percetakan, dan Distributor / Perdagangan Umum</h3>
+        </div>
+      </div>
+
+      <!-- Checkbox untuk hamburger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <!-- Tombol hamburger -->
+      <label for="menu-toggle" class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <a href="index.html">Beranda</a>
+        <a href="services.html">Layanan</a>
+        <a href="#">Artikel</a>
+        <a href="#">Jurnal</a>
+        <a href="etalase.html">Etalase</a>
+        <a href="about.html">Tentang Kami</a>
+      </nav>
+    </div>
+  </header>
+<!-- Header Section selesai -->
+
+<!-- Detail Section dimulai -->
+<section class="detail-section">
+  <div class="detail-container">
+    <!-- Gambar Produk -->
+    <div class="detail-image">
+      <img id="cover-image" src="images/penjas-mts.jpg" alt="Produk">
+      <!-- Teks tambahan di bawah gambar -->
+      <div class="image-extra-text">
+        <p>
+          <strong>CV. Aneka Pustaka Multimedia</strong> - Rumah bagi karya-karya inspiratif dan bacaan bermakna.
+        </p>
+      </div>
+    </div>
+
+    <!-- Info Produk -->
+    <div class="detail-info">
+      <h2 id="judul-buku" class="detail-title">Judul Buku</h2>
+      <p class="detail-sold">🔖ISBN : <span id="isbn">-</span></p>
+      <h3 id="harga-buku" class="detail-price">Rp. 0</h3>
+
+      <!-- Deskripsi & Rincian -->
+      <div class="detail-description">
+        <p><strong>Penulis:</strong></p>
+        <ol id="daftar-penulis">
+          <!-- akan diisi oleh JS -->
+        </ol>
+        <p><strong>Editor:</strong> <span id="editor"></span></p>
+        <p><strong>Ukuran:</strong> <span id="ukuran"></span></p>
+        <p><strong>Halaman:</strong> <span id="halaman"></span></p>
+        <p><strong>Tahun Terbit:</strong> <span id="tahun"></span></p>
+        <hr>
+        <p><strong>Sinopsis:</strong></p>
+        <p id="sinopsis"></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Detail Section selesai -->
+
+<!-- Footer Section dimulai -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Footer Section selesai-->
+
+<!-- Load data-buku -->
+<script src="data-buku.js"></script>
+
+<script>
+/*
+  buku.html dynamic loader
+  - baca parameter ?id=...
+  - ambil data dari daftarBuku (data-buku.js)
+  - inject ke halaman
+  - update document.title dan beberapa meta tag og/twitter (catatan: social preview tidak selalu memperhatikan meta yang diubah via JS)
+*/
+
+function getQueryParam(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name);
+}
+
+function setMeta(selector, attr, value) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+  if (attr === 'content') el.setAttribute('content', value);
+  else el.setAttribute(attr, value);
+}
+
+function showNotFound() {
+  document.getElementById('judul-buku').textContent = "Produk tidak ditemukan";
+  document.getElementById('isbn').textContent = "-";
+  document.getElementById('harga-buku').textContent = "-";
+  document.getElementById('sinopsis').textContent = "Maaf, produk tidak ditemukan. Periksa kembali link atau kembali ke etalase.";
+  document.getElementById('cover-image').src = "images/logocv.png";
+}
+
+function populate(book) {
+  document.getElementById('judul-buku').textContent = book.judul || "";
+  document.getElementById('isbn').textContent = book.isbn || "-";
+  document.getElementById('harga-buku').textContent = book.harga || "-";
+  document.getElementById('editor').textContent = book.editor || "";
+  document.getElementById('ukuran').textContent = book.ukuran || "";
+  document.getElementById('halaman').textContent = book.halaman || "";
+  document.getElementById('tahun').textContent = book.tahun || "";
+  document.getElementById('sinopsis').textContent = book.sinopsis || "";
+
+  // penulis
+  const list = document.getElementById('daftar-penulis');
+  list.innerHTML = "";
+  if (Array.isArray(book.penulis)) {
+    book.penulis.forEach(p => {
+      const li = document.createElement('li');
+      li.textContent = p;
+      list.appendChild(li);
+    });
+  } else if (book.penulis) {
+    const li = document.createElement('li');
+    li.textContent = book.penulis;
+    list.appendChild(li);
+  }
+
+  // cover image (dari folder images/)
+  const cover = document.getElementById('cover-image');
+  if (book.gambar) {
+    cover.src = "images/" + book.gambar;
+    cover.alt = book.judul;
+  }
+
+  // update title & basic meta
+  document.title = book.judul + " - Aneka Pustaka Multimedia";
+  setMeta('meta[name="description"]', 'content', book.sinopsis ? book.sinopsis.slice(0, 160) : "Buku dari Aneka Pustaka Multimedia");
+  setMeta('meta[property="og:title"]', 'content', book.judul + " - Aneka Pustaka Multimedia");
+  setMeta('meta[property="og:description"]', 'content', book.sinopsis ? book.sinopsis.slice(0,200) : "");
+  setMeta('meta[property="og:image"]', 'content', window.location.origin + window.location.pathname.replace(/\/[^/]*$/, "/") + "images/" + (book.gambar || ""));
+  setMeta('meta[property="og:url"]', 'content', window.location.href);
+  setMeta('meta[name="twitter:title"]', 'content', book.judul + " - Aneka Pustaka Multimedia");
+  setMeta('meta[name="twitter:description"]', 'content', book.sinopsis ? book.sinopsis.slice(0,200) : "");
+  setMeta('meta[name="twitter:image"]', 'content', window.location.origin + window.location.pathname.replace(/\/[^/]*$/, "/") + "images/" + (book.gambar || ""));
+}
+
+// main
+(function(){
+  const id = getQueryParam('id');
+  if (!window.daftarBuku || !Array.isArray(window.daftarBuku)) {
+    console.error("data-buku.js tidak ditemukan atau formatnya salah.");
+    showNotFound();
+    return;
+  }
+
+  if (!id) {
+    // jika tidak ada id, bisa tampilkan buku pertama atau pesan
+    // di sini saya tampilkan buku pertama sebagai default
+    populate(daftarBuku[0]);
+    return;
+  }
+
+  const buku = daftarBuku.find(b => b.id === id);
+  if (!buku) {
+    showNotFound();
+    return;
+  }
+
+  populate(buku);
+})();
+</script>
+
+</body>
+</html>
