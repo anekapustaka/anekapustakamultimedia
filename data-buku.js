@@ -43,7 +43,7 @@ window.dataBuku = [
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 118 halaman",
     tahun: "2025",
-    gambar: "senirupa-mts-vii.png",
+    gambar: "senirupa-mts.png",
     sinopsis: `Buku Seni Rupa Kelas VII SMP/MTs (Kurikulum Merdeka) ini disusun untuk membimbing peserta didik mengenal, memahami, dan mengembangkan kreativitas dalam berkarya seni rupa secara menyeluruh. Melalui empat bab utama—Menggambar, Mendesain, Membuat Tipografi dan Logo, serta Berkarya Seni untuk Perubahan—buku ini mengajak siswa untuk mengekspresikan ide, perasaan, dan gagasan melalui berbagai media dan teknik. Selain mempelajari unsur dan prinsip seni rupa, peserta didik juga diarahkan untuk peka terhadap lingkungan sosial, budaya, dan kemanusiaan di sekitarnya. Buku ini diharapkan dapat menumbuhkan kemampuan berpikir kreatif, kritis, dan kolaboratif, sekaligus menanamkan nilai estetika, empati, serta tanggung jawab sosial melalui kegiatan seni yang bermakna..`
   }
 
