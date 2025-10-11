@@ -633,6 +633,36 @@ body, html {
   line-height: 1.7;
   color: #333;
 }
+.rekom-buku h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003366;
+}
 
+.rekom-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 5px;
+}
 
+.rekom-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.rekom-slider::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.rekom-slider img {
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.rekom-slider img:hover {
+  transform: scale(1.05);
+}
 /* =================== GLOBAL DETAIL END =================== */
