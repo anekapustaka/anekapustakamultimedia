@@ -236,6 +236,10 @@ function populate(book, id) {
     const li = document.createElement('li');
     li.textContent = n;
     list.appendChild(li);
+
+    // tombol beli diarahkan ke form
+  const btnBeli = document.getElementById("btn-beli");
+  btnBeli.href = "form-pemesanan.html?buku=" + encodeURIComponent(book.judul);
   });
 
   const cover = document.getElementById('cover-image');
