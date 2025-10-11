@@ -118,13 +118,24 @@
       <h3 id="harga-buku" class="detail-price">Rp. 0</h3>
       
     <div class="action-buttons" style="margin:15px 0;">
-      <a id="btn-beli" href="#" target="_blank" class="btn btn-success" style="margin-right:10px;">
-        <i class="fa-brands fa-whatsapp"></i> Beli Sekarang
+      <a id="btn-beli" href="#" class="btn btn-success" style="margin-right:10px;">
+        <i class="fa-solid fa-cart-shopping"></i> Beli Sekarang
       </a>
       <button id="btn-share" class="btn btn-primary">
         <i class="fa-solid fa-share"></i> Bagikan
       </button>
     </div>
+    
+    <script>
+      // arahkan tombol beli ke form-pemesanan.html dengan judul buku
+      const btnBeli = document.getElementById("btn-beli");
+      const judulBuku = document.getElementById("judul-buku").textContent;
+      btnBeli.addEventListener("click", function(e){
+        e.preventDefault();
+        // encodeURIComponent untuk URL aman
+        window.location.href = "form-pemesanan.html?buku=" + encodeURIComponent(judulBuku);
+      });
+    </script>
 
       <!-- Deskripsi & Rincian -->
       <div class="detail-description">
@@ -235,11 +246,6 @@ function populate(book, id) {
 
   updateSEO(book, id);
 
-  // Tombol beli langsung via WA
-  const waMessage = encodeURIComponent(
-    "Halo, saya ingin memesan buku: " + book.judul + " (" + book.isbn + ")"
-  );
-  document.getElementById("btn-beli").setAttribute("href", "https://wa.me/628xxxxxxxxxx?text=" + waMessage);
 }
 
 (function() {
