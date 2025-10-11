@@ -97,7 +97,15 @@
         <p><strong>CV. Aneka Pustaka Multimedia</strong> - Rumah bagi karya-karya inspiratif dan bacaan bermakna.</p>
       </div>
     </div>
-
+    
+  <!-- Rekomendasi Buku Slider -->
+  <div class="rekom-buku mt-3">
+    <h5>Rekomendasi Buku Lainnya</h5>
+    <div class="rekom-slider" id="rekom-slider">
+      <!-- Gambar cover akan diisi JS -->
+    </div>
+  </div>
+    
     <div class="detail-info">
       <h2 id="judul-buku" class="detail-title">Judul Buku</h2>
       <p class="detail-sold">🔖ISBN : <span id="isbn">-</span></p>
@@ -213,7 +221,23 @@ function populate(book, id) {
   cover.onload = () => { cover.style.opacity = "1"; };
   cover.src = "images/" + book.gambar;
   cover.alt = book.judul;
-
+  
+// Slider Rekomendasi Buku
+  const slider = document.getElementById('rekom-slider');
+  if (slider) {
+    slider.innerHTML = ""; // kosongkan dulu
+    // Ambil buku lain selain buku yang sedang dibuka
+    const rekomBuku = window.daftarBuku.filter(b => b.id !== id).slice(0, 8); // ambil max 8 buku
+    rekomBuku.forEach(b => {
+      const img = document.createElement('img');
+      img.src = 'images/' + b.gambar;
+      img.alt = b.judul;
+      img.title = b.judul;
+      img.onclick = () => window.location.href = 'buku.html?id=' + encodeURIComponent(b.id);
+      slider.appendChild(img);
+    });
+  }
+  
   updateSEO(book, id);
 }
 
