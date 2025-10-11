@@ -27,24 +27,6 @@ window.dataBuku = [
     yang menarik dan aplikatif, buku ini mendorong siswa untuk aktif bergerak, berpikir kritis, dan berpartisipasi secara penuh dalam kegiatan jasmani, 
     sekaligus menyiapkan mereka menjadi generasi muda yang sehat, cerdas, dan berkarakter.`
   },
-  
-  {
-    id: "mtk-smp-vii",
-    judul: "Matematika SMP/MTs Kelas VII - Konsep & Latihan",
-    harga: "Rp. 85.000",
-    isbn: "978-623-0000-001",
-    penulis: [
-      "Dr. Ahmad Sudirman",
-      "Sri Rahayu, S.Pd"
-    ],
-    editor: "Prof. Dr. Budi Santoso",
-    ukuran: "17,6 X 25 cm",
-    halaman: "200 halaman",
-    tahun: "2024",
-    gambar: "mtk-smp-vii.jpg",
-    sinopsis: `Buku Matematika SMP Kelas VII ini menyajikan konsep dan latihan yang sistematis, mulai dari bilangan, aljabar dasar, hingga geometri. Disertai contoh pembahasan dan latihan ujian, cocok untuk pendalaman materi dan persiapan ujian sekolah.`
-  },
-  
   {
     id: "senirupa-mts-vii",
     judul: "Seni Rupa SMP/MTs Kelas VII - Konsep & Latihan",
@@ -65,5 +47,4 @@ window.dataBuku = [
     sinopsis: `Buku Seni Rupa Kelas VII SMP/MTs (Kurikulum Merdeka) ini disusun untuk membimbing peserta didik mengenal, memahami, dan mengembangkan kreativitas dalam berkarya seni rupa secara menyeluruh. Melalui empat bab utama—Menggambar, Mendesain, Membuat Tipografi dan Logo, serta Berkarya Seni untuk Perubahan—buku ini mengajak siswa untuk mengekspresikan ide, perasaan, dan gagasan melalui berbagai media dan teknik. Selain mempelajari unsur dan prinsip seni rupa, peserta didik juga diarahkan untuk peka terhadap lingkungan sosial, budaya, dan kemanusiaan di sekitarnya. Buku ini diharapkan dapat menumbuhkan kemampuan berpikir kreatif, kritis, dan kolaboratif, sekaligus menanamkan nilai estetika, empati, serta tanggung jawab sosial melalui kegiatan seni yang bermakna..`
   }
 
-  // Tambah objek buku lain di sini...
 ];
