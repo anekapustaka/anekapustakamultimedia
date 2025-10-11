@@ -88,10 +88,11 @@
 <!-- Header Section selesai -->
 
 <main class="container my-5">
-  <h2 class="mb-4 text-primary">Formulir Pemesanan Buku</h2>
-  <p class="mb-4">Silakan isi formulir berikut untuk memesan buku. Semua field wajib diisi.</p>
+  <div class="judul">
+    <h2>Formulir Pemesanan Buku</h2>
+  </div>
 
-  <form id="form-pemesanan" action="mailto:emailmu@domain.com" method="post" enctype="text/plain" class="p-4 bg-light border rounded shadow-sm">
+  <form id="form-pemesanan" action="https://formspree.io/f/mqayywyl" method="post">
     
     <div class="mb-3">
       <label for="nama" class="form-label fw-bold text-primary">Nama Lengkap</label>
@@ -100,7 +101,7 @@
 
     <div class="mb-3">
       <label for="email" class="form-label fw-bold text-primary">Email</label>
-      <input type="email" class="form-control border-primary" id="email" name="Email" placeholder="example@email.com" required>
+      <input type="email" class="form-control border-primary" id="email" name="Email" placeholder="Contoh@email.com" required>
     </div>
 
     <div class="mb-3">
@@ -137,6 +138,7 @@
     <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
   </div>
 </footer>
+  
   <script>
     // Ambil judul buku dari query parameter ?buku=...
     const params = new URLSearchParams(window.location.search);
@@ -145,5 +147,6 @@
       document.getElementById("buku").value = decodeURIComponent(judulBuku);
     }
   </script>
+  
 </body>
 </html>
