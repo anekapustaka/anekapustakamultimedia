@@ -29,7 +29,7 @@ window.dataBuku = [
   },
   {
     id: "senirupa-mts-vii",
-    judul: "Seni Rupa SMP/MTs Kelas VII - Konsep & Latihan",
+    judul: "Seni Rupa (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 80.150",
     isbn: "-",
     penulis: [
