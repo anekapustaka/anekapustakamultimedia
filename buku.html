@@ -166,7 +166,7 @@ function updateSEO(book, id) {
   document.getElementById("meta-description").setAttribute("content", book.sinopsis.substring(0, 150));
 
   const fullURL = window.location.origin + "/buku.html?id=" + id;
-  const imageURL = const imageURL = window.location.origin + "/images/" + book.gambar;
+  const imageURL = window.location.origin + "/images/" + book.gambar;
 
   document.getElementById("og-title").setAttribute("content", book.judul);
   document.getElementById("og-desc").setAttribute("content", book.sinopsis.substring(0, 150));
