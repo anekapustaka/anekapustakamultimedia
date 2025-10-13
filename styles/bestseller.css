@@ -29,9 +29,11 @@
 .book-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain; /* ✅ Tidak memotong gambar */
+  background: #f7f7f7; /* ✅ Tambahkan background agar rapi jika gambar tidak full */
   border-radius: 12px;
   transition: all 0.3s ease;
+  padding: 6px; /* ✅ Biar gambar ada ruang dan terlihat elegan */
 }
 
 .book-card:hover img {
