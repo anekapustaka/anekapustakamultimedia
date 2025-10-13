@@ -165,8 +165,8 @@ function updateSEO(book, id) {
   document.title = book.judul + " - Aneka Pustaka Multimedia";
   document.getElementById("meta-description").setAttribute("content", book.sinopsis.substring(0, 150));
 
-  const fullURL = "https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=" + id;
-  const imageURL = "https://anekapustaka.github.io/anekapustakamultimedia/images/" + book.gambar;
+  const fullURL = window.location.origin + "/buku.html?id=" + id;
+  const imageURL = const imageURL = window.location.origin + "/images/" + book.gambar;
 
   document.getElementById("og-title").setAttribute("content", book.judul);
   document.getElementById("og-desc").setAttribute("content", book.sinopsis.substring(0, 150));
