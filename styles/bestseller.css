@@ -3,37 +3,49 @@
   font-weight: 700;
   color: #0056d2;
   margin-bottom: 40px;
+  letter-spacing: 0.5px; /* Lebih elegan */
+  text-transform: uppercase;
 }
 
 .book-collection {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.2rem;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .book-card {
-  width: 200px;
+  width: 210px;
   text-align: center;
   font-family: "Inter", sans-serif;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .book-card img {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* lebih soft */
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.35); /* efek subtle border */
+  backdrop-filter: blur(4px); /* efek glass look elegan */
 }
 
 .book-card img:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
+  filter: brightness(1.05);
 }
 
 .book-title {
   margin-top: 1rem;
   font-size: 15px;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.book-card:hover .book-title {
+  color: #0056d2;
 }
