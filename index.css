@@ -129,23 +129,33 @@ h1, h2, h3, h4 {
 }
 
 /* Hamburger icon */
+/* ===== Hamburger Button Mobile - versi lebih jelas ===== */
 .hamburger-btn {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
-  background: #fff;
-  border-radius: 50%;
+  width: 40px; /* lebih kecil tapi proporsional */
+  height: 35px;
+  margin-left: auto; /* tetap di kanan */
+  background: var(--accent); /* warna mencolok agar terlihat tombol */
+  border-radius: 6px; /* sedikit sudut bulat */
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 6px;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
+
+.hamburger-btn:hover {
+  transform: scale(1.05);
+  background: #ff9900; /* efek hover jelas */
+}
+
 .hamburger-btn span {
-  width: 20px;
-  height: 2px;
-  background: var(--primary);
-  margin: 3px 0;
+  width: 70%;
+  height: 3px;
+  background: #fff; /* garis putih kontras */
+  margin: 4px 0;
   border-radius: 2px;
 }
 
