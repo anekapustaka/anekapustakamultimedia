@@ -1,9 +1,12 @@
 .book-collection {
-  display: grid; /* Lebih stabil daripada flex untuk layout card */
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 28px;
   padding: 20px;
-  justify-items: center;
+  justify-items: center; /* Sudah benar - item di tengah */
+  justify-content: center; /* ✅ Tambahkan ini agar grid tetap center */
+  max-width: 1200px; /* ✅ Biar tidak melebar full ke kiri */
+  margin: 0 auto; /* ✅ Auto center seluruh grid container */
 }
 
 .book-card {
