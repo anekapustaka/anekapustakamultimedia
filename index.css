@@ -508,51 +508,119 @@ body, html {
 /* =================== LAYANAN END =================== */
 
 /* =================== ABOUT START =================== */
-.about-section {
-  background: linear-gradient(135deg, #e6f0ff, #cce0ff);
-  padding: 60px 20px;
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0056d2;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.about-text {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 40px;
-  line-height: 1.8;
+/* Visi Misi */
+.visi-misi {
+  padding: 60px 20px;
+  background: #f4f8ff;
 }
 
-.about-points {
+.visi-misi-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 
-.point {
+.visi, .misi {
   background: #fff;
-  border-radius: 12px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.visi-misi-grid ul {
+  padding-left: 20px;
+}
+
+/* Values */
+.company-values {
+  padding: 60px 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  background: #fff;
   padding: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-  text-align: left;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
-
-.point:hover {
-  transform: translateY(-5px);
-}
-
-.icon {
-  font-size: 30px;
-  color: #007bff;
+.value-card h4 {
+  color: #0056d2;
   margin-bottom: 10px;
+}
+
+/* Timeline */
+.timeline-section {
+  background: #eef4ff;
+  padding: 60px 20px;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: auto;
+  border-left: 3px solid #0056d2;
+  padding-left: 25px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #0056d2;
+  border-radius: 50%;
+  position: absolute;
+  left: -35px;
+  top: 5px;
+}
+
+.year {
+  font-weight: bold;
+  color: #0056d2;
   display: block;
+  margin-bottom: 5px;
 }
 
-.point p {
-  font-size: 15px;
-  color: #333;
-  line-height: 1.6;
+/* CTA */
+.cta-section {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #dce8ff, #b7ceff);
 }
 
+.cta-btn {
+  display: inline-block;
+  background: #0056d2;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #003f9e;
+}
 /* =================== ABOUT END =================== */
 
 /* =================== GLOBAL DETAIL START =================== */
