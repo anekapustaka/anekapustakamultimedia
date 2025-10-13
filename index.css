@@ -48,116 +48,43 @@ h1, h2, h3, h4 {
 }
 
 /* =================== HEADER START =================== */
-.main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--header-height);
-  background: var(--primary);
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 0 20px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* Logo bulat */
-.logo-circle {
-  width: 56px;
-  height: 56px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  flex-shrink: 0;
-  overflow: hidden;
-}
-.logo-circle img {
-  max-width: 85%;
-  max-height: 85%;
-}
-.logo-text-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap; /* cegah teks pecah */
-}
-.company-text h2 {
-  font-family: 'Arial Black', sans-serif;
-  font-size: 18px; 
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-  letter-spacing: 0.5px;
-}
-.company-text h3 {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #d9f2e6;
-  margin: 2px 0 0 0;
-}
-
-/* NAVIGATION desktop */
-.nav-menu {
-  display: flex;
-  gap: 20px;
-}
-.nav-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-}
-.nav-menu a:hover {
-  color: var(--accent);
-}
-
-/* Checkbox hidden */
-.menu-toggle {
-  display: none;
-}
-
-/* Hamburger icon */
-/* ===== Hamburger Button Mobile - versi lebih jelas ===== */
+/* Hamburger Button Mobile - versi tanpa bulatan */
 .hamburger-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px; /* lebih kecil tapi proporsional */
+  width: 40px;
   height: 35px;
-  margin-left: auto; /* tetap di kanan */
-  background: var(--accent); /* warna mencolok agar terlihat tombol */
-  border-radius: 6px; /* sedikit sudut bulat */
+  margin-left: auto;
+  background: transparent; /* hilangkan warna kotak */
+  border-radius: 0; /* hilangkan sudut */
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  padding: 6px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: none; /* hilangkan bayangan */
+  padding: 0; /* hilangkan padding */
+  transition: transform 0.3s ease;
 }
 
 .hamburger-btn:hover {
   transform: scale(1.05);
-  background: #ff9900; /* efek hover jelas */
+  /* background di hover juga hilangkan atau bisa diganti warna garis */
 }
 
 .hamburger-btn span {
-  width: 70%;
+  width: 100%; /* bisa disesuaikan */
   height: 3px;
-  background: #fff; /* garis putih kontras */
+  background: #fff; /* garis tetap putih */
   margin: 4px 0;
   border-radius: 2px;
 }
+
+/* Sembunyikan hamburger di desktop */
+@media (min-width: 769px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
 
 /* ========== MOBILE ========== */
 @media (max-width: 768px) {
