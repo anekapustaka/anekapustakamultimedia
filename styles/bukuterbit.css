@@ -28,9 +28,12 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 20px;
+  width: 320px; /* ✅ Membatasi lebar agar tidak terlalu melebar */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   display: flex;
+  flex-direction: column; /* ✅ Gambar di atas, teks di bawah */
   align-items: center;
+  text-align: center; /* ✅ Supaya teks lebih rapi */
   gap: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -40,25 +43,21 @@ body {
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
-/* Box untuk ikon */
 .icon-box {
-  width: 80px;       /* lebih besar sedikit */
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 12px;
-  background: #f9f9f9;
+  background: #f0f6ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  overflow: hidden;  /* biar gambar tidak keluar */
-  border: 2px solid #eee;
+  border: 2px solid #dbe8ff;
 }
 
-/* Gambar di dalam icon-box */
 .icon-box img {
-  width: 70%;          /* skala gambar relatif */
-  height: 70%;         /* biar proporsional */
-  object-fit: contain; /* jaga agar tidak gepeng */
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 .service-info h3 {
@@ -71,6 +70,6 @@ body {
 .service-info p {
   margin-top: 6px;
   font-size: 14px;
-  color: #444;
-  line-height: 1.5;
+  color: #555;
+  line-height: 1.6;
 }
