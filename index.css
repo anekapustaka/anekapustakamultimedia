@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Teko:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 
-/* Reset */
-body, html {
+/* RESET GLOBAL YANG BERSIH DAN PROFESIONAL */
+html, body {
   margin: 0;
   padding: 0;
-  padding-top: var(--header-height); /* sesuaikan dengan tinggi header */
-  font-family: "Cardo", serif;
+  font-family: "Inter", sans-serif; /* Default body font modern */
   height: 100%;
-  overflow-x: hidden; /* cegah geser horizontal */
+  overflow-x: hidden;
+}
+
+/* Terapkan hanya jika header FIXED / STICKY */
+body {
+  padding-top: var(--header-height); /* biar konten tidak ketutup */
+}
+
+/* Heading typography elegan */
+h1, h2, h3, h4 {
+  font-family: "Cardo", serif;
 }
 
 /* ✅ Background tidak gelap lagi */
