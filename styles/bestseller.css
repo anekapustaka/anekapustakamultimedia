@@ -1,51 +1,46 @@
-.book-selling h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #0056d2;
-  margin-bottom: 40px;
-  letter-spacing: 0.5px; /* Lebih elegan */
-  text-transform: uppercase;
-}
-
 .book-collection {
-  display: flex;
-  justify-content: center;
-  gap: 2.2rem;
-  flex-wrap: wrap;
-  margin: 2.5rem 0;
+  display: grid; /* Lebih stabil daripada flex untuk layout card */
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 28px;
+  padding: 20px;
+  justify-items: center;
 }
 
 .book-card {
-  width: 210px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
 
 .book-card img {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* lebih soft */
-  transition: all 0.35s ease;
-  border: 1px solid rgba(255, 255, 255, 0.35); /* efek subtle border */
-  backdrop-filter: blur(4px); /* efek glass look elegan */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.book-card img:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
-  filter: brightness(1.05);
+.book-card:hover img {
+  transform: scale(1.02);
 }
 
 .book-title {
-  margin-top: 1rem;
+  margin-top: 14px;
   font-size: 15px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #111;
   letter-spacing: 0.3px;
-  transition: color 0.3s ease;
-}
-
-.book-card:hover .book-title {
-  color: #0056d2;
+  text-align: center;
+  line-height: 1.4;
 }
