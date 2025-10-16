@@ -477,6 +477,9 @@ h1, h2, h3, h4 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
+.product-section {
+  flex: 1; /* dorong footer ke bawah */
+}
 /* Responsif Desktop */
 @media (max-width: 768px) {
   .product-container {
