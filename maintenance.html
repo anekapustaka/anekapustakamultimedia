@@ -39,7 +39,10 @@
     }
 
     .gearb {
-      height: 100%;
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px;
+      position: relative;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -55,6 +58,7 @@
     
     .machine {
       width: 60vmin;
+      height: auto;
       fill: #003e99; }
     
     .small-shadow, .medium-shadow, .large-shadow {
@@ -167,10 +171,16 @@
     }
 
     .footer-note {
-      margin-top: 25px;
-      font-size: 12px;
+      margin-top: 20px;
+      font-size: 13px;
       color: #555;
       opacity: 0.8;
+    }
+    
+    @media (max-width: 480px) {
+      h1 { font-size: 20px; padding: 0 15px; }
+      .gearb { width: 140px; height: 140px; }
+      .refresh-btn { padding: 10px 24px; font-size: 14px; }
     }
   </style>
 </head>
