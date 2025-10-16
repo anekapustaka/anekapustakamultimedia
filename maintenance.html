@@ -1,109 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Maintenance Mode</title>
-<link rel="icon" type="image/png" href="logocv.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+  <meta charset="UTF-8">
+  <title>Situs Sedang Dalam Pemeliharaan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logocv.png" type="image/png">
+
+  <style>
     body {
-        margin: 0;
-        background: linear-gradient(135deg, #007bff, #4facfe);
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, sans-serif;
-        color: white;
-        overflow: hidden;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #dce9ff, #a7c7ff);
+      font-family: 'Inter', Arial, sans-serif;
+      overflow: hidden;
+      text-align: center;
     }
-    .container {
-        text-align: center;
-        animation: float 3s ease-in-out infinite alternate;
+
+    h1 {
+      font-size: 22px;
+      color: #003366;
+      font-weight: 600;
+      margin-top: 20px;
     }
-    @keyframes float {
-        from { transform: translateY(0px); }
-        to { transform: translateY(-15px); }
+
+    .gear-box {
+      position: relative;
+      width: 180px;
+      height: 180px;
     }
-    .gears {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto 20px auto;
+
+    svg {
+      width: 100%;
+      height: auto;
     }
-    .gear {
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 40px;
-        left: 20px;
+
+    .gear-large {
+      animation: rotateLarge 4s linear infinite;
+      transform-origin: center;
     }
-    .gear.small {
-        width: 70px;
-        height: 70px;
-        top: 95px;
-        left: 120px;
+
+    .gear-small {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      transform: translate(35px, -90px);
+      animation: rotateSmall 4s linear infinite reverse;
+      transform-origin: center;
     }
-    .gear svg {
-        width: 100%;
-        height: 100%;
-        filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+
+    @keyframes rotateLarge {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
-    .gear.big svg {
-        animation: rotateBig 4s linear infinite;
-    }
-    .gear.small svg {
-        animation: rotateSmall 4s linear infinite;
-    }
-    @keyframes rotateBig {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
+
     @keyframes rotateSmall {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(-360deg); }
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
+
     .refresh-btn {
-        display: inline-block;
-        padding: 12px 25px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(6px);
-        border-radius: 8px;
-        color: white;
-        cursor: pointer;
-        transition: 0.3s;
-        text-decoration: none;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: #0056d4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease;
     }
+
     .refresh-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-        transform: scale(1.05);
+      background: #003e99;
+      transform: scale(1.04);
     }
-</style>
+
+    .footer-note {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #555;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="gears">
-        <!-- Big Gear -->
-        <div class="gear big">
-            <svg viewBox="0 0 100 100">
-                <path fill="#ffffff" d="M50 30a20 20 0 1 0 0 40 20 20 0 1 0 0-40zm45 20h-7.5a37.5 37.5 0 0 0-2.5-10.5l6.5-6.5-10-10-6.5 6.5A37.5 37.5 0 0 0 70 12.5V5h-20v7.5a37.5 37.5 0 0 0-10.5 2.5l-6.5-6.5-10 10 6.5 6.5A37.5 37.5 0 0 0 12.5 50H5v20h7.5a37.5 37.5 0 0 0 2.5 10.5l-6.5 6.5 10 10 6.5-6.5A37.5 37.5 0 0 0 50 87.5V95h20v-7.5a37.5 37.5 0 0 0 10.5-2.5l6.5 6.5 10-10-6.5-6.5a37.5 37.5 0 0 0 2.5-10.5H95z"/>
-            </svg>
-        </div>
+  <div class="gear-box">
+    <!-- Gear Besar -->
+    <svg class="gear-large" viewBox="0 0 100 100">
+      <path fill="#003e99" d="M50 30a20 20 0 1 0 20 20A20.06 20.06 0 0 0 50 30zm46 22h-8.09a38.21 38.21 0 0 0-3.3-13.08l7-7a4 4 0 0 0 0-5.66l-7.87-7.87a4 4 0 0 0-5.66 0l-7 7a38.21 38.21 0 0 0-13.08-3.3V4a4 4 0 0 0-4-4h-11.2a4 4 0 0 0-4 4v8.09a38.21 38.21 0 0 0-13.08 3.3l-7-7a4 4 0 0 0-5.66 0L4.49 16.26a4 4 0 0 0 0 5.66l7 7A38.21 38.21 0 0 0 8.17 42H0a4 4 0 0 0-4 4v11.2a4 4 0 0 0 4 4h8.09a38.21 38.21 0 0 0 3.3 13.08l-7 7a4 4 0 0 0 0 5.66l7.87 7.87a4 4 0 0 0 5.66 0l7-7a38.21 38.21 0 0 0 13.08 3.3V96a4 4 0 0 0 4 4h11.2a4 4 0 0 0 4-4v-8.09a38.21 38.21 0 0 0 13.08-3.3l7 7a4 4 0 0 0 5.66 0l7.87-7.87a4 4 0 0 0 0-5.66l-7-7a38.21 38.21 0 0 0 3.3-13.08H96a4 4 0 0 0 4-4V46a4 4 0 0 0-4-4z"/>
+    </svg>
 
-        <!-- Small Gear -->
-        <div class="gear small">
-            <svg viewBox="0 0 100 100">
-                <path fill="#e3f2ff" d="M50 25a25 25 0 1 0 0 50 25 25 0 1 0 0-50zm35 25h-5a30 30 0 0 0-2-8l4.5-4.5-8-8-4.5 4.5A30 30 0 0 0 58 30v-5H42v5a30 30 0 0 0-8 2l-4.5-4.5-8 8 4.5 4.5A30 30 0 0 0 30 50h-5v16h5a30 30 0 0 0 2 8l-4.5 4.5 8 8 4.5-4.5A30 30 0 0 0 42 78v5h16v-5a30 30 0 0 0 8-2l4.5 4.5 8-8-4.5-4.5a30 30 0 0 0 2-8h5z"/>
-            </svg>
-        </div>
-    </div>
+    <!-- Gear Kecil -->
+    <svg class="gear-small" viewBox="0 0 100 100">
+      <path fill="#007bff" d="M50 30a20 20 0 1 0 20 20A20.06 20.06 0 0 0 50 30z"/>
+    </svg>
+  </div>
 
-    <h2>Website Sedang Dalam Perawatan</h2>
-    <p>Mohon tunggu sebentar, sistem sedang diperbarui...</p>
-    <a class="refresh-btn" onclick="location.reload()">🔄 Muat Ulang</a>
-</div>
+  <h1>Situs sedang dalam pemeliharaan</h1>
+
+  <button class="refresh-btn" onclick="location.reload()">Muat Ulang</button>
+
+  <div class="footer-note">Halaman akan aktif kembali setelah proses selesai.</div>
 
 </body>
 </html>
