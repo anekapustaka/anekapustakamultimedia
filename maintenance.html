@@ -2,56 +2,103 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <title>Situs Sedang Maintenance</title>
+  <link rel="icon" href="images/logocv.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedang Maintenance</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 0;
+      background: linear-gradient(135deg, #e9f1ff, #c7dcff);
       height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      color: #0044aa;
+      overflow: hidden;
+    }
+
+    .maintenance-container {
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      max-width: 420px;
-      width: 90%;
-    }
-    img {
-      width: 80px;
-      margin-bottom: 20px;
-    }
-    h1 {
+
+    .maintenance-container h1 {
+      font-size: 32px;
+      font-weight: 700;
       margin-bottom: 10px;
-      font-size: 22px;
     }
-    p {
-      margin-bottom: 20px;
-      color: #555;
+
+    .maintenance-container p {
       font-size: 15px;
+      opacity: 0.8;
+      margin-bottom: 25px;
     }
-    .btn {
+
+    svg {
+      width: 120px;
+      animation: float 3s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    .refresh-btn {
       display: inline-block;
-      padding: 10px 20px;
-      border-radius: 6px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: #0056d2;
+      border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
-      font-weight: bold;
-      border: 1px solid #000;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 86, 210, 0.3);
     }
+
+    .refresh-btn:hover {
+      background: #003f99;
+      box-shadow: 0 6px 18px rgba(0, 86, 210, 0.45);
+      transform: translateY(-2px);
+    }
+
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Ganti src logo jika siap -->
-    <img src="https://via.placeholder.com/80" alt="Logo">
-    <h1>Website Sedang Dalam Perbaikan</h1>
-    <p>Kami sedang melakukan pemeliharaan sistem untuk meningkatkan layanan. Silakan cek kembali dalam beberapa saat.</p>
+  <div class="maintenance-container">
+    <!-- Gear SVG Animated -->
+    <svg viewBox="0 0 100 100" fill="#0056d2">
+      <g transform="translate(50, 50)">
+        <g transform="translate(-50, -50)">
+          <path d="M50 30a20 20 0 1020 20A20 20 0 0050 30zm0-25l5 10h10l2 7 9 5-3 8 5 8-6 6 3 8-9 5-2 7H55l-5 10-5-10H35l-2-7-9-5 3-8-5-8 6-6-3-8 9-5 2-7h10z" transform="rotate(0 50 50)">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="4s" repeatCount="indefinite"/>
+          </path>
+        </g>
+      </g>
+    </svg>
+
+    <h1>Sedang Dalam Perawatan</h1>
+    <p>Kami sedang melakukan pembaruan sistem untuk pengalaman yang lebih baik.</p>
+
+    <a class="refresh-btn" onclick="location.reload()">🔄 Muat Ulang Halaman</a>
   </div>
 </body>
 </html>
