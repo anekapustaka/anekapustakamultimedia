@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <script>
-  var maintenanceMode = true;
+  var maintenanceMode = false;
 
   if (maintenanceMode) {
     window.location.href = "maintenance.html";
@@ -111,29 +111,30 @@
   </div>
 
   <div class="slider-container">
-    <div class="slider">
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 1"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 2"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 3"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 4"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 5"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 6"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 1"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 2"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 3"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 4"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 5"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 6"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 1"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 2"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 3"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 4"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 1.png" alt="Buku 5"></a></div>
-      <div class="slide"><a href="#"><img src="images/Cover 2.jpeg" alt="Buku 6"></a></div>
+    <div class="slider" id="slider-container">
+      <!-- Slide buku akan ter-generate di sini -->
     </div>
   </div>
 </div>
 <!-- Slider Section selesai-->
+
+<!-- Script -->
+<script src="data-buku.js"></script>
+<script>
+  const sliderContainer = document.getElementById('slider-container');
+
+  window.dataBuku.forEach(buku => {
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    slide.innerHTML = `
+      <a href="buku.html?id=${buku.id}">
+        <img src="images/${buku.gambar}" alt="${buku.judul}">
+      </a>
+    `;
+    sliderContainer.appendChild(slide);
+  });
+</script>
+
   
   <!-- Katalog Buku Section -->
   <div class="judul">
