@@ -1,4 +1,11 @@
 // data-artikel.js
+
+//    "content": `
+//      <p>Konten pembuka artikel...</p>
+//      <img src="images/midcontent1.jpg" alt="Ilustrasi konten" style="width:100%; max-width:600px; display:block; margin:20px auto;">
+//      <p>Lanjutan artikel...</p>
+ //   `
+
 const articles = {
   "1": {
     title: "Apa Itu Website dan Bagaimana Cara Membuatnya",
