@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolaborasi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .hero-kolaborasi {
+      background: #f5f5f5;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero-kolaborasi h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero-kolaborasi p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 0;
+    }
+    .section-title {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .info-card {
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+    .info-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .form-section {
+      background: #f9f9f9;
+      padding: 60px 0;
+    }
+    .form-box {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .form-box input,
+    .form-box textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .form-box button {
+      padding: 12px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .form-box button:hover {
+      background: #444;
+    }
+    .form-success {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+<!-- Header Section dimulai -->
+  <header class="main-header" role="banner">
+    <div class="header-container">
+      <!-- Logo + text -->
+      <div class="logo-text-container">
+        <div class="logo-circle">
+         <img src="images/logocv.png" alt="logo">
+        </div>
+        <div class="company-text">
+          <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
+          <h3>Penerbit, Percetakan, dan Distributor / Perdagangan Umum</h3>
+        </div>
+      </div>
+
+      <!-- Checkbox untuk hamburger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <!-- Tombol hamburger -->
+      <label for="menu-toggle" class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <a href="index.html">Beranda</a>
+        <a href="services.html">Layanan</a>
+        <a href="#">Artikel</a>
+        <a href="#">Jurnal</a>
+        <a href="etalase.html">Etalase</a>
+        <a href="about.html">Tentang Kami</a>
+      </nav>
+    </div>
+  </header>
+<!-- Header Section selesai -->
+  
+<section class="hero-kolaborasi">
+  <div class="hero-content">
+    <h1>Ayo Berkolaborasi Bersama Kami</h1>
+    <p>Kami membuka peluang kolaborasi dengan penulis, akademisi, komunitas, serta institusi pendidikan untuk
+      menciptakan karya yang berdampak.</p>
+  </div>
+</section>
+
+<section class="kolaborasi-info">
+  <div class="container">
+    <h2 class="section-title">Mengapa Kolaborasi dengan Kami?</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Dukungan Penerbitan</h3>
+        <p>Kami menyediakan sistem penerbitan modern dengan tim profesional yang siap membantu dari draf naskah.</p>
+      </div>
+      <div class="info-card">
+        <h3>Jangkauan Luas</h3>
+        <p>Karya Anda akan dipasarkan melalui jaringan distribusi digital serta platform marketplace.</p>
+      </div>
+      <div class="info-card">
+        <h3>Pengembangan Komunitas</h3>
+        <p>Kami membangun komunitas literasi agar penulis dan pembaca dapat terhubung dan berkembang bersama.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="container">
+    <h2 class="section-title">Formulir Kolaborasi</h2>
+    <form id="form-pemesanan" action="https://formspree.io/f/mqayywyl" method="post" class="form-box">
+      <input type="text" name="name" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="instansi" placeholder="Instansi / Komunitas (Opsional)">
+      <textarea name="message" placeholder="Ceritakan ide atau tujuan kolaborasi Anda..." rows="5" required></textarea>
+      <button type="submit">Kirim Permintaan</button>
+      <p id="form-success" class="form-success">Terima kasih! Pesan Anda telah terkirim.</p>
+    </form>
+  </div>
+</section>
+  
+<!-- Footer Section dimulai -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Footer Section selesai-->
+  
+<script>
+  const form = document.getElementById('form-pemesanan');
+  const successMsg = document.getElementById('form-success');
+  successMsg.style.display = 'none';
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        successMsg.style.display = 'block';
+        form.reset();
+        setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+      } else {
+        alert('Maaf, terjadi kesalahan saat mengirim. Silakan coba lagi.');
+      }
+    }).catch(error => {
+      alert('Maaf, terjadi kesalahan saat mengirim. Silakan coba lagi.');
+    });
+  });
+</script>
+
+</body>
+</html>
