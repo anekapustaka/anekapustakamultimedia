@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Layanan - Aneka Pustaka Multimedia</title>
-  
-  <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-  <!-- file koneksi lokal -->
+  <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="styles/slider.css">
   <link rel="stylesheet" href="styles/bookcategory.css">
@@ -20,23 +18,12 @@
   <link rel="stylesheet" href="styles/form.css">
   <link rel="stylesheet" href="styles/faq.css">
   <link rel="stylesheet" href="styles/footer.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
-  
-  <!-- fontawsome cdn attachment -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-  
- <style>
+
+  <style>
     .hero-kolaborasi {
       background: #f5f5f5;
       padding: 80px 20px;
@@ -51,7 +38,6 @@
       max-width: 700px;
       margin: auto;
     }
-
     .container {
       width: 90%;
       max-width: 1100px;
@@ -64,12 +50,6 @@
       text-align: center;
       margin-bottom: 30px;
     }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
     .info-card {
       padding: 25px;
       background: #fff;
@@ -81,7 +61,6 @@
     .info-card:hover {
       transform: translateY(-4px);
     }
-
     .form-section {
       background: #f9f9f9;
       padding: 60px 0;
@@ -114,40 +93,50 @@
     .form-box button:hover {
       background: #444;
     }
-    .form-success {
-      color: green;
+
+    /* Popup notifikasi */
+    .popup {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      color: #fff;
       font-weight: bold;
-      margin-top: 10px;
-      display: none;
-      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      z-index: 9999;
     }
+    .popup.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .popup.success { background-color: #28a745; }
+    .popup.error { background-color: #dc3545; }
   </style>
-  
+</head>
+
 <body>
-<!-- Header Section dimulai -->
-  <header class="main-header" role="banner">
+  <!-- Header Section -->
+  <header class="main-header">
     <div class="header-container">
-      <!-- Logo + text -->
       <div class="logo-text-container">
         <div class="logo-circle">
-         <img src="images/logocv.png" alt="logo">
+          <img src="images/logocv.png" alt="logo">
         </div>
         <div class="company-text">
           <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
           <h3>Penerbit, Percetakan, dan Distributor / Perdagangan Umum</h3>
         </div>
       </div>
-
-      <!-- Checkbox untuk hamburger -->
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <!-- Tombol hamburger -->
       <label for="menu-toggle" class="hamburger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
-
-      <!-- Navigation -->
       <nav class="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="services.html">Layanan</a>
@@ -158,106 +147,83 @@
       </nav>
     </div>
   </header>
-<!-- Header Section selesai -->
+
+  <!-- Hero Section -->
   <section class="hero-kolaborasi">
     <div class="hero-content">
       <h1>Ayo Berkolaborasi Bersama Kami</h1>
-      <p>Kami membuka peluang kolaborasi dengan penulis, akademisi, komunitas, serta institusi pendidikan untuk
-        menciptakan karya yang berdampak.</p>
+      <p>Kami membuka peluang kolaborasi dengan penulis, akademisi, komunitas, serta institusi pendidikan untuk menciptakan karya yang berdampak.</p>
     </div>
   </section>
 
+  <!-- Info Section -->
   <section class="kolaborasi-info container my-5">
     <h2 class="section-title">Mengapa Kolaborasi dengan Kami?</h2>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="info-card">
-          <h3>Dukungan Penerbitan</h3>
-          <p>Kami menyediakan sistem penerbitan modern dengan tim profesional yang siap membantu dari naskah hingga
-            distribusi.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <h3>Jangkauan Luas</h3>
-          <p>Karya Anda akan dipasarkan melalui jaringan distribusi digital serta platform marketplace.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <h3>Pengembangan Komunitas</h3>
-          <p>Kami membangun komunitas literasi agar penulis dan pembaca dapat terhubung dan berkembang bersama.</p>
-        </div>
-      </div>
+      <div class="col-md-4"><div class="info-card"><h3>Dukungan Penerbitan</h3><p>Kami menyediakan sistem penerbitan modern dengan tim profesional yang siap membantu dari naskah hingga distribusi.</p></div></div>
+      <div class="col-md-4"><div class="info-card"><h3>Jangkauan Luas</h3><p>Karya Anda akan dipasarkan melalui jaringan distribusi digital serta platform marketplace.</p></div></div>
+      <div class="col-md-4"><div class="info-card"><h3>Pengembangan Komunitas</h3><p>Kami membangun komunitas literasi agar penulis dan pembaca dapat terhubung dan berkembang bersama.</p></div></div>
     </div>
   </section>
 
+  <!-- Form Section -->
   <section class="form-section container my-5">
     <h2 class="section-title">Formulir Kolaborasi</h2>
-    <form id="form-kolaborasi" action="https://formspree.io/f/mqayywyl" method="POST">
-      <div class="mb-3">
-        <label for="nama" class="form-label fw-bold text-primary">Nama Lengkap</label>
-        <input type="text" class="form-control border-primary" id="nama" name="Nama" placeholder="Masukkan nama lengkap" required>
-      </div>
-
-      <div class="mb-3">
-        <label for="email" class="form-label fw-bold text-primary">Email</label>
-        <input type="email" class="form-control border-primary" id="email" name="Email" placeholder="Contoh@email.com" required>
-      </div>
-
-      <div class="mb-3">
-        <label for="instansi" class="form-label fw-bold text-primary">Instansi / Komunitas</label>
-        <input type="text" class="form-control border-primary" id="instansi" name="Instansi" placeholder="Opsional">
-      </div>
-
-      <div class="mb-3">
-        <label for="message" class="form-label fw-bold text-primary">Ide / Tujuan Kolaborasi</label>
-        <textarea class="form-control border-primary" id="message" name="Message" rows="5" placeholder="Tuliskan ide kolaborasi Anda..." required></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary fw-bold">📩 Kirim Permintaan</button>
-      <p id="form-success" class="text-success fw-bold mt-2" style="display:none;">Terima kasih! Pesan Anda telah terkirim.</p>
+    <form id="form-kolaborasi" action="https://formspree.io/f/mqayywyl" method="POST" class="form-box">
+      <input type="text" name="name" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="instansi" placeholder="Instansi / Komunitas (Opsional)">
+      <textarea name="message" rows="5" placeholder="Tuliskan ide kolaborasi Anda..." required></textarea>
+      <button type="submit">📩 Kirim Permintaan</button>
     </form>
   </section>
 
+  <!-- Popup notifikasi -->
+  <div id="popup-success" class="popup success">Terima kasih! Pesan Anda telah terkirim.</div>
+  <div id="popup-error" class="popup error">Maaf, terjadi kesalahan saat mengirim.</div>
+
   <script>
     const form = document.getElementById('form-kolaborasi');
-    const successMsg = document.getElementById('form-success');
+    const popupSuccess = document.getElementById('popup-success');
+    const popupError = document.getElementById('popup-error');
 
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
       const data = new FormData(form);
+
       fetch(form.action, {
         method: form.method,
         body: data,
         headers: { 'Accept': 'application/json' }
-      }).then(response => {
+      })
+      .then(response => {
         if (response.ok) {
-          successMsg.style.display = 'block';
+          showPopup(popupSuccess);
           form.reset();
-          setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
         } else {
-          alert('Maaf, terjadi kesalahan saat mengirim. Silakan coba lagi.');
+          showPopup(popupError);
         }
-      }).catch(error => {
-        alert('Maaf, terjadi kesalahan saat mengirim. Silakan coba lagi.');
-      });
+      })
+      .catch(() => showPopup(popupError));
     });
+
+    function showPopup(popup) {
+      popup.classList.add('show');
+      setTimeout(() => { popup.classList.remove('show'); }, 4000);
+    }
   </script>
-  
-<!-- Footer Section dimulai -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
     </div>
-    <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
-  </div>
-</footer>
-<!-- Footer Section selesai-->
-  
+  </footer>
 </body>
 </html>
