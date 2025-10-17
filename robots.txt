@@ -1,4 +1,12 @@
 # Robots.txt - Aneka Pustaka Multimedia
+#
+#      /\        #####     ##     ## 
+#     /  \      #     #    ##\   /## 
+#    / /\ \     ######     ## \ / ## 
+#   / ____ \    #          ##  #  ## 
+#  /_/    \_\   #          ##     ## 
+#
+# 2025 - Aneka Pustaka Multimedia. All Rights Reserved.
 
 User-agent: *
 
