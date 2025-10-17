@@ -21,21 +21,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
   
   <style>
-    .article-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .article-header img {
+    .article-banner {
       width: 100%;
       max-height: 400px;
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 20px;
     }
+    .article-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .article-meta {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
     .article-content {
-      max-width: 900px;
-      margin: auto;
       line-height: 1.7;
+    }
+    .article-content h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #0d6efd;
+    }
+    .article-content p {
+      margin-bottom: 15px;
+    }
+    .sidebar {
+      background: #f8f9ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .sidebar h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+    .sidebar a {
+      display: block;
+      color: #0d6efd;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    @media(max-width: 767px){
+      .flex-lg-row {
+        flex-direction: column !important;
+      }
+      .article-banner {
+        max-height: 250px;
+      }
     }
   </style>
 </head>
@@ -74,15 +113,23 @@
 
   <!-- Article Section -->
   <main class="container my-5">
-    <section class="article-header">
-      <img id="article-banner" src="" alt="Banner Artikel">
-      <h1 id="article-title">Judul Artikel</h1>
-      <p id="article-meta" style="color:#555; font-style:italic;">Tanggal Publikasi - Penulis</p>
-    </section>
+    <div class="d-flex flex-lg-row gap-4">
+      <div class="flex-fill">
+        <img id="article-banner" class="article-banner" src="" alt="Banner Artikel">
+        <h1 id="article-title" class="article-title">Judul Artikel</h1>
+        <p id="article-meta" class="article-meta">Tanggal Publikasi - Penulis</p>
+        <section id="article-content" class="article-content">
+          <p>Konten artikel</p>
+        </section>
+      </div>
 
-    <section class="article-content" id="article-content">
-      <p>Konten artikel akan muncul di sini...</p>
-    </section>
+      <aside class="sidebar flex-shrink-0" style="width: 250px;">
+        <h5>Artikel Terkait</h5>
+        <div id="related-articles">
+          <!-- Artikel terkait muncul di sini -->
+        </div>
+      </aside>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -105,7 +152,8 @@
     const id = params.get("id");
     const article = articles[id];
 
-    if (article) {
+    if(article){
+      // Isi artikel
       document.getElementById("article-title").innerText = article.title;
       document.getElementById("article-banner").src = article.banner;
       document.getElementById("article-meta").innerText = `${article.date} - ${article.author}`;
@@ -115,6 +163,17 @@
       document.getElementById("page-title").innerText = article.title + " - Aneka Pustaka Multimedia";
       document.getElementById("meta-description").setAttribute("content", article.description);
       document.getElementById("meta-keywords").setAttribute("content", article.keywords);
+
+      // Sidebar: Artikel Terkait
+      const relatedContainer = document.getElementById("related-articles");
+      for(const key in articles){
+        if(key !== id){
+          const a = document.createElement("a");
+          a.href = `artikel.html?id=${key}`;
+          a.innerText = articles[key].title;
+          relatedContainer.appendChild(a);
+        }
+      }
     } else {
       document.getElementById("article-title").innerText = "Artikel Tidak Ditemukan";
       document.getElementById("article-content").innerHTML = "<p>Maaf, artikel yang Anda cari tidak tersedia.</p>";
