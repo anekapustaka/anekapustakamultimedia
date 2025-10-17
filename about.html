@@ -104,31 +104,41 @@
       transform: scale(1.02);
     }
 
-    /* Timeline */
+      /* Timeline (diperbarui dengan bulatan biru) */
     .timeline {
-      border-left: 4px solid #000;
-      padding-left: 20px;
+      border-left: 4px solid #3498db; /* garis biru */
+      padding-left: 40px; /* beri ruang untuk bulatan */
       margin: 40px auto;
       max-width: 700px;
       position: relative;
     }
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: -8px;
-      top: 0;
-      height: 100%;
-      width: 16px;
-    }
+    
     .timeline-item {
       margin-bottom: 30px;
       position: relative;
     }
+    
     .timeline-item .year {
       font-weight: bold;
       font-size: 18px;
       display: inline-block;
       margin-bottom: 5px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Bulatan pada garis */
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -12px; /* posisikan bulatan di garis */
+      top: 5px; /* sejajar dengan teks tahun */
+      width: 16px;
+      height: 16px;
+      background-color: #3498db; /* warna biru */
+      border-radius: 50%;
+      border: 2px solid #fff; /* border putih agar menonjol */
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
     }
 
     /* CTA */
@@ -145,7 +155,7 @@
       margin-top: 15px;
       text-decoration: none;
       background: #000;
-      color: #fff;
+      color: #3498db;
       border-radius: 8px;
       transition: background 0.2s ease;
     }
