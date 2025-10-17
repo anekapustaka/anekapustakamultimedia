@@ -104,44 +104,47 @@
       transform: scale(1.02);
     }
 
-      /* Timeline (diperbarui dengan bulatan biru) */
+    /* Timeline dengan bulatan sejajar tahun */
     .timeline {
       border-left: 4px solid #3498db; /* garis biru */
-      padding-left: 40px; /* beri ruang untuk bulatan */
+      padding-left: 40px; /* beri ruang untuk teks */
       margin: 40px auto;
       max-width: 700px;
       position: relative;
     }
     
     .timeline-item {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       position: relative;
+      padding-left: 0; /* teks sudah berada di kanan garis */
     }
     
+    /* Bulatan di garis vertikal, sejajar dengan tahun */
     .timeline-item .year {
       font-weight: bold;
       font-size: 18px;
-      display: inline-block;
-      margin-bottom: 5px;
       position: relative;
       z-index: 1;
+      display: inline-block;
+      margin-left: 20px; /* jarak dari garis */
     }
     
-    /* Bulatan pada garis */
+    /* Bulatan */
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -12px; /* posisikan bulatan di garis */
-      top: 5px; /* sejajar dengan teks tahun */
+      left: -8px; /* tepat di garis vertikal */
+      top: 50%; /* sejajar vertikal dengan item */
+      transform: translateY(-50%);
       width: 16px;
       height: 16px;
-      background-color: #3498db; /* warna biru */
+      background-color: #3498db;
       border-radius: 50%;
-      border: 2px solid #fff; /* border putih agar menonjol */
+      border: 2px solid #fff;
       box-shadow: 0 0 4px rgba(0,0,0,0.2);
     }
 
-    /* CTA */
+    /* CTA dengan tombol border biru */
     .cta-section {
       text-align: center;
       padding: 60px 20px;
@@ -149,19 +152,25 @@
       background: #f7f7f7;
       border-top: 1px solid #eee;
     }
+    
     .cta-btn {
       display: inline-block;
       padding: 12px 25px;
       margin-top: 15px;
       text-decoration: none;
-      background: #000;
-      color: #3498db;
+      color: #3498db; /* teks biru */
+      border: 2px solid #3498db; /* border biru */
       border-radius: 8px;
-      transition: background 0.2s ease;
+      background: transparent; /* tidak ada background */
+      transition: all 0.3s ease;
     }
+    
     .cta-btn:hover {
-      background: #444;
+      background: #3498db; /* background biru saat hover */
+      color: #fff; /* teks putih saat hover */
+      border-color: #3498db; /* border tetap biru */
     }
+
   </style>
   
 <body>
