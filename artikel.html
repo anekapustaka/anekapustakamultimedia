@@ -166,14 +166,21 @@
 
       // Sidebar: Artikel Terkait
       const relatedContainer = document.getElementById("related-articles");
-      for(const key in articles){
-        if(key !== id){
-          const a = document.createElement("a");
-          a.href = `artikel.html?id=${key}`;
-          a.innerText = articles[key].title;
-          relatedContainer.appendChild(a);
-        }
-      }
+      
+      // Ambil semua key kecuali artikel saat ini
+      let relatedKeys = Object.keys(articles).filter(key => key !== id);
+      
+      // Acak urutan array
+      relatedKeys = relatedKeys.sort(() => Math.random() - 0.5);
+      
+      // Ambil maksimal 5
+      relatedKeys.slice(0, 5).forEach(key => {
+        const a = document.createElement("a");
+        a.href = `artikel.html?id=${key}`;
+        a.innerText = articles[key].title;
+        relatedContainer.appendChild(a);
+      });
+
     } else {
       document.getElementById("article-title").innerText = "Artikel Tidak Ditemukan";
       document.getElementById("article-content").innerHTML = "<p>Maaf, artikel yang Anda cari tidak tersedia.</p>";
