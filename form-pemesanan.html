@@ -2,62 +2,73 @@
 <html lang="en">
 
 <head>
-<head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <!-- SEO Default (akan dioverride oleh JS jika data ditemukan) -->
-  <title id="page-title">Aneka Pustaka Multimedia</title>
-  <meta name="description" id="meta-description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum">
-  <link rel="canonical" href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html" id="canonical-link">
+  <title>Aneka Pustaka Multimedia</title>
   <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="styles/slider.css">
-  <link rel="stylesheet" href="styles/bookcategory.css">
-  <link rel="stylesheet" href="styles/bestseller.css">
-  <link rel="stylesheet" href="styles/bukuterbit.css">
   <link rel="stylesheet" href="styles/form.css">
-  <link rel="stylesheet" href="styles/faq.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
 
-  <!-- fontawsome cdn attachment -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Custom form styling */
+    #form-pemesanan {
+      max-width: 600px;
+      margin: auto;
+      background: #f8f9ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #form-pemesanan .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    #form-pemesanan .btn-primary {
+      background: linear-gradient(90deg, #0d6efd, #4da0ff);
+      border: none;
+    }
+    #form-pemesanan .btn-primary:hover {
+      background: linear-gradient(90deg, #4da0ff, #0d6efd);
+    }
+
+    /* Popup notifikasi */
+    .popup {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      z-index: 9999;
+    }
+    .popup.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .popup.success { background-color: #28a745; }
+    .popup.error { background-color: #dc3545; }
+  </style>
 </head>
-  
-<style>
-  /* Custom form styling */
-  #form-pemesanan {
-    max-width: 600px;
-    margin: auto;
-    background: #f8f9ff; /* nuansa biru lembut */
-  }
-  #form-pemesanan .form-control:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-  }
-  #form-pemesanan .btn-primary {
-    background: linear-gradient(90deg, #0d6efd, #4da0ff);
-    border: none;
-  }
-  #form-pemesanan .btn-primary:hover {
-    background: linear-gradient(90deg, #4da0ff, #0d6efd);
-  }
-</style>
-  
+
 <body>
-<!-- Header Section dimulai -->
-  <header class="main-header" role="banner">
+  <!-- Header Section -->
+  <header class="main-header">
     <div class="header-container">
-      <!-- Logo + text -->
       <div class="logo-text-container">
         <div class="logo-circle">
-         <img src="images/logocv.png" alt="logo">
+          <img src="images/logocv.png" alt="logo">
         </div>
         <div class="company-text">
           <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
@@ -65,16 +76,11 @@
         </div>
       </div>
 
-      <!-- Checkbox untuk hamburger -->
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <!-- Tombol hamburger -->
       <label for="menu-toggle" class="hamburger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
 
-      <!-- Navigation -->
       <nav class="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="services.html">Layanan</a>
@@ -85,68 +91,95 @@
       </nav>
     </div>
   </header>
-<!-- Header Section selesai -->
 
-<main class="container my-5">
-  <div class="judul">
-    <h2>Formulir Pemesanan Buku</h2>
-  </div>
+  <!-- Form Pemesanan -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Formulir Pemesanan Buku</h2>
+    <form id="form-pemesanan" action="https://formspree.io/f/mqayywyl" method="post">
+      <div class="mb-3">
+        <label for="nama" class="form-label fw-bold text-primary">Nama Lengkap</label>
+        <input type="text" class="form-control border-primary" id="nama" name="Nama" placeholder="Masukkan nama lengkap" required>
+      </div>
 
-  <form id="form-pemesanan" action="https://formspree.io/f/mqayywyl" method="post">
-    
-    <div class="mb-3">
-      <label for="nama" class="form-label fw-bold text-primary">Nama Lengkap</label>
-      <input type="text" class="form-control border-primary" id="nama" name="Nama" placeholder="Masukkan nama lengkap" required>
+      <div class="mb-3">
+        <label for="email" class="form-label fw-bold text-primary">Email</label>
+        <input type="email" class="form-control border-primary" id="email" name="Email" placeholder="Contoh@email.com" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="alamat" class="form-label fw-bold text-primary">Alamat Lengkap</label>
+        <textarea class="form-control border-primary" id="alamat" name="Alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="buku" class="form-label fw-bold text-primary">Judul Buku</label>
+        <input type="text" class="form-control border-primary bg-light" id="buku" name="Buku" readonly required>
+      </div>
+
+      <div class="mb-3">
+        <label for="jumlah" class="form-label fw-bold text-primary">Jumlah Pesanan</label>
+        <input type="number" class="form-control border-primary" id="jumlah" name="Jumlah" value="1" min="1" required>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary flex-fill text-white fw-bold">📩 Kirim Pesanan</button>
+        <button type="reset" class="btn btn-outline-secondary flex-fill fw-bold">🧹 Reset Form</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Popup Notifikasi -->
+  <div id="popup-success" class="popup success">✅ Pesanan berhasil terkirim!</div>
+  <div id="popup-error" class="popup error">❌ Terjadi kesalahan, silakan coba lagi.</div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="footer-container text-center">
+      <div class="social-icons mb-2">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <div class="mb-3">
-      <label for="email" class="form-label fw-bold text-primary">Email</label>
-      <input type="email" class="form-control border-primary" id="email" name="Email" placeholder="Contoh@email.com" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="alamat" class="form-label fw-bold text-primary">Alamat Lengkap</label>
-      <textarea class="form-control border-primary" id="alamat" name="Alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
-    </div>
-
-    <div class="mb-3">
-      <label for="buku" class="form-label fw-bold text-primary">Judul Buku</label>
-      <input type="text" class="form-control border-primary bg-light" id="buku" name="Buku" readonly required>
-    </div>
-
-    <div class="mb-3">
-      <label for="jumlah" class="form-label fw-bold text-primary">Jumlah Pesanan</label>
-      <input type="number" class="form-control border-primary" id="jumlah" name="Jumlah" value="1" min="1" required>
-    </div>
-
-    <div class="d-flex gap-2">
-      <button type="submit" class="btn btn-primary flex-fill text-white fw-bold">📩 Kirim Pesanan</button>
-      <button type="reset" class="btn btn-outline-secondary flex-fill fw-bold">🧹 Reset Form</button>
-    </div>
-  </form>
-</main>
-
-<!-- Footer Section dimulai -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
-  </div>
-</footer>
-  
   <script>
     // Ambil judul buku dari query parameter ?buku=...
     const params = new URLSearchParams(window.location.search);
     const judulBuku = params.get("buku");
-    if (judulBuku) {
-      document.getElementById("buku").value = decodeURIComponent(judulBuku);
+    if (judulBuku) document.getElementById("buku").value = decodeURIComponent(judulBuku);
+
+    // Formspree dengan popup
+    const form = document.getElementById('form-pemesanan');
+    const popupSuccess = document.getElementById('popup-success');
+    const popupError = document.getElementById('popup-error');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          showPopup(popupSuccess);
+          form.reset();
+        } else {
+          showPopup(popupError);
+        }
+      })
+      .catch(() => showPopup(popupError));
+    });
+
+    function showPopup(popup) {
+      popup.classList.add('show');
+      setTimeout(() => popup.classList.remove('show'), 4000);
     }
   </script>
-  
 </body>
 </html>
