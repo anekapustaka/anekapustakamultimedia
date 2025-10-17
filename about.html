@@ -104,10 +104,10 @@
       transform: scale(1.02);
     }
 
-    /* Timeline dengan bulatan sejajar tahun */
+    /* Timeline dengan bulatan sejajar tahun, bulatan tepat di garis */
     .timeline {
       border-left: 4px solid #3498db; /* garis biru */
-      padding-left: 40px; /* beri ruang untuk teks */
+      padding-left: 60px; /* beri ruang untuk teks */
       margin: 40px auto;
       max-width: 700px;
       position: relative;
@@ -116,32 +116,29 @@
     .timeline-item {
       margin-bottom: 40px;
       position: relative;
-      padding-left: 0; /* teks sudah berada di kanan garis */
     }
     
-    /* Bulatan di garis vertikal, sejajar dengan tahun */
-    .timeline-item .year {
-      font-weight: bold;
-      font-size: 18px;
-      position: relative;
-      z-index: 1;
-      display: inline-block;
-      margin-left: 20px; /* jarak dari garis */
-    }
-    
-    /* Bulatan */
+    /* Bulatan tepat di garis */
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -8px; /* tepat di garis vertikal */
-      top: 50%; /* sejajar vertikal dengan item */
-      transform: translateY(-50%);
+      left: 0; /* tepat di garis vertikal */
+      top: 0;
       width: 16px;
       height: 16px;
       background-color: #3498db;
       border-radius: 50%;
       border: 2px solid #fff;
       box-shadow: 0 0 4px rgba(0,0,0,0.2);
+      transform: translate(-50%, 50%); /* pusatkan di garis dan sejajar vertikal */
+    }
+    
+    /* Teks tahun sejajar dengan bulatan */
+    .timeline-item .year {
+      font-weight: bold;
+      font-size: 18px;
+      display: inline-block;
+      margin-left: 20px; /* jarak dari garis/bulatan */
     }
 
     /* CTA dengan tombol border biru */
