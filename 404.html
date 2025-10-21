@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Halaman Tidak Ditemukan | Aneka Pustaka Multimedia</title>
+  <meta name="description" content="Halaman tidak ditemukan di situs Aneka Pustaka Multimedia. Kembali ke beranda untuk menemukan informasi penerbitan, percetakan, dan distribusi buku.">
+  <meta name="robots" content="noindex, follow">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f9ff;
+      font-family: 'Inter', sans-serif;
+      color: #0d6efd;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 600px;
+      padding: 20px;
+    }
+    lottie-player {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+    a.btn-home {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 2px solid #0d6efd;
+      color: #0d6efd;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    a.btn-home:hover {
+      background-color: #0d6efd;
+      color: white;
+      transform: scale(1.05);
+    }
+    @media(max-width: 480px){
+      h1 { font-size: 2.2rem; }
+      lottie-player { width: 220px; height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Animasi Lottie -->
+    <lottie-player
+      src="https://lottie.host/3a51f306-4dc2-4231-91f6-30ac09744f96/YZ6tu6HWWF.lottie"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+
+    <h1>404</h1>
+    <p>Maaf, halaman yang Anda cari tidak ditemukan.</p>
+    <a href="/" class="btn-home">Kembali ke Beranda</a>
+  </div>
+
+  <!-- Lottie Player Script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
