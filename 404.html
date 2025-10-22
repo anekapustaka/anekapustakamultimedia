@@ -28,10 +28,13 @@
       max-width: 600px;
       padding: 20px;
     }
-    lottie-player {
-      width: 300px;
-      height: 300px;
+    video {
+      width: 320px;
+      height: 320px;
       margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
     }
     h1 {
       font-size: 3rem;
@@ -60,27 +63,21 @@
     }
     @media(max-width: 480px){
       h1 { font-size: 2.2rem; }
-      lottie-player { width: 220px; height: 220px; }
+      video { width: 240px; height: 240px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Animasi Lottie -->
-    <lottie-player
-      src="https://lottie.host/3a51f306-4dc2-4231-91f6-30ac09744f96/YZ6tu6HWWF.lottie"
-      background="transparent"
-      speed="1"
-      loop
-      autoplay>
-    </lottie-player>
+    <!-- Video Animasi Lokal -->
+    <video autoplay loop muted playsinline>
+      <source src="animations/404.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutaran video.
+    </video>
 
     <h1>404</h1>
     <p>Maaf, halaman yang Anda cari tidak ditemukan.</p>
     <a href="/" class="btn-home">Kembali ke Beranda</a>
   </div>
-
-  <!-- Lottie Player Script -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
