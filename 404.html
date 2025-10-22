@@ -14,12 +14,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f5f9ff;
       font-family: 'Inter', sans-serif;
       color: #0d6efd;
       text-align: center;
       overflow: hidden;
+      background: linear-gradient(135deg, #f5f9ff 0%, #eaf1ff 50%, #dbe9ff 100%);
+      background-image: 
+        url("https://www.transparenttextures.com/patterns/paper-fibers.png"); /* pattern lembut */
     }
+
     .container {
       display: flex;
       flex-direction: column;
@@ -27,25 +30,30 @@
       justify-content: center;
       max-width: 600px;
       padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
+
     video {
-      width: 320px;
-      height: 320px;
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
       margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
+
     p {
       font-size: 1.1rem;
       color: #555;
       margin-bottom: 25px;
     }
+
     a.btn-home {
       display: inline-block;
       padding: 12px 28px;
@@ -56,28 +64,30 @@
       font-weight: bold;
       transition: all 0.3s ease;
     }
+
     a.btn-home:hover {
       background-color: #0d6efd;
       color: white;
       transform: scale(1.05);
     }
+
     @media(max-width: 480px){
       h1 { font-size: 2.2rem; }
-      video { width: 240px; height: 240px; }
+      video { width: 200px; }
+      .container { padding: 15px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Video Animasi Lokal -->
-    <video autoplay loop muted playsinline>
-      <source src="animations/404.mp4" type="video/mp4">
-      Browser Anda tidak mendukung pemutaran video.
-    </video>
+    <!-- Animasi GIF pengganti lottie -->
+    <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/dino.gif" alt="404 dino" width="250" height="auto">
 
-    <h1>404</h1>
-    <p>Maaf, halaman yang Anda cari tidak ditemukan.</p>
+    <h1>404 Page not found</h1>
+    <p>Halaman yang Anda cari tidak ditemukan.</p>
+
     <a href="/" class="btn-home">Kembali ke Beranda</a>
+
   </div>
 </body>
 </html>
