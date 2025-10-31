@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,8 @@
   <!-- SEO Default -->
   <title id="page-title">Aneka Pustaka Multimedia</title>
   <meta name="description" id="meta-description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum">
-  <meta name="keywords" id="meta-keywords" content="Aneka Pustaka Multimedia, penerbit, percetakan, distribusi buku">
+  <meta name="keywords" id="meta-keywords"
+    content="Aneka Pustaka Multimedia, penerbit, percetakan, distribusi buku">
   <meta name="author" content="CV. Aneka Pustaka Multimedia">
 
   <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
@@ -21,47 +22,162 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
 
   <style>
-    /* Artikel */
-    .article-banner { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; }
-    .article-title { font-size: 2rem; font-weight: bold; margin-bottom: 10px; }
-    .article-meta { color: #555; font-style: italic; margin-bottom: 30px; }
-    .article-content { line-height: 1.7; }
-    .article-content h2 { margin-top: 30px; font-size: 1.5rem; color: #0d6efd; }
-    .article-content p { margin-bottom: 15px; }
-
-    /* Sidebar */
-    .sidebar { background: #f8f9ff; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; }
-    .sidebar h5 { font-weight: bold; margin-bottom: 15px; color: #0d6efd; }
-    .sidebar a { display: block; color: #0d6efd; margin-bottom: 10px; text-decoration: none; }
-    .sidebar a:hover { text-decoration: underline; }
-
-    @media(max-width: 767px){
-      .flex-lg-row { flex-direction: column !important; }
-      .article-banner { max-height: 250px; }
+    /* ====================
+       Artikel
+    ==================== */
+    .article-banner {
+      width: 100%;
+      max-height: 400px; /* Desktop */
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
-    /* Pop-up Promosi */
+    .article-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .article-meta {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .article-content {
+      line-height: 1.7;
+    }
+
+    .article-content h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #0d6efd;
+    }
+
+    .article-content p {
+      margin-bottom: 15px;
+    }
+
+    /* ====================
+       Sidebar
+    ==================== */
+    .sidebar {
+      background: #f8f9ff;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #0d6efd;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====================
+       Pop-up Promosi
+    ==================== */
     .popup-overlay {
-      position: fixed; top:0; left:0; width:100%; height:100%;
-      background: rgba(0,0,0,0.6);
-      display:flex; justify-content:center; align-items:center;
-      z-index:9999; opacity:0; pointer-events:none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
       transition: opacity 0.3s ease;
     }
-    .popup-overlay.active { opacity:1; pointer-events:auto; }
+
+    .popup-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
     .popup-content {
-      position: relative; background: #fff; border-radius: 12px;
-      width: 300px; max-width:90%; height:450px; padding:10px;
-      text-align:center; animation: popupShow 0.4s ease;
-      display:flex; justify-content:center; align-items:center;
+      position: relative;
+      background: #fff;
+      border-radius: 12px;
+      width: 300px;
+      max-width: 90%;
+      height: 450px;
+      padding: 10px;
+      text-align: center;
+      animation: popupShow 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .popup-image { width:100%; height:100%; object-fit:cover; border-radius:12px; }
+
+    .popup-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
     .popup-close {
-      position:absolute; top:5px; right:10px; font-size:24px;
-      cursor:pointer; color:#fff; background:#0d6efd; border-radius:50%;
-      width:30px; height:30px; display:flex; align-items:center; justify-content:center;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
+      background: #0d6efd;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    @keyframes popupShow { from { transform: scale(0.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+    @keyframes popupShow {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* ====================
+       Responsive
+    ==================== */
+    @media (max-width: 767px) {
+      .flex-lg-row {
+        flex-direction: column !important;
+      }
+
+      .article-banner {
+        max-height: 250px; /* HP */
+      }
+
+      .sidebar {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
   </style>
 </head>
 
@@ -102,6 +218,7 @@
   <!-- Article Section -->
   <main class="container my-5">
     <div class="d-flex flex-lg-row gap-4">
+      <!-- Konten Artikel -->
       <div class="flex-fill">
         <img id="article-banner" class="article-banner" src="" alt="Banner Artikel">
         <h1 id="article-title" class="article-title">Judul Artikel</h1>
@@ -110,6 +227,8 @@
           <p>Konten artikel</p>
         </section>
       </div>
+
+      <!-- Sidebar -->
       <aside class="sidebar flex-shrink-0" style="width: 250px;">
         <h5>Artikel Terkait</h5>
         <div id="related-articles"></div>
@@ -137,7 +256,7 @@
     const id = params.get("id");
     const article = articles[id];
 
-    if(article){
+    if (article) {
       document.getElementById("article-title").innerText = article.title;
       document.getElementById("article-banner").src = article.banner;
       document.getElementById("article-meta").innerText = `${article.date} - ${article.author}`;
@@ -150,7 +269,7 @@
 
       // Sidebar: Artikel Terkait (acak 5)
       const relatedContainer = document.getElementById("related-articles");
-      let relatedKeys = Object.keys(articles).filter(key => key !== id).sort(() => Math.random() - 0.5).slice(0,5);
+      let relatedKeys = Object.keys(articles).filter(key => key !== id).sort(() => Math.random() - 0.5).slice(0, 5);
       relatedKeys.forEach(key => {
         const a = document.createElement("a");
         a.href = `artikel.html?id=${key}`;
@@ -168,9 +287,14 @@
       const closeBtn = popup.querySelector(".popup-close");
       popup.classList.add("active");
 
-      closeBtn.addEventListener("click", () => { popup.classList.remove("active"); });
-      popup.addEventListener("click", e => { if(e.target === popup) popup.classList.remove("active"); });
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("active");
+      });
+      popup.addEventListener("click", e => {
+        if (e.target === popup) popup.classList.remove("active");
+      });
     });
   </script>
 </body>
+
 </html>

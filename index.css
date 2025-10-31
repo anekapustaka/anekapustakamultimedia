@@ -223,7 +223,6 @@ h1, h2, h3, h4 {
 
   .hamburger-btn { display: flex; }
 }
-
 /* =========================================================
    HERO SECTION
    ========================================================= */
@@ -387,9 +386,9 @@ h1, h2, h3, h4 {
   animation: fadeIn 1s ease;
 }
 
-/* =========================================================
-   DETAIL PRODUK
-   ========================================================= */
+/* ===============================
+   DETAIL PRODUK - Layout Desktop sejajar
+================================ */
 .detail-section {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background: #fff;
@@ -400,27 +399,157 @@ h1, h2, h3, h4 {
 
 .detail-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-direction: row; /* pastikan row di desktop */
+  align-items: flex-start;
+  gap: 40px;
   max-width: 1100px;
+  width: 100%;
   background: linear-gradient(135deg, rgb(204, 229, 255), rgb(153, 204, 255));
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 9px 20px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  flex-wrap: nowrap; /* PENTING supaya tidak pindah ke bawah */
 }
 
-/* Gambar produk */
+/* =========================================
+   KIRI: Cover + rekomendasi buku
+========================================= */
+.detail-image {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .detail-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
 
-/* Info Produk */
-.detail-title { font-size: 24px; font-weight: 700; color: #003366; }
-.detail-price { font-size: 26px; font-weight: 700; color: #007bff; }
+.image-extra-text {
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Rekomendasi di bawah cover */
+.rekom-buku {
+  width: 100%;
+  text-align: center;
+}
+
+.rekom-buku h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Slider Rekomendasi */
+.rekom-slider {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+.rekom-slider img {
+  flex: 0 0 calc((100% - 20px) / 3); /* 3 gambar terlihat, sisanya scroll */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rekom-slider img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Detail Text */
+.detail-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.detail-sold {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.detail-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.detail-description {
+  font-size: 15px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.detail-description strong {
+  color: #003366;
+}
+
+.detail-description hr {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 14px 0;
+}
+
+/* =========================================
+   RESPONSIVE - Stack di layar kecil
+========================================= */
+@media (max-width: 850px) {
+  .detail-container {
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    gap: 20px;
+  }
+
+  .detail-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .detail-info {
+    width: 100%;
+  }
+
+  .rekom-slider {
+    justify-content: center;
+  }
+}
 
 /* =========================================================
    END OF FILE
