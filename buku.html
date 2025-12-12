@@ -200,7 +200,6 @@ function populate(book, id) {
   document.getElementById('judul-buku').textContent = book.judul;
   document.getElementById('isbn').textContent = book.isbn;
   document.getElementById('harga-buku').textContent = book.harga;
-  document.getElementById('editor').textContent = book.editor;
   document.getElementById('ukuran').textContent = book.ukuran;
   document.getElementById('halaman').textContent = book.halaman;
   document.getElementById('tahun').textContent = book.tahun;
@@ -213,7 +212,15 @@ function populate(book, id) {
     li.textContent = n;
     list.appendChild(li);
   });
-
+  
+  const list2 = document.getElementById('editor');
+  list2.innerHTML = "";
+  book.editor.forEach(n => {
+    const li2 = document.createElement('li');
+    li2.textContent = n;
+    list2.appendChild(li2);
+  });
+  
   // Set tombol beli setelah buku dipopulate
   const btnBeli = document.getElementById("btn-beli");
   btnBeli.href = "form-pemesanan.html?buku=" + encodeURIComponent(book.judul);
