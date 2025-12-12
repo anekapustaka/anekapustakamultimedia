@@ -117,7 +117,7 @@ window.dataBuku = [
     sinopsis: `Buku Ilmu Pengetahuan Alam (IPA) Kelas VII ini disusun untuk membantu peserta didik memahami konsep-konsep dasar sains yang meliputi makhluk hidup, ekosistem, zat dan perubahannya, energi, sistem bumi, serta tata surya. Melalui pendekatan kontekstual dan kegiatan eksperimen sederhana, buku ini tidak hanya menyajikan pengetahuan faktual, tetapi juga menumbuhkan rasa ingin tahu, berpikir kritis, dan keterampilan ilmiah. Disajikan secara menarik dengan ilustrasi, rangkuman, soal latihan, dan aktivitas praktikum, buku ini diharapkan dapat memotivasi siswa untuk lebih dekat dengan alam sekitar, memahami fenomena kehidupan sehari-hari, serta menumbuhkan sikap peduli terhadap lingkungan dan kebesaran ciptaan Tuhan.`
   },
     {
-    id: "monograf-pemimpin-sebagai-katalisator-kinerja hijau",
+    id: "monograf-pemimpin-sebagai-katalisator-kinerja-hijau",
     judul: "MONOGRAF PEMIMPIN SEBAGAI KATALISATOR KINERJA HIJAU (Analisis Mediasi Green Hrm Dan Employee Involvement Dalam Industri Perhotelan Palembang)",
     harga: "Rp. 80.170",
     isbn: "-",
