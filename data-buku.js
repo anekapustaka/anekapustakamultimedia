@@ -115,5 +115,27 @@ window.dataBuku = [
     tahun: "2025",
     gambar: "ipa-mts-vii.jpeg",
     sinopsis: `Buku Ilmu Pengetahuan Alam (IPA) Kelas VII ini disusun untuk membantu peserta didik memahami konsep-konsep dasar sains yang meliputi makhluk hidup, ekosistem, zat dan perubahannya, energi, sistem bumi, serta tata surya. Melalui pendekatan kontekstual dan kegiatan eksperimen sederhana, buku ini tidak hanya menyajikan pengetahuan faktual, tetapi juga menumbuhkan rasa ingin tahu, berpikir kritis, dan keterampilan ilmiah. Disajikan secara menarik dengan ilustrasi, rangkuman, soal latihan, dan aktivitas praktikum, buku ini diharapkan dapat memotivasi siswa untuk lebih dekat dengan alam sekitar, memahami fenomena kehidupan sehari-hari, serta menumbuhkan sikap peduli terhadap lingkungan dan kebesaran ciptaan Tuhan.`
+  },
+    {
+    id: "monograf-pemimpin-sebagai-katalisator-kinerja hijau",
+    judul: "MONOGRAF PEMIMPIN SEBAGAI KATALISATOR KINERJA HIJAU (Analisis Mediasi Green Hrm Dan Employee Involvement Dalam Industri Perhotelan Palembang)",
+    harga: "Rp. 80.170",
+    isbn: "-",
+    penulis: [
+      "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
+      "Prof. Dr. Zaenal Arifin, M.Si",
+      "Dr. Majang Palupi, BBA,MBA"
+    ],
+    editor: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Toni Siswanto, S.E.,M.M",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si"
+      ],
+    ukuran: "17,6 X 25 cm",
+    halaman: "vi + 200 halaman",
+    tahun: "2025",
+    gambar: "monografpaktedy.jpeg",
+    sinopsis: `Monograf ini mengulas secara komprehensif bagaimana pemimpin berperan sebagai katalisator dalam mendorong terciptanya kinerja hijau di lingkungan industri perhotelan Kota Palembang, sebuah sektor yang menghadapi tantangan besar dalam menerapkan praktik keberlanjutan. Dengan menggunakan perspektif kepemimpinan transformatif hijau, buku ini menyoroti bagaimana strategi manajemen sumber daya manusia berbasis lingkungan (Green HRM) serta keterlibatan karyawan (Employee Involvement) bertindak sebagai mediator yang memperkuat pengaruh kepemimpinan terhadap perilaku dan kinerja hijau karyawan. Melalui pendekatan ilmiah-populer, monograf ini tidak hanya menawarkan pembahasan teoritis yang kaya dan didukung hasil penelitian empiris, tetapi juga memberikan rekomendasi praktis bagi manajer hotel, akademisi, dan pembuat kebijakan untuk mewujudkan praktik kerja berkelanjutan yang berdampak nyata pada kinerja organisasi dan kelestarian lingkungan.
+    `
   }
 ];
