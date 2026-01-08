@@ -36,7 +36,7 @@ window.dataBuku = [
       "Heri Irwanto, S.M"
     ],
 	editor: [
-      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 118 halaman",
