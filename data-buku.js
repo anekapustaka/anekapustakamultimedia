@@ -14,7 +14,9 @@ window.dataBuku = [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
       "Heri Irwanto, S.M"
     ],
-    editor: "Prof. Dr. H. Zaidan Nawawi, M.Si",
+	editor: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 152 halaman",
     tahun: "2025",
@@ -33,7 +35,9 @@ window.dataBuku = [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
       "Heri Irwanto, S.M"
     ],
-    editor: "Prof. Dr. H. Zaidan Nawawi, M.Si",
+	editor: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 118 halaman",
     tahun: "2025",
@@ -52,7 +56,9 @@ window.dataBuku = [
       "Rafliditya Bayu Wicaksono",
       "Hj. Siti Syamsiyah, S.Pd., M.Pd"
     ],
-    editor: "Prof. Dr. H. Zaidan Nawawi, M.Si",
+	editor: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 144 halaman",
     tahun: "2025",
@@ -71,7 +77,9 @@ window.dataBuku = [
       "Dr. H. Dasmadi, S.E., M.M",
       "Heri Irwanto, S.M"
     ],
-    editor: "Prof. Dr. H. Zaidan Nawawi, M.Si",
+	editor: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 138 halaman",
     tahun: "2025",
@@ -90,7 +98,9 @@ window.dataBuku = [
       "Dr. H. Dasmadi, S.E., M.M",
       "Abid Khotibul Umam, S.M"
     ],
-    editor: " Prof. Dr. KH. Abdul Matin Bin Salman, Lc., M.Ag.",
+	editor: [
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc., M.Ag."
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "viii + 140 halaman",
     tahun: "2025",
@@ -109,7 +119,9 @@ window.dataBuku = [
       "Reza Estati Putri, S.Pd.",
       "Hj. Siti Syamsiyah, S.Pd., M.Pd"
     ],
-    editor: "Prof. Dr. H. Zaidan Nawawi, M.Si",
+	editor: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 170 halaman",
     tahun: "2025",
