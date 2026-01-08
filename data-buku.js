@@ -148,8 +148,8 @@ window.dataBuku = [
       "Agung Purnomo",
     ],
     editor: [
-      "Dr. H. Dasmadi, S.E.,M.M",
-      "Toni Siswanto, S.E.,M.M",
+      "Ahmad Fajar Ariyanto",
+      "Primastiti Wening Mumpuni",
       ],
     ukuran: "15,5 X 23 cm",
     halaman: "xvi + 208 halaman",
