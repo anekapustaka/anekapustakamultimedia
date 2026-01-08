@@ -15,7 +15,7 @@ window.dataBuku = [
       "Heri Irwanto, S.M"
     ],
 	editor: [
-      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 152 halaman",
@@ -57,7 +57,7 @@ window.dataBuku = [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd"
     ],
 	editor: [
-      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 144 halaman",
@@ -78,7 +78,7 @@ window.dataBuku = [
       "Heri Irwanto, S.M"
     ],
 	editor: [
-      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 138 halaman",
@@ -99,7 +99,7 @@ window.dataBuku = [
       "Abid Khotibul Umam, S.M"
     ],
 	editor: [
-      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc., M.Ag."
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc., M.Ag.",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "viii + 140 halaman",
@@ -120,7 +120,7 @@ window.dataBuku = [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd"
     ],
 	editor: [
-      "Prof. Dr. H. Zaidan Nawawi, M.Si"
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
       ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 170 halaman",
