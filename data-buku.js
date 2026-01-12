@@ -150,7 +150,7 @@ window.dataBuku = [
     sinopsis: `Monograf ini mengulas secara komprehensif bagaimana pemimpin berperan sebagai katalisator dalam mendorong terciptanya kinerja hijau di lingkungan industri perhotelan Kota Palembang, sebuah sektor yang menghadapi tantangan besar dalam menerapkan praktik keberlanjutan. Dengan menggunakan perspektif kepemimpinan transformatif hijau, buku ini menyoroti bagaimana strategi manajemen sumber daya manusia berbasis lingkungan (Green HRM) serta keterlibatan karyawan (Employee Involvement) bertindak sebagai mediator yang memperkuat pengaruh kepemimpinan terhadap perilaku dan kinerja hijau karyawan. Melalui pendekatan ilmiah-populer, monograf ini tidak hanya menawarkan pembahasan teoritis yang kaya dan didukung hasil penelitian empiris, tetapi juga memberikan rekomendasi praktis bagi manajer hotel, akademisi, dan pembuat kebijakan untuk mewujudkan praktik kerja berkelanjutan yang berdampak nyata pada kinerja organisasi dan kelestarian lingkungan.
     `
   },
-    {
+  {
     id: "mebel-rotan-batik",
     judul: "Desain Mebel ROTIK Rotan Batik",
     harga: "Rp. 92.800",
@@ -168,5 +168,26 @@ window.dataBuku = [
     tahun: "2026",
     gambar: "mebelrotik.jpg",
     sinopsis: `Buku ini menegaskan bahwa kerajinan dan mebel rotan merupakan wujud perpaduan kekayaan alam dan budaya Indonesia yang bernilai tinggi, didukung keahlian teknik pengolahan dari sederhana hingga kompleks, serta inovasi desain yang terus berkembang. Rotan diperkaya dengan sentuhan seni batik sebagai warisan budaya dunia, yang diaplikasikan melalui berbagai teknik pada material rotan sehingga menghasilkan produk mebel yang eksotis, orisinal, ramah lingkungan, dan berdaya saing. Buku ini membahas secara sistematis potensi rotan dan batik, karakteristik material, proses perancangan, produksi, teknik batik, pewarnaan alami, hingga pengembangan desain, dengan harapan menjadi referensi penting bagi pengembangan industri mebel rotan nasional yang berakar pada budaya bangsa dan berkelanjutan.`
+   },
+   {
+    id: "green-leadership-in-the-hospitality-industry",
+    judul: "Green Leadership in the Hospitality Industry : Strategies for Building Sustainable Employee Performance",
+    harga: "Rp. 60.050",
+    isbn: "-",
+    penulis: [
+      "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
+      "Prof. Dr. Zaenal Arifin, M.Si",
+	  "Dr. Majang Palupi, BBA, MBA",
+    ],
+    editor: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Toni Siswanto, S.E.,M.M",
+	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      ],
+    ukuran: "15,5 X 23 cm",
+    halaman: "vi + 134 Halaman",
+    tahun: "2026",
+    gambar: "greenleadership.jpeg",
+    sinopsis: `Buku ini mengulas secara komprehensif peran green leadership dalam membangun kinerja karyawan yang berkelanjutan di industri perhotelan melalui sinergi green human resource management dan employee involvement. Dengan memadukan pendekatan konseptual dan praktik aplikatif, buku ini menjelaskan bagaimana kepemimpinan yang berorientasi lingkungan mampu mendorong perubahan perilaku, memperkuat keterlibatan karyawan, serta menumbuhkan budaya organisasi hijau. Berbagai pembahasan strategis, praktik terbaik, dan arah masa depan industri perhotelan berkelanjutan disajikan sebagai rujukan bagi akademisi dan praktisi dalam merancang kebijakan dan strategi pengelolaan sumber daya manusia yang adaptif, bertanggung jawab, dan berdaya saing jangka panjang.`
 	},
 ];
