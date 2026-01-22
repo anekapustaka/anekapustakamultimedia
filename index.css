@@ -23,10 +23,16 @@ html, body {
 
 body {
   padding-top: var(--header-height);
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4 {
   font-family: "Cardo", serif;
+}
+
+main {
+  flex: 1;
 }
 
 /* =========================================================
