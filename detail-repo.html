@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Repositori Buku | Aneka Pustaka Multimedia</title>
+
+  <link rel="stylesheet" href="styles/detail-repo.css">
+  
+</head>
+<body>
+
+<header class="repo-header">
+  <div class="repo-brand">
+    <div class="repo-logo">
+      <img src="images/logocv.png" alt="Aneka Pustaka Multimedia">
+    </div>
+
+    <div class="repo-company">
+      <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
+      <p>Penerbit, Percetakan, dan Distributor / Perdagangan Umum</p>
+    </div>
+  </div>
+</header>
+
+<main class="book-detail">
+
+  <div class="book-card">
+
+    <div class="book-cover">
+      <img id="cover" alt="Cover Buku">
+    </div>
+
+    <div class="book-info">
+      <h1 id="judul"></h1>
+
+      <ul class="meta">
+        <li><strong>Penulis:</strong> <span id="penulis"></span></li>
+        <li><strong>Editor:</strong> <span id="editor"></span></li>
+        <li><strong>ISBN:</strong> <span id="isbn"></span></li>
+        <li><strong>Tahun:</strong> <span id="tahun"></span></li>
+      </ul>
+
+      <p class="sinopsis" id="sinopsis"></p>
+
+      <a id="btnBaca" class="btn-baca">
+        📘 Baca Buku
+      </a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="repo-footer">
+  © 2025 <strong>CV. Aneka Pustaka Multimedia</strong><br>
+  Seluruh konten buku dilindungi undang-undang.<br>
+  Dilarang memperbanyak, menyimpan, atau mendistribusikan tanpa izin tertulis penerbit.
+</footer>
+
+
+<script src="script/data-repo.js"></script>
+<script>
+  function renderNama(data, targetId) {
+    const el = document.getElementById(targetId);
+    if (!el) return;
+
+    if (!data || (Array.isArray(data) && data.length === 0)) {
+      el.textContent = "-";
+      return;
+    }
+
+    if (typeof data === "string") {
+      el.textContent = data.trim() || "-";
+      return;
+    }
+
+    if (Array.isArray(data)) {
+      if (data.length === 1) {
+        el.textContent = data[0];
+        return;
+      }
+
+      const ol = document.createElement("ol");
+      ol.style.margin = "4px 0 0 18px";
+      ol.style.padding = "0";
+      ol.style.lineHeight = "1.6";
+
+      data.forEach(nama => {
+        const li = document.createElement("li");
+        li.textContent = nama;
+        ol.appendChild(li);
+      });
+
+      el.innerHTML = "";
+      el.appendChild(ol);
+    }
+  }
+
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+
+  const buku = window.dataRepo.find(b => b.id === id);
+
+  if (!buku) {
+    document.body.innerHTML = "<h2>Buku tidak ditemukan</h2>";
+    throw new Error("Buku tidak ditemukan");
+  }
+
+  document.title = buku.judul + " | Detail Buku";
+
+  document.getElementById("cover").src = "images/" + buku.cover;
+  document.getElementById("judul").textContent = buku.judul;
+
+  renderNama(buku.penulis, "penulis");
+  renderNama(buku.editor, "editor");
+
+  document.getElementById("isbn").textContent = buku.isbn || "-";
+  document.getElementById("tahun").textContent = buku.tahun || "-";
+  document.getElementById("sinopsis").textContent = buku.sinopsis || "-";
+
+  document.getElementById("btnBaca").href =
+    "viewer.html?id=" + buku.id;
+</script>
+
+</body>
+</html>

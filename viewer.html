@@ -1,223 +1,123 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baca Buku</title>
-
-<style>
-:root {
-  --primary: #003366;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f4f6f9;
-  color: #111;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* ================= HEADER ================= */
-.viewer-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  background: #003366;
-  color: #fff;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 14px 24px;
-  gap: 20px;
-
-  z-index: 1000;
-  box-shadow: 0 4px 18px rgba(0,0,0,.25);
-}
-
-/* BRAND */
-.viewer-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.logo-circle {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: #fff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-circle img {
-  width: 75%;
-}
-
-.company-text h2 {
-  font-size: .95rem;
-  font-weight: 700;
-}
-
-.company-text h3 {
-  font-size: .75rem;
-  opacity: .85;
-}
-
-/* BOOK TITLE */
-.viewer-book-title {
-  font-size: .95rem;
-  font-weight: 600;
-  max-width: 420px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* ================= PDF ================= */
-.viewer-content {
-  position: fixed;
-  top: 76px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 76px);
-  background: #111;
-}
-
-.viewer-content iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* ================= FOOTER ================= */
-.viewer-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: .8rem;
-  background: rgba(0,0,0,.6);
-  color: #ddd;
-  padding: 8px;
-}
-
-
-.viewer-content::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 10;
-
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='220'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='rgba(0,51,102,0.12)' font-size='13' font-family='Inter, Segoe UI, Arial, sans-serif' font-weight='400' letter-spacing='3'%3EPROPERTY OF CV ANEKA PUSTAKA MULTIMEDIA%3C/text%3E%3C/svg%3E");
-
-  background-repeat: repeat-y;
-  background-position: center top;
-  background-size: 50% 200px;
-}
-
-
-body.blurred::after {
-  content: "PROPERTY OF CV ANEKA PUSTAKA MULTIMEDIA";
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  letter-spacing: 0.2em;
-  z-index: 99999;
-}
-
-
-</style>
+  <meta charset="UTF-8">
+  <title>Viewer | Aneka Pustaka Multimedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/viewer.css">
+  
 </head>
-
 <body>
 
 <header class="viewer-header">
-  <div class="viewer-brand">
-    <div class="logo-circle">
-      <img src="images/logocv.png" alt="logo">
-    </div>
-    <div class="company-text">
-      <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
-      <h3>Penerbit, Percetakan, dan Distributor</h3>
-    </div>
+  <div class="logo-circle">
+    <img src="images/logocv.png" alt="Logo">
   </div>
-
-  <div class="viewer-book-title" id="viewerTitle">
-    Memuat buku...
+  <div class="viewer-title" id="judulBuku">
+    Memuat judul buku...
   </div>
 </header>
 
-<div class="viewer-content">
-  <iframe id="pdfViewer"></iframe>
-</div>
+<div id="pdf-container"></div>
 
-<footer class="viewer-footer">
-  © 2025 Aneka Pustaka Multimedia — Dilarang mengunduh & memperbanyak tanpa izin
-</footer>
+<script src="script/data-repo.js"></script>
 
-<script>
+<script type="module">
+import * as pdfjsLib from "./pdfjs/build/pdf.mjs";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "./pdfjs/build/pdf.worker.mjs";
+
 const params = new URLSearchParams(window.location.search);
-const file = params.get("file");
+const id = params.get("id");
 
-const iframe = document.getElementById("pdfViewer");
-const title = document.getElementById("viewerTitle");
+if (!window.dataRepo) {
+  throw new Error("dataRepo tidak ditemukan");
+}
 
-if (!file) {
-  title.textContent = "Buku tidak ditemukan";
-} else {
-  iframe.src = "pdf/" + file + "#toolbar=0&navpanes=0&scrollbar=0";
-  title.textContent = file.replace(".pdf", "").replace(/[-_]/g, " ");
-  document.title = title.textContent + " | Aneka Pustaka Multimedia";
+const buku = window.dataRepo.find(b => b.id === id);
+
+if (!buku) {
+  document.getElementById("judulBuku").textContent =
+    "Buku tidak ditemukan";
+  throw new Error("Buku tidak ditemukan");
+}
+
+document.title = buku.judul + " | Aneka Pustaka Multimedia";
+document.getElementById("judulBuku").textContent = buku.judul;
+
+
+const url = "./pdf/" + buku.file;
+const container = document.getElementById("pdf-container");
+
+const loadingTask = pdfjsLib.getDocument(url);
+const pdf = await loadingTask.promise;
+
+for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+  const page = await pdf.getPage(pageNum);
+
+  const scale = window.innerWidth < 768 ? 1.05 : 1.4;
+  const viewport = page.getViewport({ scale });
+
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+
+  container.appendChild(canvas);
+
+  await page.render({
+    canvasContext: ctx,
+    viewport
+  }).promise;
+
+  ctx.save();
+  ctx.globalAlpha = 0.08;
+  ctx.fillStyle = "#003366";
+  ctx.font = "11px system-ui, sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+
+  const text = "PROPERTY OF CV ANEKA PUSTAKA MULTIMEDIA";
+
+  for (let y = 80; y < canvas.height; y += 160) {
+    ctx.fillText(text, canvas.width / 2, y);
+  }
+
+  ctx.restore();
 }
 
 document.addEventListener("contextmenu", e => e.preventDefault());
-document.addEventListener("dragstart", e => e.preventDefault());
-document.addEventListener("selectstart", e => e.preventDefault());
-document.addEventListener("copy", e => e.preventDefault());
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", e => {
+  const k = e.key.toLowerCase();
+
   if (
-    e.ctrlKey || e.metaKey || e.altKey ||
+    (e.ctrlKey && ["p","s","u","c","x","a"].includes(k)) ||
     e.key === "PrintScreen" ||
-    e.key === "F12"
+    (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(k))
   ) {
     e.preventDefault();
     e.stopPropagation();
-    return false;
   }
 });
 
+document.addEventListener("dragstart", e => e.preventDefault());
+
 window.addEventListener("blur", () => {
-  document.body.classList.add("blurred");
+  document.body.style.filter = "blur(8px)";
 });
-
 window.addEventListener("focus", () => {
-  document.body.classList.remove("blurred");
+  document.body.style.filter = "none";
 });
 
+window.addEventListener("beforeprint", e => {
+  e.preventDefault();
+});
 </script>
+
+
 
 </body>
 </html>

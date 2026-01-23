@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <!-- SEO Default (akan dioverride oleh JS jika data ditemukan) -->
   <title id="page-title">Aneka Pustaka Multimedia</title>
   <meta name="description" id="meta-description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum">
   <link rel="canonical" href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html" id="canonical-link">
 
-  <!-- ✅ Open Graph Default -->
   <meta property="og:title" content="CV Aneka Pustaka Multimedia" id="og-title">
   <meta property="og:description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum" id="og-desc">
   <meta property="og:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/logocv.png" id="og-image">
@@ -19,13 +17,11 @@
   <meta property="og:type" content="product">
   <meta property="og:site_name" content="Aneka Pustaka Multimedia">
 
-  <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CV Aneka Pustaka Multimedia" id="twitter-title">
   <meta name="twitter:description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum" id="twitter-desc">
   <meta name="twitter:image" content="https://anekapustaka.github.io/anekapustakamultimedia/images/logocv.png" id="twitter-image">
 
-  <!-- ✅ Schema JSON-LD untuk Buku (Google akan baca ini) -->
   <script type="application/ld+json" id="schema-json">
   {
     "@context": "https://schema.org",
@@ -59,7 +55,6 @@
 </head>
   
 <body>
-<!-- Header Section dimulai -->
 <header class="main-header" role="banner">
   <div class="header-container">
     <div class="logo-text-container">
@@ -88,8 +83,6 @@
   </div>
 </header>
 
-
-<!-- Detail Section dimulai -->
 <section class="detail-section">
   <div class="detail-container">
     
@@ -99,7 +92,6 @@
         <p><strong>CV. Aneka Pustaka Multimedia</strong> - Rumah bagi karya-karya inspiratif dan bacaan bermakna.</p>
       </div>
 
-      <!-- ✅ Rekomendasi SEKARANG DI SINI (DI DALAM KOTAK BIRU) -->
       <div class="rekom-buku">
         <h5>Rekomendasi Buku Lainnya</h5>
         <div class="rekom-slider" id="rekom-slider"></div>
@@ -136,8 +128,6 @@
   </div>
 </section>
 
-
-<!-- Footer Section dimulai -->
 <footer class="footer">
   <div class="footer-container">
     <div class="social-icons">
@@ -150,8 +140,8 @@
   </div>
 </footer>
 
-<!-- Load data-buku -->
-<script src="data-buku.js"></script>
+
+<script src="script/data-buku.js"></script>
 
 <script>
 if (window.dataBuku && !window.daftarBuku) {
@@ -220,8 +210,7 @@ function populate(book, id) {
     li2.textContent = n;
     list2.appendChild(li2);
   });
-  
-  // Set tombol beli setelah buku dipopulate
+
   const btnBeli = document.getElementById("btn-beli");
   btnBeli.href = "form-pemesanan.html?buku=" + encodeURIComponent(book.judul);
 
@@ -231,10 +220,9 @@ function populate(book, id) {
   cover.src = "images/" + book.gambar;
   cover.alt = book.judul;
   
-// Slider Rekomendasi Buku
 const slider = document.getElementById('rekom-slider');
 if (slider && Array.isArray(window.daftarBuku)) {
-  slider.innerHTML = ""; // kosongkan dulu
+  slider.innerHTML = "";
 
   const rekomBuku = window.daftarBuku.filter(b => b.id !== id).slice(0, 6);
   rekomBuku.forEach(b => {
