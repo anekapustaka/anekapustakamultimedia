@@ -190,4 +190,21 @@ window.dataBuku = [
     gambar: "greenleadership.jpeg",
     sinopsis: `Buku ini mengulas secara komprehensif peran green leadership dalam membangun kinerja karyawan yang berkelanjutan di industri perhotelan melalui sinergi green human resource management dan employee involvement. Dengan memadukan pendekatan konseptual dan praktik aplikatif, buku ini menjelaskan bagaimana kepemimpinan yang berorientasi lingkungan mampu mendorong perubahan perilaku, memperkuat keterlibatan karyawan, serta menumbuhkan budaya organisasi hijau. Berbagai pembahasan strategis, praktik terbaik, dan arah masa depan industri perhotelan berkelanjutan disajikan sebagai rujukan bagi akademisi dan praktisi dalam merancang kebijakan dan strategi pengelolaan sumber daya manusia yang adaptif, bertanggung jawab, dan berdaya saing jangka panjang.`
 	},
+	{
+    id: "state-of-the-art-resource-base-theory",
+    judul: "State ot The Art RESOURCE BASE THEORY",
+    harga: "Rp. 86.100",
+    isbn: "-",
+    penulis: [
+      "Prof. Dr. Widodo, SE., M.Si",
+    ],
+    editor: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      ],
+    ukuran: "15,5 X 23 cm",
+    halaman: "vi + 134 Halaman",
+    tahun: "2026",
+    gambar: "resource-profwidodo.png",
+    sinopsis: `State of the art Resource Base Theory disusun dalam tiga tahap, yakni  introduction dengan author Penrose, 1959 ; Lippman & Rumelt, 1982 ; Wernerfelt, 1984 ; Barney, 1986; Dierickx & Cool, 1989 ; Barney, 1991. Kemudian tahap growth dengan author Mahoney & Pandian, 1992 ; Kogut & Zander, 1992 ; Peteraf, 1993 ; Hart, 1995; Grant, 1996; Conner & Prahalad, 1996 ; Oliver, 1997 ; Teece, Pisano, & Shuen, 1997. Dan tahap maturity dengan author  Alvarez & Busenitz, 2001 ; Barney, 2001 ; Barney, Wright, & Ketchen, 2001 ; Makadok & Barney, 2001 ; Lippman & Rumelt, 2003 ; Ireland, Hitt, & Sirmon, 2003 ; Armstrong & Shimizu, 2007; Widodo, 2008; Kraaijenbrink, Spender, & Groen, 2010 ; Widodo & Dandri; Malhotra, G., Dandotiya, G., Shaiwalini, S., Khan, A., & Homechaudhuri, S. (2025).`
+	},
 ];
