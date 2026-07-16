@@ -193,7 +193,7 @@ window.dataBuku = [
 	{
     id: "state-of-the-art-resource-base-theory",
     judul: "State ot The Art RESOURCE BASE THEORY",
-    harga: "Rp. 86.100",
+    harga: "Rp. 98.500",
     isbn: "-",
     penulis: [
       "Prof. Dr. Widodo, SE., M.Si",
@@ -206,5 +206,26 @@ window.dataBuku = [
     tahun: "2026",
     gambar: "resource-profwidodo.png",
     sinopsis: `State of the art Resource Base Theory disusun dalam tiga tahap, yakni  introduction dengan author Penrose, 1959 ; Lippman & Rumelt, 1982 ; Wernerfelt, 1984 ; Barney, 1986; Dierickx & Cool, 1989 ; Barney, 1991. Kemudian tahap growth dengan author Mahoney & Pandian, 1992 ; Kogut & Zander, 1992 ; Peteraf, 1993 ; Hart, 1995; Grant, 1996; Conner & Prahalad, 1996 ; Oliver, 1997 ; Teece, Pisano, & Shuen, 1997. Dan tahap maturity dengan author  Alvarez & Busenitz, 2001 ; Barney, 2001 ; Barney, Wright, & Ketchen, 2001 ; Makadok & Barney, 2001 ; Lippman & Rumelt, 2003 ; Ireland, Hitt, & Sirmon, 2003 ; Armstrong & Shimizu, 2007; Widodo, 2008; Kraaijenbrink, Spender, & Groen, 2010 ; Widodo & Dandri; Malhotra, G., Dandotiya, G., Shaiwalini, S., Khan, A., & Homechaudhuri, S. (2025).`
+	},
+	{
+    id: "the-role-of-artificial-intelligence",
+    judul: "[MONOGRAF] The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees",
+    harga: "Rp. 72.380",
+    isbn: "-",
+    penulis: [
+      "Ismandra, S.Kom, SE, MM",
+	  "Dr. Supriadi, SE, M.Si",
+	  "Aidina Syafaroh Ramadini, S.SI, SE, MM"
+    ],
+    editor: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+	  "Toni Siswanto, S.E.,M.M",
+	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si"
+      ],
+    ukuran: "15,5 X 23 cm",
+    halaman: "vi + 166 Halaman",
+    tahun: "2026",
+    gambar: "theroleai.jpeg",
+    sinopsis: `Monograf berjudul “The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees” membahas secara mendalam mengenai peran strategis Artificial Intelligence (AI) dalam mengubah praktik pengelolaan sumber daya manusia melalui pendekatan Human Resource Analytics di era transformasi digital. Buku ini mengkaji bagaimana teknologi AI dimanfaatkan dalam berbagai fungsi manajemen SDM, mulai dari proses rekrutmen dan seleksi, monitoring kinerja, pengembangan kompetensi, hingga pengambilan keputusan organisasi berbasis data. Dengan fokus pada karyawan Generasi Z sebagai tenaga kerja digital yang memiliki karakteristik unik, monograf ini menjelaskan hubungan antara pemanfaatan teknologi, adaptasi lingkungan kerja, employee engagement, dan peningkatan produktivitas. Selain membahas peluang dan manfaat implementasi AI, buku ini juga menguraikan berbagai tantangan seperti etika penggunaan data, keamanan informasi, kesiapan organisasi, serta kebutuhan integrasi antara teknologi dan pendekatan manusiawi. Monograf ini menjadi referensi penting bagi akademisi, praktisi manajemen, pemimpin organisasi, dan mahasiswa yang ingin memahami bagaimana AI dan Human Resource Analytics dapat dikembangkan sebagai strategi untuk menciptakan sumber daya manusia yang adaptif, inovatif, dan kompetitif dalam menghadapi perubahan dunia kerja digital.`
 	},
 ];
