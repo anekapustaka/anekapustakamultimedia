@@ -218,6 +218,7 @@ window.dataBuku = [
 	  "Aidina Syafaroh Ramadini, S.SI, SE, MM"
     ],
     editor: [
+	  "Rulli Ramadayani B, S.H.,S.E.,M.M",
       "Dr. H. Dasmadi, S.E.,M.M",
 	  "Toni Siswanto, S.E.,M.M",
 	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si"
