@@ -229,4 +229,54 @@ window.dataBuku = [
     gambar: "theroleai.jpeg",
     sinopsis: `Monograf berjudul “The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees” membahas secara mendalam mengenai peran strategis Artificial Intelligence (AI) dalam mengubah praktik pengelolaan sumber daya manusia melalui pendekatan Human Resource Analytics di era transformasi digital. Buku ini mengkaji bagaimana teknologi AI dimanfaatkan dalam berbagai fungsi manajemen SDM, mulai dari proses rekrutmen dan seleksi, monitoring kinerja, pengembangan kompetensi, hingga pengambilan keputusan organisasi berbasis data. Dengan fokus pada karyawan Generasi Z sebagai tenaga kerja digital yang memiliki karakteristik unik, monograf ini menjelaskan hubungan antara pemanfaatan teknologi, adaptasi lingkungan kerja, employee engagement, dan peningkatan produktivitas. Selain membahas peluang dan manfaat implementasi AI, buku ini juga menguraikan berbagai tantangan seperti etika penggunaan data, keamanan informasi, kesiapan organisasi, serta kebutuhan integrasi antara teknologi dan pendekatan manusiawi. Monograf ini menjadi referensi penting bagi akademisi, praktisi manajemen, pemimpin organisasi, dan mahasiswa yang ingin memahami bagaimana AI dan Human Resource Analytics dapat dikembangkan sebagai strategi untuk menciptakan sumber daya manusia yang adaptif, inovatif, dan kompetitif dalam menghadapi perubahan dunia kerja digital.`
 	},
+	{
+	  id: "langkah-kecil-untuk-mencintai-dan-merawat-indonesia",
+	  judul: "Langkah Kecil untuk MENCINTAI & MERAWAT INDONESIA",
+	  harga: "Rp. 74.340",
+	  isbn: "(Dalam Proses)",
+	  penulis: [
+		"Dr. H. Dasmadi, S.E.,M.M",
+		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+		"Prof. Dr. H. Zaidan Nawawi, M.Si",
+		"Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+		"Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
+		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+		"Toni Siswanto, S.E.,M.M",
+		"Abid Khotibul Umam, S.M.,M.M",
+		"Muhammad Putra Maulana",
+		"Rafliditya Bayu Wicaksono",
+		"Heri Irwanto, S.M"
+	  ],
+	  editor: [
+		"Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag"
+	  ],
+	  ukuran: "15,5 x 23 cm",
+	  halaman: "viii + 174 Halaman",
+	  tahun: "2026",
+	  gambar: "langkahkecil.jpeg",
+	  sinopsis: `Buku “Langkah Kecil untuk Mencintai dan Merawat Indonesia” mengajak pembaca, khususnya generasi muda, untuk memahami bahwa mencintai Indonesia tidak selalu harus diwujudkan melalui tindakan besar, tetapi dapat dimulai dari kebiasaan sederhana dalam kehidupan sehari-hari. Buku ini membahas pentingnya mengenal Indonesia sebagai rumah bersama, menumbuhkan rasa cinta tanah air, menjaga lingkungan, membangun kebiasaan baik, menghargai keberagaman, serta mempersiapkan generasi muda yang berkarakter, kreatif, dan bertanggung jawab. Setiap langkah kecil seperti menjaga kebersihan, menghormati perbedaan, membantu sesama, belajar dengan sungguh-sungguh, menggunakan teknologi secara bijak, melestarikan budaya, dan menjaga persatuan merupakan bagian dari upaya merawat Indonesia. Melalui bahasa yang sederhana dan dekat dengan kehidupan sehari-hari, buku ini menanamkan kesadaran bahwa perubahan besar dapat dimulai dari diri sendiri. Pada akhirnya, buku ini menjadi ajakan bagi setiap pembaca untuk tidak hanya bermimpi tentang Indonesia yang lebih baik, tetapi berani mengambil peran dan mewujudkannya melalui kebaikan-kebaikan kecil yang dilakukan secara konsisten.`
+	},
+	{
+	  id: "modul-ajar-ilmu-pengetahuan-sosial-kelas-viii",
+	  judul: "MODUL AJAR Ilmu Pengetahuan Sosial Untuk Siswa SMP / MTs Kelas VIII",
+	  harga: "Rp. 94.500",
+	  isbn: "(Dalam Proses)",
+	  penulis: [
+		"Dr. H. Dasmadi, S.E.,M.M",
+		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+		"Toni Siswanto, S.E.,M.M",
+		"Abid Khotibul Umam, S.M.,M.M",
+		"Rafliditya Bayu Wicaksono",
+		"Heri Irwanto, S.M"
+	  ],
+	  editor: [
+		"Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag"
+	  ],
+	  ukuran: "17,6 x 25 cm",
+	  halaman: "viii + 162 Halaman",
+	  tahun: "2026",
+	  gambar: "modulips.jpeg",
+	  sinopsis: `Buku “IPS Kelas VIII Kurikulum Merdeka” ini disusun sebagai bahan ajar yang membantu peserta didik memahami berbagai fenomena kehidupan masyarakat Indonesia secara kontekstual, kritis, dan bermakna. Materi disajikan secara sistematis melalui pembahasan yang mendalam, contoh kehidupan sehari-hari, apersepsi, aktivitas individu dan kelompok, LKPD, penguatan literasi dan numerasi, proyek, asesmen, pengayaan, remedial, serta refleksi. Setiap materi dilengkapi arahan ilustrasi gambar yang relevan untuk membantu peserta didik memvisualisasikan konsep dan menghubungkannya dengan lingkungan sekitar. Melalui pendekatan pembelajaran yang aktif dan berorientasi pada keterampilan berpikir kritis, buku ini mengajak peserta didik memahami perubahan masyarakat, aktivitas ekonomi, perdagangan antarwilayah, serta berbagai dinamika sosial dan lingkungan Indonesia sekaligus menumbuhkan sikap mandiri, gotong royong, kreatif, bernalar kritis, peduli lingkungan, dan menghargai keberagaman bangsa. Buku ini diharapkan dapat menjadi pendamping belajar yang informatif, menarik, dan mudah digunakan oleh peserta didik maupun guru dalam mewujudkan pembelajaran IPS yang relevan dengan kehidupan dan tantangan masa kini.`
+	},
 ];
