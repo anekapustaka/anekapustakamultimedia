@@ -279,4 +279,30 @@ window.dataBuku = [
 	  gambar: "modulips.jpeg",
 	  sinopsis: `Buku “IPS Kelas VIII Kurikulum Merdeka” ini disusun sebagai bahan ajar yang membantu peserta didik memahami berbagai fenomena kehidupan masyarakat Indonesia secara kontekstual, kritis, dan bermakna. Materi disajikan secara sistematis melalui pembahasan yang mendalam, contoh kehidupan sehari-hari, apersepsi, aktivitas individu dan kelompok, LKPD, penguatan literasi dan numerasi, proyek, asesmen, pengayaan, remedial, serta refleksi. Setiap materi dilengkapi arahan ilustrasi gambar yang relevan untuk membantu peserta didik memvisualisasikan konsep dan menghubungkannya dengan lingkungan sekitar. Melalui pendekatan pembelajaran yang aktif dan berorientasi pada keterampilan berpikir kritis, buku ini mengajak peserta didik memahami perubahan masyarakat, aktivitas ekonomi, perdagangan antarwilayah, serta berbagai dinamika sosial dan lingkungan Indonesia sekaligus menumbuhkan sikap mandiri, gotong royong, kreatif, bernalar kritis, peduli lingkungan, dan menghargai keberagaman bangsa. Buku ini diharapkan dapat menjadi pendamping belajar yang informatif, menarik, dan mudah digunakan oleh peserta didik maupun guru dalam mewujudkan pembelajaran IPS yang relevan dengan kehidupan dan tantangan masa kini.`
 	},
+	{
+	  id: "monograf-strategic-transformation-of-human-resource-management-industry-5-0",
+	  judul: "MONOGRAF Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
+	  harga: "Rp. 70.910",
+	  isbn: "(Dalam Proses)",
+	  penulis: [
+		"Dr. H. Dasmadi, S.E.,M.M",
+		"Prof. Dr. H. Zaidan Nawawi, M.Si",
+		"Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+		"Toni Siswanto, S.E.,M.M",
+		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+		"Abid Khotibul Umam, S.M.,M.M",
+		"Heri Irwanto, S.M",
+		"Rafliditya Bayu Wicaksono"
+	  ],
+	  editor: [
+		"Prof. Dr. Widodo, M.Si",
+		"Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag"
+	  ],
+	  ukuran: "15,5 x 23 cm",
+	  halaman: "viii + 158 Halaman",
+	  tahun: "2026",
+	  gambar: "monograf-strategic-hrm.jpeg",
+	  sinopsis: `Monograf Strategic Transformation of Human Resource Management in the Industry 5.0 Era: Leadership, Innovation, and Organizational Sustainability membahas transformasi strategis manajemen sumber daya manusia dalam menghadapi perubahan teknologi dan dinamika organisasi pada era Industri 5.0 yang menempatkan manusia sebagai pusat inovasi. Buku ini menguraikan konsep Industri 5.0, Strategic Human Resource Management, kepemimpinan transformasional dan digital, inovasi serta pemanfaatan Artificial Intelligence dalam pengelolaan SDM, reskilling dan upskilling, hingga pengembangan organisasi yang tangguh dan berkelanjutan. Pembahasan juga menekankan pentingnya integrasi leadership, innovation, dan sustainability dalam membangun lingkungan kerja yang human-centered, adaptif, produktif, dan mampu mempertahankan talenta. Melalui pembahasan konseptual dan strategis, buku ini menawarkan strategic roadmap transformasi SDM yang dapat menjadi acuan bagi akademisi, mahasiswa, praktisi HR, pemimpin organisasi, maupun pengambil kebijakan dalam merancang dan mengimplementasikan transformasi SDM berbasis teknologi secara bertanggung jawab untuk menciptakan keunggulan kompetitif sekaligus keberlanjutan organisasi di era Industri 5.0.`
+	},
 ];
