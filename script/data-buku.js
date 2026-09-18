@@ -1,7 +1,4 @@
-// ========================= DATA BUKU CV. ANEKA PUSTAKA MULTIMEDIA ========================= //
-// ========================= ARSIP ETALASE CV. ANEKA PUSTAKA MULTIMEDIA ========================= //
-
-window.dataBuku = [
+const dataBuku = [
   {
     id: "penjas-mts-vii",
     judul: "Pendidikan Jasmani Olahraga dan Kesehatan (Untuk Siswa SMP/MTs Kelas VII)",
@@ -330,5 +327,31 @@ window.dataBuku = [
     tahun: "2026",
     gambar: "dasar-ekonomi-dan-bisnis-untuk-smk.jpeg",
     sinopsis: `Dasar Ekonomi dan Bisnis untuk SMK/MAK: Konsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital merupakan buku pembelajaran yang disusun untuk memberikan pemahaman dasar mengenai konsep ekonomi dan penerapannya dalam dunia bisnis kepada peserta didik SMK/MAK. Buku ini membahas berbagai materi mulai dari konsep dasar ekonomi, kegiatan dan pelaku ekonomi, pasar, permintaan dan penawaran, aktivitas bisnis dan badan usaha, manajemen dan pengelolaan bisnis, hingga perkembangan ekonomi digital dan transformasi bisnis. Pembahasan dilengkapi dengan materi mengenai produksi, distribusi, konsumsi, kewirausahaan, pengambilan keputusan, e-commerce, digital marketing, fintech, sistem pembayaran digital, serta strategi bisnis berkelanjutan. Dengan bahasa yang sistematis dan kontekstual, buku ini diharapkan dapat membantu peserta didik memahami hubungan antara teori ekonomi dengan praktik bisnis dalam kehidupan sehari-hari, sekaligus mengembangkan kemampuan berpikir kritis, kreatif, adaptif, dan berjiwa kewirausahaan untuk menghadapi dunia kerja serta perkembangan ekonomi digital.`
+  },
+  {
+    id: "Buku-Referensi-IPAS-SD-BERBASIS-AKTIVITAS",
+    judul: "Buku Referensi IPAS SD BERBASIS AKTIVITAS Belajar Sains dan Sosial dari Lingkungan Sekitar",
+    harga: "66990",
+    isbn: "-",
+    penulis: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
+      "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Toni Siswanto, S.E.,M.M",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Heri Irwanto, S.M",
+      "Rafliditya Bayu Wicaksono",
+    ],
+    editor: [
+      "Prof. Dr. Widodo, M.Si",
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag",
+    ],
+    ukuran: "15.5 x 23",
+    halaman: "vi + 144",
+    tahun: "2026",
+    gambar: "Buku-Referensi-IPAS-SD-BERBASIS-AKTIVITAS.png",
+    sinopsis: `Buku Referensi IPAS SD Berbasis Aktivitas: Belajar Sains dan Sosial dari Lingkungan Sekitar merupakan buku pembelajaran yang dirancang untuk membantu siswa sekolah dasar memahami Ilmu Pengetahuan Alam dan Sosial melalui pengalaman nyata di lingkungan sekitar. Buku ini membahas berbagai materi, mulai dari makhluk hidup dan kehidupannya, materi dan energi, bumi dan lingkungan, kehidupan sosial masyarakat, hingga kegiatan ekonomi. Setiap materi disajikan dengan bahasa yang sederhana, contoh yang dekat dengan kehidupan siswa, serta aktivitas seperti pengamatan, percobaan sederhana, diskusi, wawancara, refleksi, dan proyek IPAS. Melalui pendekatan berbasis aktivitas, siswa tidak hanya memperoleh pengetahuan, tetapi juga dilatih untuk berpikir kritis, bekerja sama, bertanggung jawab, peduli terhadap lingkungan, serta mampu menghubungkan pembelajaran dengan kehidupan sehari-hari. Buku ini diharapkan menjadi pendamping belajar yang menarik, kontekstual, dan bermakna dalam membentuk siswa yang aktif, kreatif, mandiri, dan memiliki kepedulian terhadap alam serta kehidupan sosial di sekitarnya.`
   }
 ];
