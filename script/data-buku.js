@@ -1,4 +1,4 @@
-const dataBuku = [
+window.dataBuku = [
   {
     id: "penjas-mts-vii",
     judul: "Pendidikan Jasmani Olahraga dan Kesehatan (Untuk Siswa SMP/MTs Kelas VII)",
