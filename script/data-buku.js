@@ -12,11 +12,11 @@ window.dataBuku = [
       "Toni Siswanto, S.E., M.M",
       "Dr. H. Dasmadi, S.E., M.M",
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
-      "Heri Irwanto, S.M"
+      "Heri Irwanto, S.M",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 152 halaman",
     tahun: "2025",
@@ -33,11 +33,11 @@ window.dataBuku = [
       "Toni Siswanto, S.E., M.M",
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
-      "Heri Irwanto, S.M"
+      "Heri Irwanto, S.M",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 118 halaman",
     tahun: "2025",
@@ -54,11 +54,11 @@ window.dataBuku = [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
       "Toni Siswanto, S.E., M.M",
       "Rafliditya Bayu Wicaksono",
-      "Hj. Siti Syamsiyah, S.Pd., M.Pd"
+      "Hj. Siti Syamsiyah, S.Pd., M.Pd",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 144 halaman",
     tahun: "2025",
@@ -75,11 +75,11 @@ window.dataBuku = [
       "Toni Siswanto, S.E., M.M",
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
       "Dr. H. Dasmadi, S.E., M.M",
-      "Heri Irwanto, S.M"
+      "Heri Irwanto, S.M",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 138 halaman",
     tahun: "2025",
@@ -96,11 +96,11 @@ window.dataBuku = [
       "Toni Siswanto, S.E., M.M",
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
       "Dr. H. Dasmadi, S.E., M.M",
-      "Abid Khotibul Umam, S.M"
+      "Abid Khotibul Umam, S.M",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. KH. Abdul Matin Bin Salman, Lc., M.Ag.",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "viii + 140 halaman",
     tahun: "2025",
@@ -117,18 +117,18 @@ window.dataBuku = [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
       "Toni Siswanto, S.E., M.M",
       "Reza Estati Putri, S.Pd.",
-      "Hj. Siti Syamsiyah, S.Pd., M.Pd"
+      "Hj. Siti Syamsiyah, S.Pd., M.Pd",
     ],
-	editor: [
+    editor: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
-      ],
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 170 halaman",
     tahun: "2025",
     gambar: "ipa-mts-vii.jpeg",
     sinopsis: `Buku Ilmu Pengetahuan Alam (IPA) Kelas VII ini disusun untuk membantu peserta didik memahami konsep-konsep dasar sains yang meliputi makhluk hidup, ekosistem, zat dan perubahannya, energi, sistem bumi, serta tata surya. Melalui pendekatan kontekstual dan kegiatan eksperimen sederhana, buku ini tidak hanya menyajikan pengetahuan faktual, tetapi juga menumbuhkan rasa ingin tahu, berpikir kritis, dan keterampilan ilmiah. Disajikan secara menarik dengan ilustrasi, rangkuman, soal latihan, dan aktivitas praktikum, buku ini diharapkan dapat memotivasi siswa untuk lebih dekat dengan alam sekitar, memahami fenomena kehidupan sehari-hari, serta menumbuhkan sikap peduli terhadap lingkungan dan kebesaran ciptaan Tuhan.`
   },
-    {
+  {
     id: "monograf-pemimpin-sebagai-katalisator-kinerja-hijau",
     judul: "MONOGRAF PEMIMPIN SEBAGAI KATALISATOR KINERJA HIJAU (Analisis Mediasi Green Hrm Dan Employee Involvement Dalam Industri Perhotelan Palembang)",
     harga: "Rp. 80.170",
@@ -136,13 +136,13 @@ window.dataBuku = [
     penulis: [
       "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
       "Prof. Dr. Zaenal Arifin, M.Si",
-      "Dr. Majang Palupi, BBA,MBA"
+      "Dr. Majang Palupi, BBA,MBA",
     ],
     editor: [
       "Dr. H. Dasmadi, S.E.,M.M",
       "Toni Siswanto, S.E.,M.M",
-      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si"
-      ],
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+    ],
     ukuran: "17,6 X 25 cm",
     halaman: "vi + 200 halaman",
     tahun: "2025",
@@ -162,14 +162,14 @@ window.dataBuku = [
     editor: [
       "Ahmad Fajar Ariyanto",
       "Primastiti Wening Mumpuni",
-      ],
+    ],
     ukuran: "15,5 X 23 cm",
     halaman: "xvi + 208 halaman",
     tahun: "2026",
     gambar: "mebelrotik.jpg",
     sinopsis: `Buku ini menegaskan bahwa kerajinan dan mebel rotan merupakan wujud perpaduan kekayaan alam dan budaya Indonesia yang bernilai tinggi, didukung keahlian teknik pengolahan dari sederhana hingga kompleks, serta inovasi desain yang terus berkembang. Rotan diperkaya dengan sentuhan seni batik sebagai warisan budaya dunia, yang diaplikasikan melalui berbagai teknik pada material rotan sehingga menghasilkan produk mebel yang eksotis, orisinal, ramah lingkungan, dan berdaya saing. Buku ini membahas secara sistematis potensi rotan dan batik, karakteristik material, proses perancangan, produksi, teknik batik, pewarnaan alami, hingga pengembangan desain, dengan harapan menjadi referensi penting bagi pengembangan industri mebel rotan nasional yang berakar pada budaya bangsa dan berkelanjutan.`
-   },
-   {
+  },
+  {
     id: "green-leadership-in-the-hospitality-industry",
     judul: "Green Leadership in the Hospitality Industry : Strategies for Building Sustainable Employee Performance",
     harga: "Rp. 60.050",
@@ -177,20 +177,20 @@ window.dataBuku = [
     penulis: [
       "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
       "Prof. Dr. Zaenal Arifin, M.Si",
-	  "Dr. Majang Palupi, BBA, MBA",
+      "Dr. Majang Palupi, BBA, MBA",
     ],
     editor: [
       "Dr. H. Dasmadi, S.E.,M.M",
       "Toni Siswanto, S.E.,M.M",
-	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-      ],
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+    ],
     ukuran: "15,5 X 23 cm",
     halaman: "vi + 134 Halaman",
     tahun: "2026",
     gambar: "greenleadership.jpeg",
     sinopsis: `Buku ini mengulas secara komprehensif peran green leadership dalam membangun kinerja karyawan yang berkelanjutan di industri perhotelan melalui sinergi green human resource management dan employee involvement. Dengan memadukan pendekatan konseptual dan praktik aplikatif, buku ini menjelaskan bagaimana kepemimpinan yang berorientasi lingkungan mampu mendorong perubahan perilaku, memperkuat keterlibatan karyawan, serta menumbuhkan budaya organisasi hijau. Berbagai pembahasan strategis, praktik terbaik, dan arah masa depan industri perhotelan berkelanjutan disajikan sebagai rujukan bagi akademisi dan praktisi dalam merancang kebijakan dan strategi pengelolaan sumber daya manusia yang adaptif, bertanggung jawab, dan berdaya saing jangka panjang.`
-	},
-	{
+  },
+  {
     id: "state-of-the-art-resource-base-theory",
     judul: "State ot The Art RESOURCE BASE THEORY",
     harga: "Rp. 98.500",
@@ -200,109 +200,135 @@ window.dataBuku = [
     ],
     editor: [
       "Dr. H. Dasmadi, S.E.,M.M",
-      ],
+    ],
     ukuran: "15,5 X 23 cm",
     halaman: "vi + 134 Halaman",
     tahun: "2026",
     gambar: "resource-profwidodo.png",
     sinopsis: `State of the art Resource Base Theory disusun dalam tiga tahap, yakni  introduction dengan author Penrose, 1959 ; Lippman & Rumelt, 1982 ; Wernerfelt, 1984 ; Barney, 1986; Dierickx & Cool, 1989 ; Barney, 1991. Kemudian tahap growth dengan author Mahoney & Pandian, 1992 ; Kogut & Zander, 1992 ; Peteraf, 1993 ; Hart, 1995; Grant, 1996; Conner & Prahalad, 1996 ; Oliver, 1997 ; Teece, Pisano, & Shuen, 1997. Dan tahap maturity dengan author  Alvarez & Busenitz, 2001 ; Barney, 2001 ; Barney, Wright, & Ketchen, 2001 ; Makadok & Barney, 2001 ; Lippman & Rumelt, 2003 ; Ireland, Hitt, & Sirmon, 2003 ; Armstrong & Shimizu, 2007; Widodo, 2008; Kraaijenbrink, Spender, & Groen, 2010 ; Widodo & Dandri; Malhotra, G., Dandotiya, G., Shaiwalini, S., Khan, A., & Homechaudhuri, S. (2025).`
-	},
-	{
+  },
+  {
     id: "the-role-of-artificial-intelligence",
     judul: "[MONOGRAF] The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees",
     harga: "Rp. 72.380",
     isbn: "-",
     penulis: [
       "Ismandra, S.Kom, SE, MM",
-	  "Dr. Supriadi, SE, M.Si",
-	  "Aidina Syafaroh Ramadini, S.SI, SE, MM"
+      "Dr. Supriadi, SE, M.Si",
+      "Aidina Syafaroh Ramadini, S.SI, SE, MM",
     ],
     editor: [
-	  "Rulli Ramadayani B, S.H.,S.E.,M.M",
+      "Rulli Ramadayani B, S.H.,S.E.,M.M",
       "Dr. H. Dasmadi, S.E.,M.M",
-	  "Toni Siswanto, S.E.,M.M",
-	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si"
-      ],
+      "Toni Siswanto, S.E.,M.M",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+    ],
     ukuran: "15,5 X 23 cm",
     halaman: "vi + 166 Halaman",
     tahun: "2026",
     gambar: "theroleai.jpeg",
     sinopsis: `Monograf berjudul “The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees” membahas secara mendalam mengenai peran strategis Artificial Intelligence (AI) dalam mengubah praktik pengelolaan sumber daya manusia melalui pendekatan Human Resource Analytics di era transformasi digital. Buku ini mengkaji bagaimana teknologi AI dimanfaatkan dalam berbagai fungsi manajemen SDM, mulai dari proses rekrutmen dan seleksi, monitoring kinerja, pengembangan kompetensi, hingga pengambilan keputusan organisasi berbasis data. Dengan fokus pada karyawan Generasi Z sebagai tenaga kerja digital yang memiliki karakteristik unik, monograf ini menjelaskan hubungan antara pemanfaatan teknologi, adaptasi lingkungan kerja, employee engagement, dan peningkatan produktivitas. Selain membahas peluang dan manfaat implementasi AI, buku ini juga menguraikan berbagai tantangan seperti etika penggunaan data, keamanan informasi, kesiapan organisasi, serta kebutuhan integrasi antara teknologi dan pendekatan manusiawi. Monograf ini menjadi referensi penting bagi akademisi, praktisi manajemen, pemimpin organisasi, dan mahasiswa yang ingin memahami bagaimana AI dan Human Resource Analytics dapat dikembangkan sebagai strategi untuk menciptakan sumber daya manusia yang adaptif, inovatif, dan kompetitif dalam menghadapi perubahan dunia kerja digital.`
-	},
-	{
-	  id: "langkah-kecil-untuk-mencintai-dan-merawat-indonesia",
-	  judul: "Langkah Kecil untuk MENCINTAI & MERAWAT INDONESIA",
-	  harga: "Rp. 74.340",
-	  isbn: "(Dalam Proses)",
-	  penulis: [
-		"Dr. H. Dasmadi, S.E.,M.M",
-		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
-		"Prof. Dr. H. Zaidan Nawawi, M.Si",
-		"Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
-		"Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
-		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-		"Toni Siswanto, S.E.,M.M",
-		"Abid Khotibul Umam, S.M.,M.M",
-		"Muhammad Putra Maulana",
-		"Rafliditya Bayu Wicaksono",
-		"Heri Irwanto, S.M"
-	  ],
-	  editor: [
-		"Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag"
-	  ],
-	  ukuran: "15,5 x 23 cm",
-	  halaman: "viii + 174 Halaman",
-	  tahun: "2026",
-	  gambar: "langkahkecil.jpeg",
-	  sinopsis: `Buku “Langkah Kecil untuk Mencintai dan Merawat Indonesia” mengajak pembaca, khususnya generasi muda, untuk memahami bahwa mencintai Indonesia tidak selalu harus diwujudkan melalui tindakan besar, tetapi dapat dimulai dari kebiasaan sederhana dalam kehidupan sehari-hari. Buku ini membahas pentingnya mengenal Indonesia sebagai rumah bersama, menumbuhkan rasa cinta tanah air, menjaga lingkungan, membangun kebiasaan baik, menghargai keberagaman, serta mempersiapkan generasi muda yang berkarakter, kreatif, dan bertanggung jawab. Setiap langkah kecil seperti menjaga kebersihan, menghormati perbedaan, membantu sesama, belajar dengan sungguh-sungguh, menggunakan teknologi secara bijak, melestarikan budaya, dan menjaga persatuan merupakan bagian dari upaya merawat Indonesia. Melalui bahasa yang sederhana dan dekat dengan kehidupan sehari-hari, buku ini menanamkan kesadaran bahwa perubahan besar dapat dimulai dari diri sendiri. Pada akhirnya, buku ini menjadi ajakan bagi setiap pembaca untuk tidak hanya bermimpi tentang Indonesia yang lebih baik, tetapi berani mengambil peran dan mewujudkannya melalui kebaikan-kebaikan kecil yang dilakukan secara konsisten.`
-	},
-	{
-	  id: "modul-ajar-ilmu-pengetahuan-sosial-kelas-viii",
-	  judul: "MODUL AJAR Ilmu Pengetahuan Sosial Untuk Siswa SMP / MTs Kelas VIII",
-	  harga: "Rp. 94.500",
-	  isbn: "(Dalam Proses)",
-	  penulis: [
-		"Dr. H. Dasmadi, S.E.,M.M",
-		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
-		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-		"Toni Siswanto, S.E.,M.M",
-		"Abid Khotibul Umam, S.M.,M.M",
-		"Rafliditya Bayu Wicaksono",
-		"Heri Irwanto, S.M"
-	  ],
-	  editor: [
-		"Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag"
-	  ],
-	  ukuran: "17,6 x 25 cm",
-	  halaman: "viii + 162 Halaman",
-	  tahun: "2026",
-	  gambar: "modulips.jpeg",
-	  sinopsis: `Buku “IPS Kelas VIII Kurikulum Merdeka” ini disusun sebagai bahan ajar yang membantu peserta didik memahami berbagai fenomena kehidupan masyarakat Indonesia secara kontekstual, kritis, dan bermakna. Materi disajikan secara sistematis melalui pembahasan yang mendalam, contoh kehidupan sehari-hari, apersepsi, aktivitas individu dan kelompok, LKPD, penguatan literasi dan numerasi, proyek, asesmen, pengayaan, remedial, serta refleksi. Setiap materi dilengkapi arahan ilustrasi gambar yang relevan untuk membantu peserta didik memvisualisasikan konsep dan menghubungkannya dengan lingkungan sekitar. Melalui pendekatan pembelajaran yang aktif dan berorientasi pada keterampilan berpikir kritis, buku ini mengajak peserta didik memahami perubahan masyarakat, aktivitas ekonomi, perdagangan antarwilayah, serta berbagai dinamika sosial dan lingkungan Indonesia sekaligus menumbuhkan sikap mandiri, gotong royong, kreatif, bernalar kritis, peduli lingkungan, dan menghargai keberagaman bangsa. Buku ini diharapkan dapat menjadi pendamping belajar yang informatif, menarik, dan mudah digunakan oleh peserta didik maupun guru dalam mewujudkan pembelajaran IPS yang relevan dengan kehidupan dan tantangan masa kini.`
-	},
-	{
-	  id: "monograf-strategic-transformation-of-human-resource-management-industry-5-0",
-	  judul: "MONOGRAF Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
-	  harga: "Rp. 70.910",
-	  isbn: "(Dalam Proses)",
-	  penulis: [
-		"Dr. H. Dasmadi, S.E.,M.M",
-		"Prof. Dr. H. Zaidan Nawawi, M.Si",
-		"Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
-		"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-		"Toni Siswanto, S.E.,M.M",
-		"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
-		"Abid Khotibul Umam, S.M.,M.M",
-		"Heri Irwanto, S.M",
-		"Rafliditya Bayu Wicaksono"
-	  ],
-	  editor: [
-		"Prof. Dr. Widodo, M.Si",
-		"Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag"
-	  ],
-	  ukuran: "15,5 x 23 cm",
-	  halaman: "viii + 158 Halaman",
-	  tahun: "2026",
-	  gambar: "monograf-strategic-hrm.jpeg",
-	  sinopsis: `Monograf Strategic Transformation of Human Resource Management in the Industry 5.0 Era: Leadership, Innovation, and Organizational Sustainability membahas transformasi strategis manajemen sumber daya manusia dalam menghadapi perubahan teknologi dan dinamika organisasi pada era Industri 5.0 yang menempatkan manusia sebagai pusat inovasi. Buku ini menguraikan konsep Industri 5.0, Strategic Human Resource Management, kepemimpinan transformasional dan digital, inovasi serta pemanfaatan Artificial Intelligence dalam pengelolaan SDM, reskilling dan upskilling, hingga pengembangan organisasi yang tangguh dan berkelanjutan. Pembahasan juga menekankan pentingnya integrasi leadership, innovation, dan sustainability dalam membangun lingkungan kerja yang human-centered, adaptif, produktif, dan mampu mempertahankan talenta. Melalui pembahasan konseptual dan strategis, buku ini menawarkan strategic roadmap transformasi SDM yang dapat menjadi acuan bagi akademisi, mahasiswa, praktisi HR, pemimpin organisasi, maupun pengambil kebijakan dalam merancang dan mengimplementasikan transformasi SDM berbasis teknologi secara bertanggung jawab untuk menciptakan keunggulan kompetitif sekaligus keberlanjutan organisasi di era Industri 5.0.`
-	},
+  },
+  {
+    id: "langkah-kecil-untuk-mencintai-dan-merawat-indonesia",
+    judul: "Langkah Kecil untuk MENCINTAI & MERAWAT INDONESIA",
+    harga: "Rp. 74.340",
+    isbn: "(Dalam Proses)",
+    penulis: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
+      "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+      "Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Toni Siswanto, S.E.,M.M",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Muhammad Putra Maulana",
+      "Rafliditya Bayu Wicaksono",
+      "Heri Irwanto, S.M",
+    ],
+    editor: [
+      "Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "viii + 174 Halaman",
+    tahun: "2026",
+    gambar: "langkahkecil.jpeg",
+    sinopsis: `Buku “Langkah Kecil untuk Mencintai dan Merawat Indonesia” mengajak pembaca, khususnya generasi muda, untuk memahami bahwa mencintai Indonesia tidak selalu harus diwujudkan melalui tindakan besar, tetapi dapat dimulai dari kebiasaan sederhana dalam kehidupan sehari-hari. Buku ini membahas pentingnya mengenal Indonesia sebagai rumah bersama, menumbuhkan rasa cinta tanah air, menjaga lingkungan, membangun kebiasaan baik, menghargai keberagaman, serta mempersiapkan generasi muda yang berkarakter, kreatif, dan bertanggung jawab. Setiap langkah kecil seperti menjaga kebersihan, menghormati perbedaan, membantu sesama, belajar dengan sungguh-sungguh, menggunakan teknologi secara bijak, melestarikan budaya, dan menjaga persatuan merupakan bagian dari upaya merawat Indonesia. Melalui bahasa yang sederhana dan dekat dengan kehidupan sehari-hari, buku ini menanamkan kesadaran bahwa perubahan besar dapat dimulai dari diri sendiri. Pada akhirnya, buku ini menjadi ajakan bagi setiap pembaca untuk tidak hanya bermimpi tentang Indonesia yang lebih baik, tetapi berani mengambil peran dan mewujudkannya melalui kebaikan-kebaikan kecil yang dilakukan secara konsisten.`
+  },
+  {
+    id: "modul-ajar-ilmu-pengetahuan-sosial-kelas-viii",
+    judul: "MODUL AJAR Ilmu Pengetahuan Sosial Untuk Siswa SMP / MTs Kelas VIII",
+    harga: "Rp. 94.500",
+    isbn: "(Dalam Proses)",
+    penulis: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Toni Siswanto, S.E.,M.M",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Rafliditya Bayu Wicaksono",
+      "Heri Irwanto, S.M",
+    ],
+    editor: [
+      "Prof. Dr. KH. Abdul Matin Bin Salman, LC.,M.Ag",
+    ],
+    ukuran: "17,6 x 25 cm",
+    halaman: "viii + 162 Halaman",
+    tahun: "2026",
+    gambar: "modulips.jpeg",
+    sinopsis: `Buku “IPS Kelas VIII Kurikulum Merdeka” ini disusun sebagai bahan ajar yang membantu peserta didik memahami berbagai fenomena kehidupan masyarakat Indonesia secara kontekstual, kritis, dan bermakna. Materi disajikan secara sistematis melalui pembahasan yang mendalam, contoh kehidupan sehari-hari, apersepsi, aktivitas individu dan kelompok, LKPD, penguatan literasi dan numerasi, proyek, asesmen, pengayaan, remedial, serta refleksi. Setiap materi dilengkapi arahan ilustrasi gambar yang relevan untuk membantu peserta didik memvisualisasikan konsep dan menghubungkannya dengan lingkungan sekitar. Melalui pendekatan pembelajaran yang aktif dan berorientasi pada keterampilan berpikir kritis, buku ini mengajak peserta didik memahami perubahan masyarakat, aktivitas ekonomi, perdagangan antarwilayah, serta berbagai dinamika sosial dan lingkungan Indonesia sekaligus menumbuhkan sikap mandiri, gotong royong, kreatif, bernalar kritis, peduli lingkungan, dan menghargai keberagaman bangsa. Buku ini diharapkan dapat menjadi pendamping belajar yang informatif, menarik, dan mudah digunakan oleh peserta didik maupun guru dalam mewujudkan pembelajaran IPS yang relevan dengan kehidupan dan tantangan masa kini.`
+  },
+  {
+    id: "monograf-strategic-transformation-of-human-resource-management-industry-5-0",
+    judul: "MONOGRAF Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
+    harga: "Rp. 70.910",
+    isbn: "(Dalam Proses)",
+    penulis: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
+      "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Toni Siswanto, S.E.,M.M",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Heri Irwanto, S.M",
+      "Rafliditya Bayu Wicaksono",
+    ],
+    editor: [
+      "Prof. Dr. Widodo, M.Si",
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "viii + 158 Halaman",
+    tahun: "2026",
+    gambar: "monograf-strategic-hrm.jpeg",
+    sinopsis: `Monograf Strategic Transformation of Human Resource Management in the Industry 5.0 Era: Leadership, Innovation, and Organizational Sustainability membahas transformasi strategis manajemen sumber daya manusia dalam menghadapi perubahan teknologi dan dinamika organisasi pada era Industri 5.0 yang menempatkan manusia sebagai pusat inovasi. Buku ini menguraikan konsep Industri 5.0, Strategic Human Resource Management, kepemimpinan transformasional dan digital, inovasi serta pemanfaatan Artificial Intelligence dalam pengelolaan SDM, reskilling dan upskilling, hingga pengembangan organisasi yang tangguh dan berkelanjutan. Pembahasan juga menekankan pentingnya integrasi leadership, innovation, dan sustainability dalam membangun lingkungan kerja yang human-centered, adaptif, produktif, dan mampu mempertahankan talenta. Melalui pembahasan konseptual dan strategis, buku ini menawarkan strategic roadmap transformasi SDM yang dapat menjadi acuan bagi akademisi, mahasiswa, praktisi HR, pemimpin organisasi, maupun pengambil kebijakan dalam merancang dan mengimplementasikan transformasi SDM berbasis teknologi secara bertanggung jawab untuk menciptakan keunggulan kompetitif sekaligus keberlanjutan organisasi di era Industri 5.0.`
+  },
+  {
+    id: "dasar-ekonomi-dan-bisnis-untuk-smk",
+    judul: "DASAR EKONOMI DAN BISNIS UNTUK SMK/MAK \nKonsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital",
+    harga: "74.830",
+    isbn: "-",
+    penulis: [
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
+      "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si.,M.M.,Psi",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Toni Siswanto, S.E.,M.M",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Heri Irwanto, S.M",
+      "Rafliditya Bayu Wicaksono",
+    ],
+    editor: [
+      "Prof. Dr. Widodo, M.Si",
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "viii + 174 Halaman",
+    tahun: "2026",
+    gambar: "dasar-ekonomi-dan-bisnis-untuk-smk.jpeg",
+    sinopsis: `Dasar Ekonomi dan Bisnis untuk SMK/MAK: Konsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital merupakan buku pembelajaran yang disusun untuk memberikan pemahaman dasar mengenai konsep ekonomi dan penerapannya dalam dunia bisnis kepada peserta didik SMK/MAK. Buku ini membahas berbagai materi mulai dari konsep dasar ekonomi, kegiatan dan pelaku ekonomi, pasar, permintaan dan penawaran, aktivitas bisnis dan badan usaha, manajemen dan pengelolaan bisnis, hingga perkembangan ekonomi digital dan transformasi bisnis. Pembahasan dilengkapi dengan materi mengenai produksi, distribusi, konsumsi, kewirausahaan, pengambilan keputusan, e-commerce, digital marketing, fintech, sistem pembayaran digital, serta strategi bisnis berkelanjutan. Dengan bahasa yang sistematis dan kontekstual, buku ini diharapkan dapat membantu peserta didik memahami hubungan antara teori ekonomi dengan praktik bisnis dalam kehidupan sehari-hari, sekaligus mengembangkan kemampuan berpikir kritis, kreatif, adaptif, dan berjiwa kewirausahaan untuk menghadapi dunia kerja serta perkembangan ekonomi digital.`
+  }
 ];
