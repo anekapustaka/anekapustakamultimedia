@@ -352,5 +352,28 @@ window.dataBuku = [
     tahun: "2026",
     gambar: "buku-referensi-ipas-sd-berbasis-aktivitas.jpeg",
     sinopsis: `Buku Referensi IPAS SD Berbasis Aktivitas: Belajar Sains dan Sosial dari Lingkungan Sekitar merupakan buku pembelajaran yang dirancang untuk membantu siswa sekolah dasar memahami Ilmu Pengetahuan Alam dan Sosial melalui pengalaman nyata di lingkungan sekitar. Buku ini membahas berbagai materi, mulai dari makhluk hidup dan kehidupannya, materi dan energi, bumi dan lingkungan, kehidupan sosial masyarakat, hingga kegiatan ekonomi. Setiap materi disajikan dengan bahasa yang sederhana, contoh yang dekat dengan kehidupan siswa, serta aktivitas seperti pengamatan, percobaan sederhana, diskusi, wawancara, refleksi, dan proyek IPAS. Melalui pendekatan berbasis aktivitas, siswa tidak hanya memperoleh pengetahuan, tetapi juga dilatih untuk berpikir kritis, bekerja sama, bertanggung jawab, peduli terhadap lingkungan, serta mampu menghubungkan pembelajaran dengan kehidupan sehari-hari. Buku ini diharapkan menjadi pendamping belajar yang menarik, kontekstual, dan bermakna dalam membentuk siswa yang aktif, kreatif, mandiri, dan memiliki kepedulian terhadap alam serta kehidupan sosial di sekitarnya.`
-  }
+  },
+  {
+  "id": "logika-dan-pemecahan-masalah-bisnis",
+  "judul": "LOGIKA DAN PEMECAHAN MASALAH BISNIS Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis",
+  "harga": "Rp. 66.990",
+  "isbn": "(Dalam Proses)",
+  "penulis": [
+    "Prof. Dr. H. Zaidan Nawawi, M.Si",
+    "Dr. H. Dasmadi, S.E.,M.M",
+    "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si., M.M., Psi",
+    "Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
+    "Hendra Musa, S.H., S.E., M.H., M.Si"
+  ],
+  "editor": [
+    "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+    "Toni Siswanto, S.E.,M.M",
+    "Abid Khotibul Umam, S.M.,M.M"
+  ],
+  "ukuran": "15,5 x 23 cm",
+  "halaman": "vi + 150 halaman",
+  "tahun": "2026",
+  "gambar": "logika-dan-pemecahan-masalah-bisnis.jpeg",
+  "sinopsis": "Logika dan Pemecahan Masalah Bisnis: Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis merupakan buku yang membahas kemampuan berpikir logis, kritis, analitis, dan sistematis dalam menghadapi berbagai persoalan serta menentukan keputusan di dunia bisnis. Buku ini menguraikan konsep dasar logika dan pemecahan masalah, proses penalaran deduktif dan induktif, identifikasi serta analisis akar masalah, pengumpulan dan pemanfaatan data, hingga berbagai metode pemecahan masalah seperti brainstorming, mind mapping, 5 Why, diagram fishbone, SWOT, PESTEL, matriks prioritas, decision matrix, dan design thinking. Pembahasan dilanjutkan dengan pengambilan keputusan berbasis data, pengelolaan risiko dan ketidakpastian, pengembangan solusi dan inovasi, implementasi serta evaluasi berkelanjutan. Pada bagian akhir, buku ini menghadirkan penerapan pemecahan masalah dalam berbagai bidang, meliputi pemasaran dan perilaku konsumen, keuangan dan investasi, manajemen sumber daya manusia, operasional dan rantai pasok, serta kewirausahaan dan bisnis digital. Dengan pendekatan konseptual sekaligus aplikatif, buku ini diharapkan menjadi referensi bagi mahasiswa, dosen, manajer, wirausahawan, dan praktisi bisnis dalam mengembangkan kemampuan menganalisis masalah, mengevaluasi berbagai alternatif, dan mengambil keputusan secara terstruktur, berbasis informasi, adaptif, serta berorientasi pada keberlanjutan bisnis."
+}
 ];
