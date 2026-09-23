@@ -363,12 +363,18 @@ window.dataBuku = [
     "Dr. H. Dasmadi, S.E.,M.M",
     "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si., M.M., Psi",
     "Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
-    "Hendra Musa, S.H., S.E., M.H., M.Si"
+    "Hendra Musa, S.H., S.E., M.H., M.Si",
+	"Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+	"Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+	"Abid Khotibul Umam, S.M.,M.M ",
+	"Toni Siswanto, S.E.,M.M",
+	"Heri Irwanto, S.M"
+
   ],
   "editor": [
-    "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-    "Toni Siswanto, S.E.,M.M",
-    "Abid Khotibul Umam, S.M.,M.M"
+	"Prof. Dr. Widodo, S.E., M.Si",
+	"Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag"
+
   ],
   "ukuran": "15,5 x 23 cm",
   "halaman": "vi + 150 halaman",
