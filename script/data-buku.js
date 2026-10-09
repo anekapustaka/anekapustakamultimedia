@@ -381,5 +381,29 @@ window.dataBuku = [
   "tahun": "2026",
   "gambar": "logika-dan-pemecahan-masalah-bisnis.jpeg",
   "sinopsis": "Logika dan Pemecahan Masalah Bisnis: Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis merupakan buku yang membahas kemampuan berpikir logis, kritis, analitis, dan sistematis dalam menghadapi berbagai persoalan serta menentukan keputusan di dunia bisnis. Buku ini menguraikan konsep dasar logika dan pemecahan masalah, proses penalaran deduktif dan induktif, identifikasi serta analisis akar masalah, pengumpulan dan pemanfaatan data, hingga berbagai metode pemecahan masalah seperti brainstorming, mind mapping, 5 Why, diagram fishbone, SWOT, PESTEL, matriks prioritas, decision matrix, dan design thinking. Pembahasan dilanjutkan dengan pengambilan keputusan berbasis data, pengelolaan risiko dan ketidakpastian, pengembangan solusi dan inovasi, implementasi serta evaluasi berkelanjutan. Pada bagian akhir, buku ini menghadirkan penerapan pemecahan masalah dalam berbagai bidang, meliputi pemasaran dan perilaku konsumen, keuangan dan investasi, manajemen sumber daya manusia, operasional dan rantai pasok, serta kewirausahaan dan bisnis digital. Dengan pendekatan konseptual sekaligus aplikatif, buku ini diharapkan menjadi referensi bagi mahasiswa, dosen, manajer, wirausahawan, dan praktisi bisnis dalam mengembangkan kemampuan menganalisis masalah, mengevaluasi berbagai alternatif, dan mengambil keputusan secara terstruktur, berbasis informasi, adaptif, serta berorientasi pada keberlanjutan bisnis."
+},
+{
+  "id": "bahasa-indonesia-dan-penulisan-ilmiah",
+  "judul": "BAHASA INDONESIA DAN PENULISAN ILMIAH Konsep, Keterampilan Berbahasa, dan Strategi Menulis Karya Ilmiah bagi Mahasiswa",
+  "harga": "Rp. 68.460",
+  "isbn": "(Dalam Proses)",
+  "penulis": [
+    "Hendra Musa, S.H., S.E., M.H., M.Si",
+    "Indriani, S.E., M.M",
+    "Serli Lestari, S.Pd., S.M., M.Pd",
+    "Aidina Syafaroh Ramadini, S.SI, SE, MM",
+    "Firdanita Wandira Dwi Putri, S.P., M.Si",
+    "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+    "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+    "Abid Khotibul Umam, S.M.,M.M"
+  ],
+  "editor": [
+    "Toni Siswanto, S.E.,M.M"
+  ],
+  "ukuran": "15,5 x 23 cm",
+  "halaman": "vi + 152 halaman",
+  "tahun": "2026",
+  "gambar": "bahasa-indonesia-dan-penulisan-ilmiah.jpeg",
+  "sinopsis": "Buku Bahasa Indonesia dan Penulisan Ilmiah merupakan buku pembelajaran yang disusun untuk membantu mahasiswa mengembangkan kemampuan berbahasa Indonesia secara baik, benar, efektif, dan akademis dalam berbagai kegiatan pendidikan maupun profesional. Buku ini membahas secara sistematis kedudukan dan fungsi bahasa Indonesia dalam dunia akademik, kaidah bahasa Indonesia baku, komunikasi tulis dan lisan, konsep serta struktur karya tulis ilmiah, teknik pengutipan dan penyusunan referensi, penerapan gaya penulisan akademik, serta prinsip plagiarisme dan integritas akademik. Selain memberikan landasan konseptual, buku ini juga mengarahkan pembaca pada penerapan praktis melalui perencanaan dan penyusunan karya ilmiah, pengembangan argumentasi berbasis data, penyuntingan dan evaluasi naskah, penyelesaian serta presentasi laporan mini proyek, hingga publikasi dan pengembangan karya ilmiah secara berkelanjutan. Dengan penyajikan yang sistematis dan berorientasi pada praktik, buku ini diharapkan dapat menjadi referensi bagi mahasiswa dalam membangun keterampilan literasi akademik, berpikir kritis, menulis secara ilmiah, berkomunikasi secara profesional, serta menghasilkan karya yang berkualitas, berintegritas, dan dapat dipertanggungjawabkan."
 }
 ];
