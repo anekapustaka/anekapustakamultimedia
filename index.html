@@ -132,141 +132,213 @@
 
 </script>
   
-  <div class="judul">
-    <h2>Katalog Buku</h2>
-  </div>
+<div class="judul">
+  <h2>Katalog Buku</h2>
+</div>
 
-  <section class="categorysection">
-    <div class="categorycard">
-      <div class="poster">
-        <img src="images/fictional.jpg" alt="">
-      </div>
-      <div class="parahome">
-        <h4>Buku Ekonomi</h4>
-        <p>Buku ekonomi menyajikan teori dan praktik yang berkaitan dengan pengelolaan sumber daya, pembangunan, hingga dinamika pasar global.</p>
-      </div>
-      <div class="btncard">
-        <a href="#"><button>Buka Katalog</button></a>
-      </div>
-    </div>
+<div class="category-wrapper">
 
-    <div class="categorycard">
-      <div class="poster">
-        <img src="images/nonfictional.jpg" alt="">
-      </div>
-      <div class="parahome">
-        <h4>Buku Hukum</h4>
-        <p>Buku hukum menghadirkan kajian tentang prinsip, asas, dan praktik hukum yang berlaku di Indonesia.</p>
-      </div>
-      <div class="btncard">
-        <a href="#"><button>Buka Katalog</button></a>
-      </div>
-    </div>
+  <button
+    type="button"
+    class="category-arrow prev"
+    id="category-prev"
+    aria-label="Geser kategori ke kiri"
+  >&#8249;</button>
 
-    <div class="categorycard">
-      <div class="poster">
-        <img src="images/kids.jpg" alt="">
-      </div>
-      <div class="parahome">
-        <h4>Buku Keagamaan</h4>
-        <p>Buku keagamaan memberikan pemahaman mengenai nilai-nilai spiritual, etika, dan moralitas yang bersumber dari ajaran agama Islam.</p>
-      </div>
-      <div class="btncard">
-        <a href="#"><button>Buka Katalog</button></a>
-      </div>
-    </div>
+  <section
+    class="categorysection"
+    id="category-section"
+    aria-label="Daftar kategori buku"
+  ></section>
 
-    <div class="categorycard">
-      <div class="poster">
-        <img src="images/special.jpg" alt="">
-      </div>
-      <div class="parahome">
-        <h4>Buku Informatika</h4>
-        <p>Buku informatika membahas perkembangan teknologi informasi mulai dari konsep dasar komputer, jaringan, pemrograman, hingga kecerdasan buatan.</p>
-      </div>
-      <div class="btncard">
-        <a href="#"><button>Buka Katalog</button></a>
-      </div>
-    </div>
-  </section>
+  <button
+    type="button"
+    class="category-arrow next"
+    id="category-next"
+    aria-label="Geser kategori ke kanan"
+  >&#8250;</button>
+
+</div>
+
+<script src="script/data-buku.js"></script>
+
+<script>
+(() => {
+  const categorySection = document.getElementById("category-section");
+  const prevButton = document.getElementById("category-prev");
+  const nextButton = document.getElementById("category-next");
+
+  const daftarKategori = [
+    {
+      nama: "Manajemen dan Bisnis",
+      gambar: "kategori-manajemen.jpeg",
+      deskripsi:
+        "Buku tentang manajemen, kepemimpinan, sumber daya manusia, ekonomi, kewirausahaan, dan strategi bisnis."
+    },
+    {
+      nama: "Pendidikan Jenjang Perguruan Tinggi",
+      gambar: "kategori-perguruan-tinggi.jpeg",
+      deskripsi:
+        "Buku referensi akademik untuk mahasiswa, dosen, peneliti, dan pembaca perguruan tinggi."
+    },
+    {
+      nama: "Pendidikan Jenjang SD/MI",
+      gambar: "kategori-sd-mi.jpeg",
+      deskripsi:
+        "Buku pembelajaran untuk siswa Sekolah Dasar dan Madrasah Ibtidaiyah."
+    },
+    {
+      nama: "Pendidikan Jenjang SMP/MTs",
+      gambar: "kategori-smp-mts.jpeg",
+      deskripsi:
+        "Buku pembelajaran untuk siswa Sekolah Menengah Pertama dan Madrasah Tsanawiyah."
+    },
+    {
+      nama: "Sosial dan Budaya",
+      gambar: "kategori-sosial-budaya.jpeg",
+      deskripsi:
+        "Buku tentang kehidupan sosial, kebangsaan, seni, budaya, dan pelestarian lingkungan."
+    }
+  ];
+
+  const dataBuku = window.dataBuku;
+
+  if (!Array.isArray(dataBuku)) {
+    categorySection.innerHTML =
+      "<p>Data buku gagal dimuat. Periksa script/data-buku.js.</p>";
+    prevButton.hidden = true;
+    nextButton.hidden = true;
+    return;
+  }
+
+  daftarKategori.forEach(kategori => {
+    const jumlahBuku = dataBuku.filter(
+      buku => buku.kategori?.trim() === kategori.nama
+    ).length;
+
+    const card = document.createElement("article");
+    card.className = "categorycard";
+
+    const poster = document.createElement("div");
+    poster.className = "poster";
+
+    const img = document.createElement("img");
+    img.src = `images/${kategori.gambar}`;
+    img.alt = `Kategori ${kategori.nama}`;
+    img.loading = "lazy";
+
+    img.onerror = function () {
+      this.remove();
+      poster.classList.add("no-image");
+    };
+
+    poster.appendChild(img);
+
+    const info = document.createElement("div");
+    info.className = "parahome";
+
+    const heading = document.createElement("h4");
+    heading.textContent = kategori.nama;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = kategori.deskripsi;
+
+    const count = document.createElement("p");
+    count.className = "category-count";
+    count.textContent = `${jumlahBuku} buku tersedia`;
+
+    info.append(heading, paragraph, count);
+
+    const buttonArea = document.createElement("div");
+    buttonArea.className = "btncard";
+
+    const link = document.createElement("a");
+    link.href =
+      `katalog.html?kategori=${encodeURIComponent(kategori.nama)}`;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Buka Katalog";
+
+    link.appendChild(button);
+    buttonArea.appendChild(link);
+
+    card.append(poster, info, buttonArea);
+    categorySection.appendChild(card);
+  });
+
+  function geserKategori(arah) {
+    const card = categorySection.querySelector(".categorycard");
+    if (!card) return;
+
+    const style = getComputedStyle(categorySection);
+    const gap = parseFloat(style.columnGap) || 0;
+    const jarakGeser = card.getBoundingClientRect().width + gap;
+
+    categorySection.scrollBy({
+      left: arah * jarakGeser,
+      behavior: "smooth"
+    });
+  }
+
+  prevButton.addEventListener("click", () => geserKategori(-1));
+  nextButton.addEventListener("click", () => geserKategori(1));
+
+  function perbaruiTombol() {
+    const maksimalScroll =
+      categorySection.scrollWidth - categorySection.clientWidth;
+
+    prevButton.hidden = categorySection.scrollLeft <= 2;
+    nextButton.hidden =
+      maksimalScroll <= 2 ||
+      categorySection.scrollLeft >= maksimalScroll - 2;
+  }
+
+  categorySection.addEventListener("scroll", perbaruiTombol, {
+    passive: true
+  });
+
+  window.addEventListener("resize", perbaruiTombol);
+  requestAnimationFrame(perbaruiTombol);
+})();
+</script>
+```
+
 
 <div class="book-selling">
   <div class="title">
     <h2>Buku Baru Terbit</h2>
   </div>
 
-  <section class="book-collection">
-
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=informatika-mts-vii">
-        <img src="images/informatika-mts-vii.png" alt="bestseller">
-      </a>
-      <h3 class="book-title">Informatika (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
-
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=ipa-mts-vii">
-        <img src="images/ipa-mts-vii.jpeg" alt="bestseller">
-      </a>
-      <h3 class="book-title">Ilmu Pengetahuan Alam (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
-    
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=pkn-mts-vii">
-        <img src="images/pkn-mts.jpg" alt="bestseller">
-      </a>
-      <h3 class="book-title">Pendidikan Kewarganegaraan (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
-
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=ips-mts-vii">
-        <img src="images/ips-mts-vii.png" alt="bestseller">
-      </a>
-      <h3 class="book-title">Ilmu Pengetahuan Sosial (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
+  <section class="book-collection" id="new-books">
   </section>
 </div>
 
-<div class="book-selling">
-  <div class="title">
-    <h2>Bestselling Books</h2>
-  </div>
+<script src="script/data-buku.js"></script>
+<script>
+  const bookCollection = document.getElementById('new-books');
 
-  <section class="book-collection">
+  if (Array.isArray(window.dataBuku)) {
+    const bukuTerbaru = window.dataBuku.slice(-4).reverse();
 
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=informatika-mts-vii">
-        <img src="images/informatika-mts-vii.png" alt="bestseller">
-      </a>
-      <h3 class="book-title">Informatika (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
+    bukuTerbaru.forEach(buku => {
+      const card = document.createElement('div');
+      card.className = 'book-card';
 
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=ipa-mts-vii">
-        <img src="images/ipa-mts-vii.jpeg" alt="bestseller">
-      </a>
-      <h3 class="book-title">Ilmu Pengetahuan Alam (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
-    
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=pkn-mts-vii">
-        <img src="images/pkn-mts.jpg" alt="bestseller">
-      </a>
-      <h3 class="book-title">Pendidikan Kewarganegaraan (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
+      card.innerHTML = `
+        <a href="buku.html?id=${encodeURIComponent(buku.id)}">
+          <img src="images/${buku.gambar}" alt="${buku.judul}" loading="lazy">
+        </a>
+      `;
 
-    <div class="book-card">
-      <a href="https://anekapustaka.github.io/anekapustakamultimedia/buku.html?id=ips-mts-vii">
-        <img src="images/ips-mts-vii.png" alt="bestseller">
-      </a>
-      <h3 class="book-title">Ilmu Pengetahuan Sosial (Untuk Siswa SMP/MTs Kelas VII)</h3>
-    </div>
-  </section>
-</div>
+      bookCollection.appendChild(card);
+    });
+  }
+</script>
 
 <div class="judul container">
   <div class="title">
-    <h2>TJU (Tanya Jawab Umum)</h2>
+    <h2>Tanya Jawab Umum (FAQ)</h2>
   </div>
 </div>
 <section class="faq">

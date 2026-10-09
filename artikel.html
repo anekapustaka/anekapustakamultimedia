@@ -2,299 +2,222 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Default -->
-  <title id="page-title">Aneka Pustaka Multimedia</title>
-  <meta name="description" id="meta-description" content="Penerbit, Percetakan, dan Distributor / Perdagangan Umum">
-  <meta name="keywords" id="meta-keywords"
-    content="Aneka Pustaka Multimedia, penerbit, percetakan, distribusi buku">
+  <title id="page-title">Etalase Artikel - Aneka Pustaka Multimedia</title>
+  <meta id="meta-description" name="description" content="Kumpulan artikel terbaru dari CV. Aneka Pustaka Multimedia.">
+  <meta id="meta-keywords" name="keywords" content="artikel, aneka pustaka multimedia, penerbit, literasi, buku">
   <meta name="author" content="CV. Aneka Pustaka Multimedia">
 
   <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="index.css" />
+  
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/artikel.css">
   <link rel="stylesheet" href="styles/footer.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    /* ====================
-       Artikel
-    ==================== */
-    .article-banner {
-      width: 100%;
-      max-height: 400px; /* Desktop */
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    .article-title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .article-meta {
-      color: #555;
-      font-style: italic;
-      margin-bottom: 30px;
-    }
-
-    .article-content {
-      line-height: 1.7;
-    }
-
-    .article-content h2 {
-      margin-top: 30px;
-      font-size: 1.5rem;
-      color: #0d6efd;
-    }
-
-    .article-content p {
-      margin-bottom: 15px;
-    }
-
-    /* ====================
-       Sidebar
-    ==================== */
-    .sidebar {
-      background: #f8f9ff;
-      padding: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar h5 {
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: #0d6efd;
-    }
-
-    .sidebar a {
-      display: block;
-      color: #0d6efd;
-      margin-bottom: 10px;
-      text-decoration: none;
-    }
-
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-
-    /* ====================
-       Pop-up Promosi
-    ==================== */
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-
-    .popup-overlay.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .popup-content {
-      position: relative;
-      background: #fff;
-      border-radius: 12px;
-      width: 300px;
-      max-width: 90%;
-      height: 450px;
-      padding: 10px;
-      text-align: center;
-      animation: popupShow 0.4s ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .popup-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    .popup-close {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      font-size: 24px;
-      cursor: pointer;
-      color: #fff;
-      background: #0d6efd;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    @keyframes popupShow {
-      from {
-        transform: scale(0.7);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    /* ====================
-       Responsive
-    ==================== */
-    @media (max-width: 767px) {
-      .flex-lg-row {
-        flex-direction: column !important;
-      }
-
-      .article-banner {
-        max-height: 250px; /* HP */
-      }
-
-      .sidebar {
-        width: 100%;
-        margin-top: 20px;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="main-header" role="banner">
+
+  <header class="main-header">
     <div class="header-container">
+
       <div class="logo-text-container">
-        <div class="logo-circle"><img src="images/logocv.png" alt="logo"></div>
+        <div class="logo-circle">
+          <img src="images/logocv.png" alt="Logo Aneka Pustaka Multimedia">
+        </div>
+
         <div class="company-text">
           <h2>CV. ANEKA PUSTAKA MULTIMEDIA</h2>
           <h3>Penerbit, Percetakan, dan Distributor / Perdagangan Umum</h3>
         </div>
       </div>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburger-btn">
-        <span></span><span></span><span></span>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+      <label for="menu-toggle" class="hamburger-btn" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
       </label>
+
       <nav class="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="services.html">Layanan</a>
-        <a href="artikel.html">Artikel</a>
-        <a href="#">Jurnal</a>
+        <a href="artikel-all.html">Artikel</a>
+        <a href="repo.html">Repositori</a>
         <a href="etalase.html">Etalase</a>
         <a href="about.html">Tentang Kami</a>
       </nav>
+
     </div>
   </header>
 
-  <!-- Pop-up Promosi -->
-  <div id="promo-popup" class="popup-overlay">
+  <div
+    id="promo-popup"
+    class="popup-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Promosi Aneka Pustaka Multimedia"
+  >
     <div class="popup-content">
-      <span class="popup-close">&times;</span>
-      <img src="images/poster-promosi.jpg" alt="Promo" class="popup-image">
+
+      <button
+        type="button"
+        class="popup-close"
+        aria-label="Tutup popup"
+        title="Tutup"
+      >&times;</button>
+
+      <img
+        src="images/poster-promosi.jpg"
+        alt="Poster promosi Aneka Pustaka Multimedia"
+        class="popup-image"
+      >
+
     </div>
   </div>
 
-  <!-- Article Section -->
-  <main class="container my-5">
-    <div class="d-flex flex-lg-row gap-4">
-      <!-- Konten Artikel -->
-      <div class="flex-fill">
-        <img id="article-banner" class="article-banner" src="" alt="Banner Artikel">
-        <h1 id="article-title" class="article-title">Judul Artikel</h1>
-        <p id="article-meta" class="article-meta">Tanggal Publikasi - Penulis</p>
-        <section id="article-content" class="article-content">
-          <p>Konten artikel</p>
-        </section>
-      </div>
 
-      <!-- Sidebar -->
-      <aside class="sidebar flex-shrink-0" style="width: 250px;">
-        <h5>Artikel Terkait</h5>
-        <div id="related-articles"></div>
-      </aside>
+<main class="container my-5">
+  <div class="d-flex flex-lg-row flex-column gap-4">
+
+    <article class="flex-fill">
+
+      <img
+        id="article-banner"
+        class="article-banner"
+        src=""
+        alt="Banner Artikel"
+        style="display: none;"
+      >
+
+      <h1 id="article-title" class="article-title">
+        Memuat artikel...
+      </h1>
+
+      <p id="article-meta" class="article-meta"></p>
+
+      <section id="article-content" class="article-content">
+        <p>Konten artikel sedang dimuat.</p>
+      </section>
+
+    </article>
+
+    <aside class="sidebar flex-shrink-0"
+      style="width: 250px; max-width: 100%;">
+      <h5>Artikel Terkait</h5>
+      <div id="related-articles"></div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
-    </div>
-  </footer>
+    <p class="footer-text">
+      © 2026 Aneka Pustaka Multimedia - All Rights Reserved.
+    </p>
 
-  <!-- Script -->
-  <script src="data-artikel.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
-    const article = articles[id];
+  </div>
+</footer>
 
-    if (article) {
-      document.getElementById("article-title").innerText = article.title;
-      document.getElementById("article-banner").src = article.banner;
-      document.getElementById("article-meta").innerText = `${article.date} - ${article.author}`;
-      document.getElementById("article-content").innerHTML = article.content;
+<script src="script/data-artikel.js"></script>
 
-      // SEO Dinamis
-      document.getElementById("page-title").innerText = article.title + " - Aneka Pustaka Multimedia";
-      document.getElementById("meta-description").setAttribute("content", article.description);
-      document.getElementById("meta-keywords").setAttribute("content", article.keywords);
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
-      // Sidebar: Artikel Terkait (acak 5)
-      const relatedContainer = document.getElementById("related-articles");
-      let relatedKeys = Object.keys(articles).filter(key => key !== id).sort(() => Math.random() - 0.5).slice(0, 5);
-      relatedKeys.forEach(key => {
-        const a = document.createElement("a");
-        a.href = `artikel.html?id=${key}`;
-        a.innerText = articles[key].title;
-        relatedContainer.appendChild(a);
+  const article = (typeof articles !== "undefined" && id !== null)
+    ? articles[id]
+    : null;
+
+  const titleEl = document.getElementById("article-title");
+  const bannerEl = document.getElementById("article-banner");
+  const metaEl = document.getElementById("article-meta");
+  const contentEl = document.getElementById("article-content");
+
+  if (!article) {
+    titleEl.textContent = "Artikel Tidak Ditemukan";
+    metaEl.textContent = "";
+    contentEl.innerHTML = `
+      <p>Artikel dengan ID "${id || "-"}" tidak ditemukan.</p>
+      <p><a href="artikel-all.html">Kembali ke daftar artikel</a></p>
+    `;
+    bannerEl.style.display = "none";
+    return;
+  }
+
+  document.title = article.title + " - Aneka Pustaka Multimedia";
+
+  titleEl.textContent = article.title;
+  metaEl.textContent = `${article.date || ""} - ${article.author || ""}`;
+  contentEl.innerHTML = article.content || "";
+
+  if (article.banner) {
+    bannerEl.src = article.banner;
+    bannerEl.alt = article.title;
+    bannerEl.style.display = "block";
+    bannerEl.onerror = function () {
+      this.style.display = "none";
+    };
+  } else {
+    bannerEl.style.display = "none";
+  }
+
+  const description = document.getElementById("meta-description");
+  const keywords = document.getElementById("meta-keywords");
+
+  if (description) {
+    description.content = article.description || "";
+  }
+
+  if (keywords) {
+    keywords.content = article.keywords || "";
+  }
+
+  const relatedContainer = document.getElementById("related-articles");
+
+  if (relatedContainer) {
+    relatedContainer.innerHTML = "";
+
+    Object.keys(articles)
+      .filter(key => key !== id)
+      .slice(0, 5)
+      .forEach(key => {
+        const link = document.createElement("a");
+        link.href = `artikel.html?id=${encodeURIComponent(key)}`;
+        link.textContent = articles[key].title;
+        relatedContainer.appendChild(link);
       });
-    } else {
-      document.getElementById("article-title").innerText = "Artikel Tidak Ditemukan";
-      document.getElementById("article-content").innerHTML = "<p>Maaf, artikel yang Anda cari tidak tersedia.</p>";
-    }
+  }
+});
+</script>
 
-    // Pop-up Promosi
-    window.addEventListener("load", () => {
-      const popup = document.getElementById("promo-popup");
-      const closeBtn = popup.querySelector(".popup-close");
-      popup.classList.add("active");
-
-      closeBtn.addEventListener("click", () => {
-        popup.classList.remove("active");
-      });
-      popup.addEventListener("click", e => {
-        if (e.target === popup) popup.classList.remove("active");
-      });
-    });
-  </script>
 </body>
-
 </html>

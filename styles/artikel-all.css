@@ -1,0 +1,310 @@
+
+/* =========================
+   Judul Halaman Artikel
+========================= */
+
+.judul {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.judul h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.judul p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* =========================
+   Grid Artikel
+   Maksimal 5 kolom
+========================= */
+
+.artikel-grid {
+  display: grid;
+
+  /* Maksimal 5 artikel dalam satu baris */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  align-items: stretch;
+}
+
+/* =========================
+   Kartu Artikel
+========================= */
+
+.artikel-card {
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #e8ecf3;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.artikel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   Gambar Artikel
+========================= */
+
+.artikel-card img {
+  display: block;
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  object-position: center;
+  background: #f1f3f5;
+}
+
+/* =========================
+   Isi Kartu
+========================= */
+
+.artikel-card-body {
+  padding: 15px 13px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.artikel-card-title {
+  color: #163b70;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+
+  margin: 0 0 10px;
+
+  /* Batasi judul menjadi maksimal 3 baris */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+
+  overflow-wrap: anywhere;
+}
+
+.artikel-card-excerpt {
+  color: #606873;
+  font-size: 0.85rem;
+  line-height: 1.65;
+
+  margin: 0 0 18px;
+
+  /* Batasi ringkasan menjadi maksimal 4 baris */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+
+  overflow-wrap: anywhere;
+  flex: 1;
+}
+
+/* =========================
+   Tombol Baca Artikel
+========================= */
+
+.btn-baca {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+
+  margin-top: auto;
+  padding: 8px 12px;
+
+  background: #0d6efd;
+  color: #fff;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-baca:hover {
+  background: #0a53be;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-baca:focus-visible {
+  outline: 3px solid #8bb9ff;
+  outline-offset: 3px;
+}
+
+/* =========================
+   Pesan Artikel Kosong
+========================= */
+
+.artikel-kosong {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #666;
+  padding: 40px 20px;
+}
+
+/* =========================
+   Laptop / Desktop Kecil
+   Maksimal 4 kolom
+========================= */
+
+@media (max-width: 1100px) {
+  .artikel-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* =========================
+   Tablet
+   Maksimal 3 kolom
+========================= */
+
+@media (max-width: 850px) {
+  .artikel-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .artikel-card img {
+    height: 135px;
+  }
+
+  .artikel-card-body {
+    padding: 13px 11px;
+  }
+}
+
+/* =========================
+   HP
+   Maksimal 2 kolom
+========================= */
+
+@media (max-width: 600px) {
+  .judul {
+    margin-bottom: 25px;
+  }
+
+  .judul h2 {
+    font-size: 1.7rem;
+  }
+
+  .judul p {
+    font-size: 0.88rem;
+  }
+
+  .artikel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .artikel-card {
+    border-radius: 8px;
+  }
+
+  .artikel-card img {
+    height: 115px;
+  }
+
+  .artikel-card-body {
+    padding: 11px 10px;
+  }
+
+  .artikel-card-title {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .artikel-card-excerpt {
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .btn-baca {
+    padding: 7px 9px;
+    font-size: 0.75rem;
+  }
+}
+
+/* =========================
+   HP Sangat Kecil
+========================= */
+
+@media (max-width: 360px) {
+  .artikel-grid {
+    gap: 10px;
+  }
+
+  .artikel-card img {
+    height: 100px;
+  }
+
+  .artikel-card-body {
+    padding: 9px;
+  }
+
+  .artikel-card-title {
+    font-size: 0.84rem;
+  }
+
+  .artikel-card-excerpt {
+    font-size: 0.76rem;
+  }
+
+  .btn-baca {
+    font-size: 0.7rem;
+    padding: 7px 8px;
+  }
+}
+
+/* =========================
+   Aksesibilitas
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .artikel-card,
+  .btn-baca {
+    transition: none;
+  }
+
+  .artikel-card:hover {
+    transform: none;
+  }
+}

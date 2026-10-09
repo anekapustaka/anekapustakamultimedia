@@ -13,85 +13,16 @@
 
   <link rel="icon" type="image/png" href="images/logocv.png" sizes="32x32">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/bookcategory.css">
+  <link rel="stylesheet" href="styles/artikel-all.css">
   <link rel="stylesheet" href="styles/footer.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
 
-  <style>
-    .artikel-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .artikel-card {
-      background: #f8f9ff;
-      border-radius: 8px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .artikel-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .artikel-card img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-    }
-
-    .artikel-card-body {
-      padding: 12px 10px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .artikel-card-title {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #0d6efd;
-      margin-bottom: 5px;
-      line-height: 1.2;
-    }
-
-    .artikel-card-excerpt {
-      font-size: 0.85rem;
-      color: #555;
-      flex-grow: 1;
-      margin-bottom: 10px;
-    }
-
-    .btn-baca {
-      align-self: flex-start;
-      background: #0d6efd;
-      color: #fff;
-      border: none;
-      font-size: 0.85rem;
-      padding: 6px 12px;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background 0.2s ease;
-    }
-
-    .btn-baca:hover {
-      background: #0a53be;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    @media(max-width: 767px) {
-      .artikel-card img {
-        height: 120px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -119,23 +50,81 @@
     </div>
   </header>
 
-  <main class="container my-5">
-    <h2 class="mb-4">Artikel</h2>
-    <div id="artikel-grid" class="artikel-grid">
-    </div>
-  </main>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <p class="footer-text">© 2025 Aneka Pustaka Multimedia - All Rights Reserved.</p>
-    </div>
-  </footer>
+<main class="container my-5">
+  <div class="judul">
+    <h2>Artikel</h2>
+    <p>Informasi, wawasan, dan inspirasi dari Aneka Pustaka Multimedia.</p>
+  </div>
+
+  <div id="artikel-grid" class="artikel-grid"></div>
+</main>
+
+<script src="script/data-artikel.js"></script>
+
+<script>
+  const grid = document.getElementById("artikel-grid");
+
+  const dataArtikel =
+    typeof articles !== "undefined" && articles
+      ? articles
+      : {};
+
+  const keys = Object.keys(dataArtikel);
+
+  if (keys.length === 0) {
+    grid.innerHTML = `
+      <p class="artikel-kosong">
+        Belum ada artikel yang tersedia.
+      </p>
+    `;
+  } else {
+    keys.forEach(key => {
+      const article = dataArtikel[key];
+
+      const card = document.createElement("article");
+      card.className = "artikel-card";
+
+      const image = document.createElement("img");
+      image.src = article.banner || "images/logocv.png";
+      image.alt = article.title || "Artikel Aneka Pustaka Multimedia";
+      image.loading = "lazy";
+
+      image.onerror = function () {
+        this.onerror = null;
+        this.src = "images/logocv.png";
+      };
+
+      const body = document.createElement("div");
+      body.className = "artikel-card-body";
+
+      const title = document.createElement("h5");
+      title.className = "artikel-card-title";
+      title.textContent = article.title || "Tanpa Judul";
+
+      const excerpt = document.createElement("p");
+      excerpt.className = "artikel-card-excerpt";
+      excerpt.textContent =
+        article.excerpt ||
+        article.description ||
+        "Baca artikel ini untuk mengetahui informasi selengkapnya.";
+
+      const link = document.createElement("a");
+      link.href = `artikel.html?id=${encodeURIComponent(key)}`;
+      link.className = "btn-baca";
+      link.textContent = "Baca Selengkapnya";
+
+      body.appendChild(title);
+      body.appendChild(excerpt);
+      body.appendChild(link);
+
+      card.appendChild(image);
+      card.appendChild(body);
+
+      grid.appendChild(card);
+    });
+  }
+</script>
 
   <script src="script/data-artikel.js"></script>
   <script>

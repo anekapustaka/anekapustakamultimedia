@@ -1,0 +1,367 @@
+
+/* ====================
+   Layout Utama
+==================== */
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 50vh;
+}
+
+main.container > .d-flex {
+  align-items: flex-start;
+}
+
+main.container article.flex-fill {
+  min-width: 0;
+}
+
+/* ====================
+   Artikel
+==================== */
+.article-banner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+.article-meta {
+  color: #555;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.article-content {
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.article-content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #0d6efd;
+}
+
+.article-content h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.article-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 24px;
+  margin-bottom: 18px;
+}
+
+.article-content a {
+  overflow-wrap: anywhere;
+}
+
+/* ====================
+   Sidebar Artikel Terkait
+==================== */
+.sidebar {
+  width: 250px;
+  max-width: 100%;
+  flex-shrink: 0;
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sidebar h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.sidebar a {
+  display: block;
+  color: #0d6efd;
+  margin-bottom: 10px;
+  text-decoration: none;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* ====================
+   Footer
+==================== */
+footer.footer {
+  width: 100%;
+  margin-top: auto;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* ====================
+   Popup Promosi
+==================== */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 99999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Kontainer poster */
+.popup-content {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  border-radius: 12px;
+
+  animation: popupShow 0.35s ease;
+}
+
+/* Gambar poster */
+.popup-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+
+  border-radius: 12px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Tombol tutup popup */
+.popup-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  background: #0d6efd;
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1;
+
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.popup-close:hover {
+  background: #084298;
+  transform: scale(1.08);
+}
+
+.popup-close:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Animasi popup */
+@keyframes popupShow {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ====================
+   Responsive Tablet
+==================== */
+@media (max-width: 991px) {
+  main.container > .d-flex {
+    flex-direction: column !important;
+  }
+
+  .sidebar {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .article-banner {
+    max-height: 240px;
+  }
+}
+
+/* ====================
+   Responsive HP
+==================== */
+@media (max-width: 767px) {
+  .article-title {
+    font-size: 1.65rem;
+  }
+
+  .article-meta {
+    font-size: 0.85rem;
+    margin-bottom: 22px;
+  }
+
+  .article-banner {
+    max-height: 200px;
+    border-radius: 6px;
+  }
+
+  .article-content {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .article-content h2 {
+    font-size: 1.35rem;
+  }
+
+  .sidebar {
+    padding: 18px;
+  }
+
+  .popup-overlay {
+    padding: 24px;
+  }
+
+  .popup-content {
+    max-width: 100%;
+    max-height: 85vh;
+  }
+
+  .popup-image {
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  .popup-close {
+    top: -12px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+  }
+}
+
+/* ====================
+   HP Kecil
+==================== */
+@media (max-width: 380px) {
+  .article-title {
+    font-size: 1.4rem;
+  }
+
+  .popup-overlay {
+    padding: 20px;
+  }
+
+  .popup-close {
+    top: -10px;
+    right: -10px;
+  }
+}
+
+/* ====================
+   Aksesibilitas
+==================== */
+@media (prefers-reduced-motion: reduce) {
+  .popup-overlay,
+  .popup-content,
+  .popup-close {
+    animation: none;
+    transition: none;
+  }
+}
