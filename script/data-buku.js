@@ -3,7 +3,6 @@ window.dataBuku = [
     id: "penjas-mts-vii",
     judul: "Pendidikan Jasmani Olahraga dan Kesehatan (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 92.050",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-90-4 (Jilid 1)",
     penulis: [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
@@ -25,7 +24,6 @@ window.dataBuku = [
     id: "senirupa-mts-vii",
     judul: "Seni Rupa (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 80.150",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-96-6 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -47,7 +45,6 @@ window.dataBuku = [
     id: "informatika-mts-vii",
     judul: "Informatika (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 89.250",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-94-2 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -69,7 +66,6 @@ window.dataBuku = [
     id: "ips-mts-vii",
     judul: "Ilmu Pengetahuan Sosial (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 87.150",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-86-7 (Jilid 1)",
     penulis: [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
@@ -91,7 +87,6 @@ window.dataBuku = [
     id: "pkn-mts-vii",
     judul: "Pendidikan Kewarganegaraan (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 88.550",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-92-8 (Jilid 1)",
     penulis: [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
@@ -113,7 +108,6 @@ window.dataBuku = [
     id: "ipa-mts-vii",
     judul: "Ilmu Pengetahuan Alam (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 98.350",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-88-1 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -135,7 +129,6 @@ window.dataBuku = [
     id: "mebel-rotan-batik",
     judul: "Desain Mebel ROTIK Rotan Batik",
     harga: "Rp. 92.800",
-	kategori: "Sosial dan Budaya",
     isbn: "978-623-8752-97-3",
     penulis: [
       "Sumarno",
@@ -155,7 +148,6 @@ window.dataBuku = [
     id: "green-leadership-in-the-hospitality-industry",
     judul: "Green Leadership in the Hospitality Industry : Strategies for Building Sustainable Employee Performance",
     harga: "Rp. 60.050",
-	kategori: "Manajemen dan Bisnis",
     isbn: "978-623-8752-98-0",
     penulis: [
       "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
@@ -177,7 +169,6 @@ window.dataBuku = [
     id: "state-of-the-art-resource-base-theory",
     judul: "State ot The Art RESOURCE BASE THEORY",
     harga: "Rp. 98.500",
-	kategori: "Manajemen dan Bisnis",
     isbn: "978-623-8752-99-7",
     penulis: [
       "Prof. Dr. Widodo, SE., M.Si",
@@ -195,7 +186,6 @@ window.dataBuku = [
     id: "the-role-of-artificial-intelligence",
     judul: "[MONOGRAF] The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees",
     harga: "Rp. 72.380",
-	kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-00-6",
     penulis: [
       "Ismandra, S.Kom, SE, MM",
@@ -218,7 +208,6 @@ window.dataBuku = [
     id: "langkah-kecil-untuk-mencintai-dan-merawat-indonesia",
     judul: "Langkah Kecil untuk MENCINTAI & MERAWAT INDONESIA",
     harga: "Rp. 74.340",
-	kategori: "Sosial dan Budaya",
     isbn: "978-634-7875-01-3",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -246,7 +235,6 @@ window.dataBuku = [
     id: "modul-ajar-ilmu-pengetahuan-sosial-kelas-viii",
     judul: "MODUL AJAR Ilmu Pengetahuan Sosial Untuk Siswa SMP / MTs Kelas VIII",
     harga: "Rp. 94.500",
-	kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-634-7875-02-0 (Jilid 2)",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -268,9 +256,8 @@ window.dataBuku = [
   },
   {
     id: "monograf-strategic-transformation-of-human-resource-management-industry-5-0",
-  judul: "[MONOGRAF] Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
+    judul: "[MONOGRAF] Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
     harga: "Rp. 70.910",
-	kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-03-7",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -297,7 +284,6 @@ window.dataBuku = [
     id: "dasar-ekonomi-dan-bisnis-untuk-smk",
     judul: "DASAR EKONOMI DAN BISNIS UNTUK SMK/MAK Konsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital",
     harga: "Rp. 74.830",
-	kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-05-1",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -324,7 +310,6 @@ window.dataBuku = [
     id: "buku-referensi-ipas-sd-berbasis-aktivitas",
     judul: "BUKU REFERENSI IPAS SD BERBASIS AKTIVITAS Belajar Sains dan Sosial dari Lingkungan Sekitar",
     harga: "Rp. 66.990",
-	kategori: "Pendidikan Jenjang SD/MI",
     isbn: "978-634-7875-04-4",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -348,58 +333,93 @@ window.dataBuku = [
     sinopsis: `Buku Referensi IPAS SD Berbasis Aktivitas: Belajar Sains dan Sosial dari Lingkungan Sekitar merupakan buku pembelajaran yang dirancang untuk membantu siswa sekolah dasar memahami Ilmu Pengetahuan Alam dan Sosial melalui pengalaman nyata di lingkungan sekitar. Buku ini membahas berbagai materi, mulai dari makhluk hidup dan kehidupannya, materi dan energi, bumi dan lingkungan, kehidupan sosial masyarakat, hingga kegiatan ekonomi. Setiap materi disajikan dengan bahasa yang sederhana, contoh yang dekat dengan kehidupan siswa, serta aktivitas seperti pengamatan, percobaan sederhana, diskusi, wawancara, refleksi, dan proyek IPAS. Melalui pendekatan berbasis aktivitas, siswa tidak hanya memperoleh pengetahuan, tetapi juga dilatih untuk berpikir kritis, bekerja sama, bertanggung jawab, peduli terhadap lingkungan, serta mampu menghubungkan pembelajaran dengan kehidupan sehari-hari. Buku ini diharapkan menjadi pendamping belajar yang menarik, kontekstual, dan bermakna dalam membentuk siswa yang aktif, kreatif, mandiri, dan memiliki kepedulian terhadap alam serta kehidupan sosial di sekitarnya.`
   },
   {
-	id: "logika-dan-pemecahan-masalah-bisnis",
-	judul: "LOGIKA DAN PEMECAHAN MASALAH BISNIS Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis",
-	harga: "Rp. 66.990",
-	kategori: "Manajemen dan Bisnis",
-	isbn: "978-634-7875-06-8",
-	penulis: [
-	  "Prof. Dr. H. Zaidan Nawawi, M.Si",
-	  "Dr. H. Dasmadi, S.E.,M.M",
-	  "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si., M.M., Psi",
-	  "Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
-	  "Hendra Musa, S.H., S.E., M.H., M.Si",
-	  "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-	  "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
-	  "Abid Khotibul Umam, S.M.,M.M ",
-	  "Toni Siswanto, S.E.,M.M",
-	  "Heri Irwanto, S.M"
-  ],
-	editor: [
-	  "Prof. Dr. Widodo, S.E., M.Si",
-	  "Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag"
-  ],
-	ukuran: "15,5 x 23 cm",
-	halaman: "vi + 150 halaman",
-	tahun: "2026",
-	gambar: "logika-dan-pemecahan-masalah-bisnis.jpeg",
-	sinopsis: "Logika dan Pemecahan Masalah Bisnis: Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis merupakan buku yang membahas kemampuan berpikir logis, kritis, analitis, dan sistematis dalam menghadapi berbagai persoalan serta menentukan keputusan di dunia bisnis. Buku ini menguraikan konsep dasar logika dan pemecahan masalah, proses penalaran deduktif dan induktif, identifikasi serta analisis akar masalah, pengumpulan dan pemanfaatan data, hingga berbagai metode pemecahan masalah seperti brainstorming, mind mapping, 5 Why, diagram fishbone, SWOT, PESTEL, matriks prioritas, decision matrix, dan design thinking. Pembahasan dilanjutkan dengan pengambilan keputusan berbasis data, pengelolaan risiko dan ketidakpastian, pengembangan solusi dan inovasi, implementasi serta evaluasi berkelanjutan. Pada bagian akhir, buku ini menghadirkan penerapan pemecahan masalah dalam berbagai bidang, meliputi pemasaran dan perilaku konsumen, keuangan dan investasi, manajemen sumber daya manusia, operasional dan rantai pasok, serta kewirausahaan dan bisnis digital. Dengan pendekatan konseptual sekaligus aplikatif, buku ini diharapkan menjadi referensi bagi mahasiswa, dosen, manajer, wirausahawan, dan praktisi bisnis dalam mengembangkan kemampuan menganalisis masalah, mengevaluasi berbagai alternatif, dan mengambil keputusan secara terstruktur, berbasis informasi, adaptif, serta berorientasi pada keberlanjutan bisnis."
-	},
-{
-	id: "bahasa-indonesia-dan-penulisan-ilmiah",
-	judul: "BAHASA INDONESIA DAN PENULISAN ILMIAH Konsep, Keterampilan Berbahasa, dan Strategi Menulis Karya Ilmiah bagi Mahasiswa",
-	harga: "Rp. 68.460",
-	kategori: "Pendidikan Jenjang Perguruan Tinggi",
-	isbn: "-",
-	penulis: [
+    id: "logika-dan-pemecahan-masalah-bisnis",
+    judul: "LOGIKA DAN PEMECAHAN MASALAH BISNIS Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis",
+    harga: "Rp. 66.990",
+    isbn: "978-634-7875-06-8",
+    penulis: [
+      "Prof. Dr. H. Zaidan Nawawi, M.Si",
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Dr. Dra. Hj. Telly. P. U. Siwi, M.Si., M.M., Psi",
+      "Tedy Setiawan Saputra, S.E., M.M., CRMPA., CACP",
+      "Hendra Musa, S.H., S.E., M.H., M.Si",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Abid Khotibul Umam, S.M.,M.M ",
+      "Toni Siswanto, S.E.,M.M",
+      "Heri Irwanto, S.M",
+    ],
+    editor: [
+      "Prof. Dr. Widodo, S.E., M.Si",
+      "Prof. Dr. KH. Abdul Matin Bin Salman, Lc.,M.Ag",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "vi + 150 halaman",
+    tahun: "2026",
+    gambar: "logika-dan-pemecahan-masalah-bisnis.jpeg",
+    sinopsis: `Logika dan Pemecahan Masalah Bisnis: Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis merupakan buku yang membahas kemampuan berpikir logis, kritis, analitis, dan sistematis dalam menghadapi berbagai persoalan serta menentukan keputusan di dunia bisnis. Buku ini menguraikan konsep dasar logika dan pemecahan masalah, proses penalaran deduktif dan induktif, identifikasi serta analisis akar masalah, pengumpulan dan pemanfaatan data, hingga berbagai metode pemecahan masalah seperti brainstorming, mind mapping, 5 Why, diagram fishbone, SWOT, PESTEL, matriks prioritas, decision matrix, dan design thinking. Pembahasan dilanjutkan dengan pengambilan keputusan berbasis data, pengelolaan risiko dan ketidakpastian, pengembangan solusi dan inovasi, implementasi serta evaluasi berkelanjutan. Pada bagian akhir, buku ini menghadirkan penerapan pemecahan masalah dalam berbagai bidang, meliputi pemasaran dan perilaku konsumen, keuangan dan investasi, manajemen sumber daya manusia, operasional dan rantai pasok, serta kewirausahaan dan bisnis digital. Dengan pendekatan konseptual sekaligus aplikatif, buku ini diharapkan menjadi referensi bagi mahasiswa, dosen, manajer, wirausahawan, dan praktisi bisnis dalam mengembangkan kemampuan menganalisis masalah, mengevaluasi berbagai alternatif, dan mengambil keputusan secara terstruktur, berbasis informasi, adaptif, serta berorientasi pada keberlanjutan bisnis.`
+  },
+  {
+    id: "bahasa-indonesia-dan-penulisan-ilmiah",
+    judul: "BAHASA INDONESIA DAN PENULISAN ILMIAH Konsep, Keterampilan Berbahasa, dan Strategi Menulis Karya Ilmiah bagi Mahasiswa",
+    harga: "Rp. 68.460",
+    isbn: "-",
+    penulis: [
       "Hendra Musa, S.H., S.E., M.H., M.Si",
       "Indriani, S.E., M.M",
       "Serli Lestari, S.Pd., S.M., M.Pd",
       "Aidina Syafaroh Ramadini, S.SI, SE, MM",
       "Firdanita Wandira Dwi Putri, S.P., M.Si",
-	  "Dr. H. Dasmadi, SE., MM",
+      "Dr. H. Dasmadi, SE., MM",
       "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
-	  "Toni Siswanto, S.E.,M.M",
-      "Abid Khotibul Umam, S.M.,M.M"
-  ],
-	editor: [
-      "Toni Siswanto, S.E.,M.M"
-  ],
-	ukuran: "15,5 x 23 cm",
-	halaman: "vi + 152 halaman",
-	tahun: "2026",
-	gambar: "bahasa-indonesia-dan-penulisan-ilmiah.jpeg",
-	sinopsis: "Buku Bahasa Indonesia dan Penulisan Ilmiah merupakan buku pembelajaran yang disusun untuk membantu mahasiswa mengembangkan kemampuan berbahasa Indonesia secara baik, benar, efektif, dan akademis dalam berbagai kegiatan pendidikan maupun profesional. Buku ini membahas secara sistematis kedudukan dan fungsi bahasa Indonesia dalam dunia akademik, kaidah bahasa Indonesia baku, komunikasi tulis dan lisan, konsep serta struktur karya tulis ilmiah, teknik pengutipan dan penyusunan referensi, penerapan gaya penulisan akademik, serta prinsip plagiarisme dan integritas akademik. Selain memberikan landasan konseptual, buku ini juga mengarahkan pembaca pada penerapan praktis melalui perencanaan dan penyusunan karya ilmiah, pengembangan argumentasi berbasis data, penyuntingan dan evaluasi naskah, penyelesaian serta presentasi laporan mini proyek, hingga publikasi dan pengembangan karya ilmiah secara berkelanjutan. Dengan penyajikan yang sistematis dan berorientasi pada praktik, buku ini diharapkan dapat menjadi referensi bagi mahasiswa dalam membangun keterampilan literasi akademik, berpikir kritis, menulis secara ilmiah, berkomunikasi secara profesional, serta menghasilkan karya yang berkualitas, berintegritas, dan dapat dipertanggungjawabkan."
-	}
+      "Toni Siswanto, S.E.,M.M",
+      "Abid Khotibul Umam, S.M.,M.M",
+    ],
+    editor: [
+      "Toni Siswanto, S.E.,M.M",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "vi + 152 halaman",
+    tahun: "2026",
+    gambar: "bahasa-indonesia-dan-penulisan-ilmiah.jpeg",
+    sinopsis: `Buku Bahasa Indonesia dan Penulisan Ilmiah merupakan buku pembelajaran yang disusun untuk membantu mahasiswa mengembangkan kemampuan berbahasa Indonesia secara baik, benar, efektif, dan akademis dalam berbagai kegiatan pendidikan maupun profesional. Buku ini membahas secara sistematis kedudukan dan fungsi bahasa Indonesia dalam dunia akademik, kaidah bahasa Indonesia baku, komunikasi tulis dan lisan, konsep serta struktur karya tulis ilmiah, teknik pengutipan dan penyusunan referensi, penerapan gaya penulisan akademik, serta prinsip plagiarisme dan integritas akademik. Selain memberikan landasan konseptual, buku ini juga mengarahkan pembaca pada penerapan praktis melalui perencanaan dan penyusunan karya ilmiah, pengembangan argumentasi berbasis data, penyuntingan dan evaluasi naskah, penyelesaian serta presentasi laporan mini proyek, hingga publikasi dan pengembangan karya ilmiah secara berkelanjutan. Dengan penyajikan yang sistematis dan berorientasi pada praktik, buku ini diharapkan dapat menjadi referensi bagi mahasiswa dalam membangun keterampilan literasi akademik, berpikir kritis, menulis secara ilmiah, berkomunikasi secara profesional, serta menghasilkan karya yang berkualitas, berintegritas, dan dapat dipertanggungjawabkan.`
+  },
+  {
+    id: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia",
+    judul: "HADIAH SANTRI UNTUK NEGERI\r\nMeneguhkan Akhlak, Menguatkan Ilmu, dan Mengabdi untuk Indonesia",
+    harga: "66500",
+    isbn: "-",
+    penulis: [
+      "Muhammad Aghla Daffa Mu'afa",
+      "Hafidz Kafka Ramadhan",
+      "Naila Jaufallail",
+      "Zaky Hasan Fahri",
+      "Stevani Aulia Putri",
+      "Dr. H. Dasmadi, S.E.,M.M",
+      "Prof. Dr. Abdul Matin Bin Salman, Lc.,M.Ag",
+      "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
+      "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
+      "Ma’ruf, S.Fil",
+      "Drs. Shomat",
+      "Mursidah Suprihatin, S.Pd",
+      "Toni Siswanto, S.E.,M.M",
+      "Heri Irwanto, S.M",
+      "Rafliditya Bayu Wicaksono",
+      "Sahirul Alim, S.Ud",
+      "Abid Khotibul Umam, S.M.,M.M",
+      "Fika Luxsmawati, S.M",
+      "Muhammad Ferta Ihza Irfani",
+      "Rima Dwi Optara",
+    ],
+    editor: [
+      "Toni Siswanto, S.E.,M.M",
+    ],
+    ukuran: "15,5 x 23 cm",
+    halaman: "x + 140",
+    tahun: "2026",
+    gambar: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia.png",
+    sinopsis: `Buku Hadiah Santri untuk Negeri mengangkat peran strategis santri dan pesantren dalam membangun karakter, memperkuat identitas kebangsaan, serta berkontribusi bagi kemajuan Indonesia. Santri tidak hanya dipandang sebagai pencari ilmu agama, tetapi juga sebagai generasi penerus bangsa yang memiliki tanggung jawab untuk menjaga nilai-nilai keislaman, merawat persatuan, dan menghadirkan manfaat bagi masyarakat. Melalui enam bab pembahasan, buku ini menguraikan jati diri santri dalam kehidupan keindonesiaan, peran pesantren dalam membentuk generasi unggul, pentingnya akhlak dan pengabdian, serta kontribusi santri dalam bidang pendidikan, ekonomi, sosial, ilmu pengetahuan, dan teknologi. Buku ini juga membahas berbagai tantangan kehidupan modern, termasuk perkembangan digitalisasi, perubahan sosial, persaingan global, dan kebutuhan untuk meningkatkan kompetensi tanpa kehilangan nilai-nilai luhur pesantren.
+Lebih dari sekadar pembahasan mengenai kehidupan pesantren, Hadiah Santri untuk Negeri merupakan ajakan untuk menjadikan ilmu, akhlak, kreativitas, dan pengabdian sebagai wujud nyata kecintaan terhadap tanah air. Buku ini menekankan pentingnya membangun generasi santri yang berilmu, berakhlak mulia, mandiri, berdaya saing, serta mampu bekerja sama dengan pemerintah dan masyarakat dalam mewujudkan pembangunan yang berkelanjutan. Melalui semangat dari pesantren untuk negeri, setiap santri diharapkan mampu mengambil peran sesuai dengan kemampuan dan bidang keahliannya, baik sebagai pendidik, pemimpin, pengusaha, ilmuwan, maupun penggerak sosial.`
+  }
 ];
