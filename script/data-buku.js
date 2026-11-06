@@ -1,8 +1,9 @@
 window.dataBuku = [
   {
-    id: "penjas-mts-vii",
+    id: "pendidikan-jasmani-olahraga-dan-kesehatan-untuk-siswa-smpmts-kelas-vii",
     judul: "Pendidikan Jasmani Olahraga dan Kesehatan (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 92.050",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-90-4 (Jilid 1)",
     penulis: [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
@@ -21,9 +22,10 @@ window.dataBuku = [
     sinopsis: `Buku Pendidikan Jasmani, Olahraga, dan Kesehatan untuk kelas VII dirancang sebagai panduan lengkap untuk membantu siswa mengembangkan keterampilan gerak, strategi olahraga, kerja sama tim, dan kebugaran jasmani. Materi disajikan secara sistematis mulai dari dasar hingga penerapan praktis, dilengkapi dengan uji kompetensi, pengayaan, dan refleksi untuk mempermudah pemahaman. Selain aspek fisik, buku ini juga menekankan nilai karakter seperti disiplin, sportivitas, dan tanggung jawab, sehingga peserta didik tidak hanya menjadi lebih sehat dan bugar, tetapi juga memiliki sikap positif yang mendukung perkembangan pribadi dan sosial. Dengan pendekatan yang menarik dan aplikatif, buku ini mendorong siswa untuk aktif bergerak, berpikir kritis, dan berpartisipasi secara penuh dalam kegiatan jasmani, sekaligus menyiapkan mereka menjadi generasi muda yang sehat, cerdas, dan berkarakter.`
   },
   {
-    id: "senirupa-mts-vii",
+    id: "seni-rupa-untuk-siswa-smpmts-kelas-vii",
     judul: "Seni Rupa (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 80.150",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-96-6 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -42,9 +44,10 @@ window.dataBuku = [
     sinopsis: `Buku Seni Rupa Kelas VII SMP/MTs (Kurikulum Merdeka) ini disusun untuk membimbing peserta didik mengenal, memahami, dan mengembangkan kreativitas dalam berkarya seni rupa secara menyeluruh. Melalui empat bab utama—Menggambar, Mendesain, Membuat Tipografi dan Logo, serta Berkarya Seni untuk Perubahan—buku ini mengajak siswa untuk mengekspresikan ide, perasaan, dan gagasan melalui berbagai media dan teknik. Selain mempelajari unsur dan prinsip seni rupa, peserta didik juga diarahkan untuk peka terhadap lingkungan sosial, budaya, dan kemanusiaan di sekitarnya. Buku ini diharapkan dapat menumbuhkan kemampuan berpikir kreatif, kritis, dan kolaboratif, sekaligus menanamkan nilai estetika, empati, serta tanggung jawab sosial melalui kegiatan seni yang bermakna.`
   },
   {
-    id: "informatika-mts-vii",
+    id: "informatika-untuk-siswa-smpmts-kelas-vii",
     judul: "Informatika (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 89.250",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-94-2 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -63,9 +66,10 @@ window.dataBuku = [
     sinopsis: `Buku "Modul Ajar Informatika" ini disusun sebagai panduan pembelajaran bagi peserta didik kelas VII SMP/MTs untuk memahami konsep-konsep dasar informatika secara sistematis dan terstruktur. Modul ini mengintegrasikan teori dan praktik yang menekankan pada pengembangan kompetensi berpikir kritis, kreatif, komunikatif, dan kolaboratif. Materi dalam buku ini mencakup berbagai topik utama, antara lain pengenalan data dan informasi, dasar-dasar algoritma dan pemrograman, konsep komputasi, jaringan komputer, sistem operasi, serta prinsip-prinsip etika digital. Setiap bab dirancang untuk memperkenalkan peserta didik pada dunia teknologi informasi dengan bahasa yang komunikatif dan pendekatan pembelajaran yang kontekstual, sehingga peserta didik dapat mengaitkan teori informatika dengan kehidupan sehari-hari. Buku ini dilengkapi dengan berbagai fitur pendukung pembelajaran seperti ilustrasi visual, contoh aplikasi nyata, latihan soal, tugas proyek berbasis masalah (problem-based project), refleksi diri, dan asesmen formatif. Dengan demikian, peserta didik tidak hanya memahami konsep secara kognitif, tetapi juga mengembangkan keterampilan praktis dan karakter positif dalam menggunakan teknologi informasi.`
   },
   {
-    id: "ips-mts-vii",
+    id: "ilmu-pengetahuan-sosial-untuk-siswa-smpmts-kelas-vii",
     judul: "Ilmu Pengetahuan Sosial (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 87.150",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-86-7 (Jilid 1)",
     penulis: [
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E., M.Si",
@@ -84,9 +88,10 @@ window.dataBuku = [
     sinopsis: `Buku Ilmu Pengetahuan Sosial (IPS) untuk Kelas VII ini disusun berdasarkan Kurikulum Merdeka dengan tujuan membantu siswa memahami berbagai fenomena sosial, ekonomi, geografi, dan sejarah yang berkaitan dengan kehidupan sehari-hari. Materi dalam buku ini disajikan secara sistematis, mulai dari pengenalan manusia dan lingkungan, interaksi sosial, kegiatan ekonomi, hingga pemberdayaan masyarakat, sehingga siswa mampu melihat keterkaitan antara konsep IPS dengan realitas yang mereka hadapi. Melalui pendekatan pembelajaran aktif, projek, dan aktivitas kontekstual, buku ini  mendorong siswa berpikir kritis, kreatif, serta memiliki karakter sesuai profil pelajar Pancasila. Dengan demikian, buku ini diharapkan tidak hanya menjadi sumber belajar, tetapi juga sarana pembentukan sikap, keterampilan, dan wawasan kebangsaan yang kuat pada diri peserta didik.`
   },
   {
-    id: "pkn-mts-vii",
+    id: "pendidikan-kewarganegaraan-untuk-siswa-smpmts-kelas-vii",
     judul: "Pendidikan Kewarganegaraan (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 88.550",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-92-8 (Jilid 1)",
     penulis: [
       "Hj. Siti Syamsiyah, S.Pd., M.Pd",
@@ -105,9 +110,10 @@ window.dataBuku = [
     sinopsis: `Buku Pendidikan Kewarganegaraan Kelas VII ini disusun sebagai panduan belajar siswa dalam memahami dan mengamalkan nilai-nilai kebangsaan, demokrasi, hak asasi manusia, serta etika dalam kehidupan bernegara. Melalui pendekatan yang kontekstual dan interaktif, buku ini membahas topik-topik penting seperti Pancasila, UUD 1945, kewarganegaraan, partisipasi sosial, hingga perilaku etis di masyarakat dan media sosial. Disusun sesuai Kurikulum Nasional 2025, buku ini tidak hanya membekali siswa dengan pengetahuan, tetapi juga mendorong mereka untuk menjadi warga negara yang aktif, kritis, bertanggung jawab, dan berintegritas dalam membangun bangsa Indonesia.`
   },
   {
-    id: "ipa-mts-vii",
+    id: "ilmu-pengetahuan-alam-untuk-siswa-smpmts-kelas-vii",
     judul: "Ilmu Pengetahuan Alam (Untuk Siswa SMP/MTs Kelas VII)",
     harga: "Rp. 98.350",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-623-8752-88-1 (Jilid 1)",
     penulis: [
       "Dr. H. Dasmadi, S.E., M.M",
@@ -126,9 +132,10 @@ window.dataBuku = [
     sinopsis: `Buku Ilmu Pengetahuan Alam (IPA) Kelas VII ini disusun untuk membantu peserta didik memahami konsep-konsep dasar sains yang meliputi makhluk hidup, ekosistem, zat dan perubahannya, energi, sistem bumi, serta tata surya. Melalui pendekatan kontekstual dan kegiatan eksperimen sederhana, buku ini tidak hanya menyajikan pengetahuan faktual, tetapi juga menumbuhkan rasa ingin tahu, berpikir kritis, dan keterampilan ilmiah. Disajikan secara menarik dengan ilustrasi, rangkuman, soal latihan, dan aktivitas praktikum, buku ini diharapkan dapat memotivasi siswa untuk lebih dekat dengan alam sekitar, memahami fenomena kehidupan sehari-hari, serta menumbuhkan sikap peduli terhadap lingkungan dan kebesaran ciptaan Tuhan.`
   },
   {
-    id: "mebel-rotan-batik",
+    id: "desain-mebel-rotik-rotan-batik",
     judul: "Desain Mebel ROTIK Rotan Batik",
     harga: "Rp. 92.800",
+    kategori: "Sosial dan Budaya",
     isbn: "978-623-8752-97-3",
     penulis: [
       "Sumarno",
@@ -145,9 +152,10 @@ window.dataBuku = [
     sinopsis: `Buku ini menegaskan bahwa kerajinan dan mebel rotan merupakan wujud perpaduan kekayaan alam dan budaya Indonesia yang bernilai tinggi, didukung keahlian teknik pengolahan dari sederhana hingga kompleks, serta inovasi desain yang terus berkembang. Rotan diperkaya dengan sentuhan seni batik sebagai warisan budaya dunia, yang diaplikasikan melalui berbagai teknik pada material rotan sehingga menghasilkan produk mebel yang eksotis, orisinal, ramah lingkungan, dan berdaya saing. Buku ini membahas secara sistematis potensi rotan dan batik, karakteristik material, proses perancangan, produksi, teknik batik, pewarnaan alami, hingga pengembangan desain, dengan harapan menjadi referensi penting bagi pengembangan industri mebel rotan nasional yang berakar pada budaya bangsa dan berkelanjutan.`
   },
   {
-    id: "green-leadership-in-the-hospitality-industry",
+    id: "green-leadership-in-the-hospitality-industry-strategies-for-building-sustainable-employee-performance",
     judul: "Green Leadership in the Hospitality Industry : Strategies for Building Sustainable Employee Performance",
     harga: "Rp. 60.050",
+    kategori: "Manajemen dan Bisnis",
     isbn: "978-623-8752-98-0",
     penulis: [
       "Tedy Setiawan Saputra, S.E.,M.M.,CRMPA.,CACP",
@@ -166,9 +174,10 @@ window.dataBuku = [
     sinopsis: `Buku ini mengulas secara komprehensif peran green leadership dalam membangun kinerja karyawan yang berkelanjutan di industri perhotelan melalui sinergi green human resource management dan employee involvement. Dengan memadukan pendekatan konseptual dan praktik aplikatif, buku ini menjelaskan bagaimana kepemimpinan yang berorientasi lingkungan mampu mendorong perubahan perilaku, memperkuat keterlibatan karyawan, serta menumbuhkan budaya organisasi hijau. Berbagai pembahasan strategis, praktik terbaik, dan arah masa depan industri perhotelan berkelanjutan disajikan sebagai rujukan bagi akademisi dan praktisi dalam merancang kebijakan dan strategi pengelolaan sumber daya manusia yang adaptif, bertanggung jawab, dan berdaya saing jangka panjang.`
   },
   {
-    id: "state-of-the-art-resource-base-theory",
+    id: "state-ot-the-art-resource-base-theory",
     judul: "State ot The Art RESOURCE BASE THEORY",
     harga: "Rp. 98.500",
+    kategori: "Manajemen dan Bisnis",
     isbn: "978-623-8752-99-7",
     penulis: [
       "Prof. Dr. Widodo, SE., M.Si",
@@ -183,9 +192,10 @@ window.dataBuku = [
     sinopsis: `State of the art Resource Base Theory disusun dalam tiga tahap, yakni  introduction dengan author Penrose, 1959 ; Lippman & Rumelt, 1982 ; Wernerfelt, 1984 ; Barney, 1986; Dierickx & Cool, 1989 ; Barney, 1991. Kemudian tahap growth dengan author Mahoney & Pandian, 1992 ; Kogut & Zander, 1992 ; Peteraf, 1993 ; Hart, 1995; Grant, 1996; Conner & Prahalad, 1996 ; Oliver, 1997 ; Teece, Pisano, & Shuen, 1997. Dan tahap maturity dengan author  Alvarez & Busenitz, 2001 ; Barney, 2001 ; Barney, Wright, & Ketchen, 2001 ; Makadok & Barney, 2001 ; Lippman & Rumelt, 2003 ; Ireland, Hitt, & Sirmon, 2003 ; Armstrong & Shimizu, 2007; Widodo, 2008; Kraaijenbrink, Spender, & Groen, 2010 ; Widodo & Dandri; Malhotra, G., Dandotiya, G., Shaiwalini, S., Khan, A., & Homechaudhuri, S. (2025).`
   },
   {
-    id: "the-role-of-artificial-intelligence",
+    id: "monograf-the-role-of-artificial-intelligence-ai-in-the-transformation-of-human-resource-analytics-on-the-performance-of-generation-z-employees",
     judul: "[MONOGRAF] The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees",
     harga: "Rp. 72.380",
+    kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-00-6",
     penulis: [
       "Ismandra, S.Kom, SE, MM",
@@ -205,9 +215,10 @@ window.dataBuku = [
     sinopsis: `Monograf berjudul “The Role of Artificial Intelligence (AI) in the Transformation of Human Resource Analytics on the Performance of Generation Z Employees” membahas secara mendalam mengenai peran strategis Artificial Intelligence (AI) dalam mengubah praktik pengelolaan sumber daya manusia melalui pendekatan Human Resource Analytics di era transformasi digital. Buku ini mengkaji bagaimana teknologi AI dimanfaatkan dalam berbagai fungsi manajemen SDM, mulai dari proses rekrutmen dan seleksi, monitoring kinerja, pengembangan kompetensi, hingga pengambilan keputusan organisasi berbasis data. Dengan fokus pada karyawan Generasi Z sebagai tenaga kerja digital yang memiliki karakteristik unik, monograf ini menjelaskan hubungan antara pemanfaatan teknologi, adaptasi lingkungan kerja, employee engagement, dan peningkatan produktivitas. Selain membahas peluang dan manfaat implementasi AI, buku ini juga menguraikan berbagai tantangan seperti etika penggunaan data, keamanan informasi, kesiapan organisasi, serta kebutuhan integrasi antara teknologi dan pendekatan manusiawi. Monograf ini menjadi referensi penting bagi akademisi, praktisi manajemen, pemimpin organisasi, dan mahasiswa yang ingin memahami bagaimana AI dan Human Resource Analytics dapat dikembangkan sebagai strategi untuk menciptakan sumber daya manusia yang adaptif, inovatif, dan kompetitif dalam menghadapi perubahan dunia kerja digital.`
   },
   {
-    id: "langkah-kecil-untuk-mencintai-dan-merawat-indonesia",
+    id: "langkah-kecil-untuk-mencintai-merawat-indonesia",
     judul: "Langkah Kecil untuk MENCINTAI & MERAWAT INDONESIA",
     harga: "Rp. 74.340",
+    kategori: "Sosial dan Budaya",
     isbn: "978-634-7875-01-3",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -232,9 +243,10 @@ window.dataBuku = [
     sinopsis: `Buku “Langkah Kecil untuk Mencintai dan Merawat Indonesia” mengajak pembaca, khususnya generasi muda, untuk memahami bahwa mencintai Indonesia tidak selalu harus diwujudkan melalui tindakan besar, tetapi dapat dimulai dari kebiasaan sederhana dalam kehidupan sehari-hari. Buku ini membahas pentingnya mengenal Indonesia sebagai rumah bersama, menumbuhkan rasa cinta tanah air, menjaga lingkungan, membangun kebiasaan baik, menghargai keberagaman, serta mempersiapkan generasi muda yang berkarakter, kreatif, dan bertanggung jawab. Setiap langkah kecil seperti menjaga kebersihan, menghormati perbedaan, membantu sesama, belajar dengan sungguh-sungguh, menggunakan teknologi secara bijak, melestarikan budaya, dan menjaga persatuan merupakan bagian dari upaya merawat Indonesia. Melalui bahasa yang sederhana dan dekat dengan kehidupan sehari-hari, buku ini menanamkan kesadaran bahwa perubahan besar dapat dimulai dari diri sendiri. Pada akhirnya, buku ini menjadi ajakan bagi setiap pembaca untuk tidak hanya bermimpi tentang Indonesia yang lebih baik, tetapi berani mengambil peran dan mewujudkannya melalui kebaikan-kebaikan kecil yang dilakukan secara konsisten.`
   },
   {
-    id: "modul-ajar-ilmu-pengetahuan-sosial-kelas-viii",
+    id: "modul-ajar-ilmu-pengetahuan-sosial-untuk-siswa-smp-mts-kelas-viii",
     judul: "MODUL AJAR Ilmu Pengetahuan Sosial Untuk Siswa SMP / MTs Kelas VIII",
     harga: "Rp. 94.500",
+    kategori: "Pendidikan Jenjang SMP/MTs",
     isbn: "978-634-7875-02-0 (Jilid 2)",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -255,9 +267,10 @@ window.dataBuku = [
     sinopsis: `Buku “IPS Kelas VIII Kurikulum Merdeka” ini disusun sebagai bahan ajar yang membantu peserta didik memahami berbagai fenomena kehidupan masyarakat Indonesia secara kontekstual, kritis, dan bermakna. Materi disajikan secara sistematis melalui pembahasan yang mendalam, contoh kehidupan sehari-hari, apersepsi, aktivitas individu dan kelompok, LKPD, penguatan literasi dan numerasi, proyek, asesmen, pengayaan, remedial, serta refleksi. Setiap materi dilengkapi arahan ilustrasi gambar yang relevan untuk membantu peserta didik memvisualisasikan konsep dan menghubungkannya dengan lingkungan sekitar. Melalui pendekatan pembelajaran yang aktif dan berorientasi pada keterampilan berpikir kritis, buku ini mengajak peserta didik memahami perubahan masyarakat, aktivitas ekonomi, perdagangan antarwilayah, serta berbagai dinamika sosial dan lingkungan Indonesia sekaligus menumbuhkan sikap mandiri, gotong royong, kreatif, bernalar kritis, peduli lingkungan, dan menghargai keberagaman bangsa. Buku ini diharapkan dapat menjadi pendamping belajar yang informatif, menarik, dan mudah digunakan oleh peserta didik maupun guru dalam mewujudkan pembelajaran IPS yang relevan dengan kehidupan dan tantangan masa kini.`
   },
   {
-    id: "monograf-strategic-transformation-of-human-resource-management-industry-5-0",
+    id: "monograf-strategic-transformation-of-human-resource-management-in-the-industry-50-era-leadership-innovation-and-organizational-sustainability",
     judul: "[MONOGRAF] Strategic Transformation of Human Resource Management in the Industry 5.0 Era : Leadership, Innovation, and Organizational Sustainability",
     harga: "Rp. 70.910",
+    kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-03-7",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -281,9 +294,10 @@ window.dataBuku = [
     sinopsis: `Monograf Strategic Transformation of Human Resource Management in the Industry 5.0 Era: Leadership, Innovation, and Organizational Sustainability membahas transformasi strategis manajemen sumber daya manusia dalam menghadapi perubahan teknologi dan dinamika organisasi pada era Industri 5.0 yang menempatkan manusia sebagai pusat inovasi. Buku ini menguraikan konsep Industri 5.0, Strategic Human Resource Management, kepemimpinan transformasional dan digital, inovasi serta pemanfaatan Artificial Intelligence dalam pengelolaan SDM, reskilling dan upskilling, hingga pengembangan organisasi yang tangguh dan berkelanjutan. Pembahasan juga menekankan pentingnya integrasi leadership, innovation, dan sustainability dalam membangun lingkungan kerja yang human-centered, adaptif, produktif, dan mampu mempertahankan talenta. Melalui pembahasan konseptual dan strategis, buku ini menawarkan strategic roadmap transformasi SDM yang dapat menjadi acuan bagi akademisi, mahasiswa, praktisi HR, pemimpin organisasi, maupun pengambil kebijakan dalam merancang dan mengimplementasikan transformasi SDM berbasis teknologi secara bertanggung jawab untuk menciptakan keunggulan kompetitif sekaligus keberlanjutan organisasi di era Industri 5.0.`
   },
   {
-    id: "dasar-ekonomi-dan-bisnis-untuk-smk",
+    id: "dasar-ekonomi-dan-bisnis-untuk-smkmak-konsep-ekonomi-aktivitas-bisnis-kewirausahaan-dan-ekonomi-digital",
     judul: "DASAR EKONOMI DAN BISNIS UNTUK SMK/MAK Konsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital",
     harga: "Rp. 74.830",
+    kategori: "Manajemen dan Bisnis",
     isbn: "978-634-7875-05-1",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -307,9 +321,10 @@ window.dataBuku = [
     sinopsis: `Dasar Ekonomi dan Bisnis untuk SMK/MAK: Konsep Ekonomi, Aktivitas Bisnis, Kewirausahaan, dan Ekonomi Digital merupakan buku pembelajaran yang disusun untuk memberikan pemahaman dasar mengenai konsep ekonomi dan penerapannya dalam dunia bisnis kepada peserta didik SMK/MAK. Buku ini membahas berbagai materi mulai dari konsep dasar ekonomi, kegiatan dan pelaku ekonomi, pasar, permintaan dan penawaran, aktivitas bisnis dan badan usaha, manajemen dan pengelolaan bisnis, hingga perkembangan ekonomi digital dan transformasi bisnis. Pembahasan dilengkapi dengan materi mengenai produksi, distribusi, konsumsi, kewirausahaan, pengambilan keputusan, e-commerce, digital marketing, fintech, sistem pembayaran digital, serta strategi bisnis berkelanjutan. Dengan bahasa yang sistematis dan kontekstual, buku ini diharapkan dapat membantu peserta didik memahami hubungan antara teori ekonomi dengan praktik bisnis dalam kehidupan sehari-hari, sekaligus mengembangkan kemampuan berpikir kritis, kreatif, adaptif, dan berjiwa kewirausahaan untuk menghadapi dunia kerja serta perkembangan ekonomi digital.`
   },
   {
-    id: "buku-referensi-ipas-sd-berbasis-aktivitas",
+    id: "buku-referensi-ipas-sd-berbasis-aktivitas-belajar-sains-dan-sosial-dari-lingkungan-sekitar",
     judul: "BUKU REFERENSI IPAS SD BERBASIS AKTIVITAS Belajar Sains dan Sosial dari Lingkungan Sekitar",
     harga: "Rp. 66.990",
+    kategori: "Pendidikan Jenjang SD/MI",
     isbn: "978-634-7875-04-4",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -333,9 +348,10 @@ window.dataBuku = [
     sinopsis: `Buku Referensi IPAS SD Berbasis Aktivitas: Belajar Sains dan Sosial dari Lingkungan Sekitar merupakan buku pembelajaran yang dirancang untuk membantu siswa sekolah dasar memahami Ilmu Pengetahuan Alam dan Sosial melalui pengalaman nyata di lingkungan sekitar. Buku ini membahas berbagai materi, mulai dari makhluk hidup dan kehidupannya, materi dan energi, bumi dan lingkungan, kehidupan sosial masyarakat, hingga kegiatan ekonomi. Setiap materi disajikan dengan bahasa yang sederhana, contoh yang dekat dengan kehidupan siswa, serta aktivitas seperti pengamatan, percobaan sederhana, diskusi, wawancara, refleksi, dan proyek IPAS. Melalui pendekatan berbasis aktivitas, siswa tidak hanya memperoleh pengetahuan, tetapi juga dilatih untuk berpikir kritis, bekerja sama, bertanggung jawab, peduli terhadap lingkungan, serta mampu menghubungkan pembelajaran dengan kehidupan sehari-hari. Buku ini diharapkan menjadi pendamping belajar yang menarik, kontekstual, dan bermakna dalam membentuk siswa yang aktif, kreatif, mandiri, dan memiliki kepedulian terhadap alam serta kehidupan sosial di sekitarnya.`
   },
   {
-    id: "logika-dan-pemecahan-masalah-bisnis",
+    id: "logika-dan-pemecahan-masalah-bisnis-konsep-metode-dan-strategi-pengambilan-keputusan-bisnis",
     judul: "LOGIKA DAN PEMECAHAN MASALAH BISNIS Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis",
     harga: "Rp. 66.990",
+    kategori: "Pendidikan Jenjang Perguruan Tinggi",
     isbn: "978-634-7875-06-8",
     penulis: [
       "Prof. Dr. H. Zaidan Nawawi, M.Si",
@@ -345,7 +361,7 @@ window.dataBuku = [
       "Hendra Musa, S.H., S.E., M.H., M.Si",
       "Hj. Yunita Niqrisah Dwi Pratiwi, S.E.,M.Si",
       "Hj. Siti Syamsiyah, S.Pd.,M.Pd",
-      "Abid Khotibul Umam, S.M.,M.M ",
+      "Abid Khotibul Umam, S.M.,M.M",
       "Toni Siswanto, S.E.,M.M",
       "Heri Irwanto, S.M",
     ],
@@ -360,9 +376,10 @@ window.dataBuku = [
     sinopsis: `Logika dan Pemecahan Masalah Bisnis: Konsep, Metode, dan Strategi Pengambilan Keputusan Bisnis merupakan buku yang membahas kemampuan berpikir logis, kritis, analitis, dan sistematis dalam menghadapi berbagai persoalan serta menentukan keputusan di dunia bisnis. Buku ini menguraikan konsep dasar logika dan pemecahan masalah, proses penalaran deduktif dan induktif, identifikasi serta analisis akar masalah, pengumpulan dan pemanfaatan data, hingga berbagai metode pemecahan masalah seperti brainstorming, mind mapping, 5 Why, diagram fishbone, SWOT, PESTEL, matriks prioritas, decision matrix, dan design thinking. Pembahasan dilanjutkan dengan pengambilan keputusan berbasis data, pengelolaan risiko dan ketidakpastian, pengembangan solusi dan inovasi, implementasi serta evaluasi berkelanjutan. Pada bagian akhir, buku ini menghadirkan penerapan pemecahan masalah dalam berbagai bidang, meliputi pemasaran dan perilaku konsumen, keuangan dan investasi, manajemen sumber daya manusia, operasional dan rantai pasok, serta kewirausahaan dan bisnis digital. Dengan pendekatan konseptual sekaligus aplikatif, buku ini diharapkan menjadi referensi bagi mahasiswa, dosen, manajer, wirausahawan, dan praktisi bisnis dalam mengembangkan kemampuan menganalisis masalah, mengevaluasi berbagai alternatif, dan mengambil keputusan secara terstruktur, berbasis informasi, adaptif, serta berorientasi pada keberlanjutan bisnis.`
   },
   {
-    id: "bahasa-indonesia-dan-penulisan-ilmiah",
+    id: "bahasa-indonesia-dan-penulisan-ilmiah-konsep-keterampilan-berbahasa-dan-strategi-menulis-karya-ilmiah-bagi-mahasiswa",
     judul: "BAHASA INDONESIA DAN PENULISAN ILMIAH Konsep, Keterampilan Berbahasa, dan Strategi Menulis Karya Ilmiah bagi Mahasiswa",
     harga: "Rp. 68.460",
+    kategori: "Pendidikan Jenjang Perguruan Tinggi",
     isbn: "-",
     penulis: [
       "Hendra Musa, S.H., S.E., M.H., M.Si",
@@ -388,7 +405,8 @@ window.dataBuku = [
   {
     id: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia",
     judul: "HADIAH SANTRI UNTUK NEGERI\r\nMeneguhkan Akhlak, Menguatkan Ilmu, dan Mengabdi untuk Indonesia",
-    harga: "Rp. 66.500;",
+    harga: "Rp. 66.500",
+    kategori: "Sosial dan Budaya",
     isbn: "-",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -419,10 +437,38 @@ window.dataBuku = [
     halaman: "x + 140",
     tahun: "2026",
     gambar: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia.png",
-    sinopsis: `Buku Hadiah Santri untuk Negeri mengangkat peran strategis santri dan pesantren dalam membangun karakter, memperkuat identitas kebangsaan, serta berkontribusi bagi kemajuan Indonesia. Santri tidak hanya dipandang sebagai pencari ilmu agama, tetapi juga sebagai generasi penerus bangsa yang memiliki tanggung jawab untuk menjaga nilai-nilai keislaman, merawat persatuan, dan menghadirkan manfaat bagi masyarakat. Melalui enam bab pembahasan, buku ini menguraikan jati diri santri dalam kehidupan keindonesiaan, peran pesantren dalam membentuk generasi unggul, pentingnya akhlak dan pengabdian, serta kontribusi santri dalam bidang pendidikan, ekonomi, sosial, ilmu pengetahuan, dan teknologi. Buku ini juga membahas berbagai tantangan kehidupan modern, termasuk perkembangan digitalisasi, perubahan sosial, persaingan global, dan kebutuhan untuk meningkatkan kompetensi tanpa kehilangan nilai-nilai luhur pesantren.
-
-
-
+    sinopsis: `Buku Hadiah Santri untuk Negeri mengangkat peran strategis santri dan pesantren dalam membangun karakter, memperkuat identitas kebangsaan, serta berkontribusi bagi kemajuan Indonesia. Santri tidak hanya dipandang sebagai pencari ilmu agama, tetapi juga sebagai generasi penerus bangsa yang memiliki tanggung jawab untuk menjaga nilai-nilai keislaman, merawat persatuan, dan menghadirkan manfaat bagi masyarakat. Melalui enam bab pembahasan, buku ini menguraikan jati diri santri dalam kehidupan keindonesiaan, peran pesantren dalam membentuk generasi unggul, pentingnya akhlak dan pengabdian, serta kontribusi santri dalam bidang pendidikan, ekonomi, sosial, ilmu pengetahuan, dan teknologi. Buku ini juga membahas berbagai tantangan kehidupan modern, termasuk perkembangan digitalisasi, perubahan sosial, persaingan global, dan kebutuhan untuk meningkatkan kompetensi tanpa kehilangan nilai-nilai luhur pesantren.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Lebih dari sekadar pembahasan mengenai kehidupan pesantren, Hadiah Santri untuk Negeri merupakan ajakan untuk menjadikan ilmu, akhlak, kreativitas, dan pengabdian sebagai wujud nyata kecintaan terhadap tanah air. Buku ini menekankan pentingnya membangun generasi santri yang berilmu, berakhlak mulia, mandiri, berdaya saing, serta mampu bekerja sama dengan pemerintah dan masyarakat dalam mewujudkan pembangunan yang berkelanjutan. Melalui semangat dari pesantren untuk negeri, setiap santri diharapkan mampu mengambil peran sesuai dengan kemampuan dan bidang keahliannya, baik sebagai pendidik, pemimpin, pengusaha, ilmuwan, maupun penggerak sosial.`
   }
 ];
