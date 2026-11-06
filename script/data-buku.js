@@ -388,7 +388,7 @@ window.dataBuku = [
   {
     id: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia",
     judul: "HADIAH SANTRI UNTUK NEGERI\r\nMeneguhkan Akhlak, Menguatkan Ilmu, dan Mengabdi untuk Indonesia",
-    harga: "66500",
+    harga: "Rp. 66.500;",
     isbn: "-",
     penulis: [
       "Dr. H. Dasmadi, S.E.,M.M",
@@ -420,6 +420,8 @@ window.dataBuku = [
     tahun: "2026",
     gambar: "hadiah-santri-untuk-negeri-meneguhkan-akhlak-menguatkan-ilmu-dan-mengabdi-untuk-indonesia.png",
     sinopsis: `Buku Hadiah Santri untuk Negeri mengangkat peran strategis santri dan pesantren dalam membangun karakter, memperkuat identitas kebangsaan, serta berkontribusi bagi kemajuan Indonesia. Santri tidak hanya dipandang sebagai pencari ilmu agama, tetapi juga sebagai generasi penerus bangsa yang memiliki tanggung jawab untuk menjaga nilai-nilai keislaman, merawat persatuan, dan menghadirkan manfaat bagi masyarakat. Melalui enam bab pembahasan, buku ini menguraikan jati diri santri dalam kehidupan keindonesiaan, peran pesantren dalam membentuk generasi unggul, pentingnya akhlak dan pengabdian, serta kontribusi santri dalam bidang pendidikan, ekonomi, sosial, ilmu pengetahuan, dan teknologi. Buku ini juga membahas berbagai tantangan kehidupan modern, termasuk perkembangan digitalisasi, perubahan sosial, persaingan global, dan kebutuhan untuk meningkatkan kompetensi tanpa kehilangan nilai-nilai luhur pesantren.
+
+
 
 Lebih dari sekadar pembahasan mengenai kehidupan pesantren, Hadiah Santri untuk Negeri merupakan ajakan untuk menjadikan ilmu, akhlak, kreativitas, dan pengabdian sebagai wujud nyata kecintaan terhadap tanah air. Buku ini menekankan pentingnya membangun generasi santri yang berilmu, berakhlak mulia, mandiri, berdaya saing, serta mampu bekerja sama dengan pemerintah dan masyarakat dalam mewujudkan pembangunan yang berkelanjutan. Melalui semangat dari pesantren untuk negeri, setiap santri diharapkan mampu mengambil peran sesuai dengan kemampuan dan bidang keahliannya, baik sebagai pendidik, pemimpin, pengusaha, ilmuwan, maupun penggerak sosial.`
   }
